@@ -1,35 +1,23 @@
 <template>
-  <main class="container">
-    <h1>TestCivique Prep</h1>
+  <nav class="nav">
+    <a href="/test-prep/">Accueil</a>
+    <a href="/test-prep/practice">S’entraîner</a>
+  </nav>
 
-    <p class="subtitle">
-      Plateforme indépendante de préparation au test civique français
-    </p>
-
-    <p class="beta">
-      Version bêta gratuite – projet en cours de développement
-    </p>
-  </main>
+  <router-view />
 </template>
 
 <style>
-.container {
-  max-width: 720px;
-  margin: 80px auto;
-  padding: 24px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  text-align: center;
+.nav {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
 }
 
-.subtitle {
-  margin-top: 12px;
-  font-size: 18px;
-  color: #444;
-}
-
-.beta {
-  margin-top: 32px;
-  font-size: 14px;
-  color: #888;
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 </style>
