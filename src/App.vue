@@ -1,11 +1,12 @@
 <template>
   <nav class="nav">
-    <a href="/test-prep/">Accueil</a>
-    <a href="/test-prep/practice">S’entraîner</a>
+    <router-link to="/">Accueil</router-link>
+    <router-link to="/practice">S’entraîner</router-link>
   </nav>
 
   <router-view />
 </template>
+
 
 <style>
 .nav {
