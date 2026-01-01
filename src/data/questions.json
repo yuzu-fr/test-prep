@@ -3,22 +3,32 @@
       "_id": "CSP_PVR_001",
       "question_fr": "À quoi correspond la date du 14 juillet ?",
       "question_cn": "7 月 14 日对应什么事件？",
+      "question_en": "What does the date July 14th correspond to?",
+      "question_es": "¿A qué corresponde la fecha del 14 de julio?",
       "options": [
         {
           "text_fr": "La prise de la Bastille",
-          "text_cn": "攻占巴士底狱"
+          "text_cn": "攻占巴士底狱",
+          "text_en": "The storming of the Bastille",
+          "text_es": "La toma de la Bastilla"
         },
         {
           "text_fr": "La proclamation de la République",
-          "text_cn": "共和国的宣布"
+          "text_cn": "共和国的宣布",
+          "text_en": "The proclamation of the Republic",
+          "text_es": "La proclamación de la República"
         },
         {
           "text_fr": "La fin officielle de la monarchie",
-          "text_cn": "君主制的正式结束"
+          "text_cn": "君主制的正式结束",
+          "text_en": "The official end of the monarchy",
+          "text_es": "El fin oficial de la monarquía"
         },
         {
           "text_fr": "L’adoption de la Constitution",
-          "text_cn": "宪法的通过"
+          "text_cn": "宪法的通过",
+          "text_en": "The adoption of the Constitution",
+          "text_es": "La adopción de la Constitución"
         }
       ],
       "correct_index": 0,
@@ -32,22 +42,32 @@
       "_id": "CSP_PVR_002",
       "question_fr": "Quel est l’un des symboles de la République française ?",
       "question_cn": "以下哪一个是法兰西共和国的象征？",
+      "question_en": "What is one of the symbols of the French Republic?",
+      "question_es": "¿Cuál es uno de los símbolos de la República Francesa?",
       "options": [
         {
           "text_fr": "Marianne",
-          "text_cn": "玛丽安娜"
+          "text_cn": "玛丽安娜",
+          "text_en": "Marianne",
+          "text_es": "Marianne"
         },
         {
           "text_fr": "La Tour Eiffel",
-          "text_cn": "埃菲尔铁塔"
+          "text_cn": "埃菲尔铁塔",
+          "text_en": "The Eiffel Tower",
+          "text_es": "La Torre Eiffel"
         },
         {
           "text_fr": "Le drapeau européen",
-          "text_cn": "欧盟旗帜"
+          "text_cn": "欧盟旗帜",
+          "text_en": "The European flag",
+          "text_es": "La bandera europea"
         },
         {
           "text_fr": "Le palais de l’Élysée",
-          "text_cn": "爱丽舍宫"
+          "text_cn": "爱丽舍宫",
+          "text_en": "The Élysée Palace",
+          "text_es": "El palacio del Elíseo"
         }
       ],
       "correct_index": 0,

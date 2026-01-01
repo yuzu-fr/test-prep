@@ -1,11 +1,14 @@
 <script setup>
 import { ref, watch, provide, onMounted } from 'vue'
+import additionalLangs from './data/language.json'
 
+// Dynamically generate combinations based on the database model
 const LANG_COMBOS = [
   { label: 'Français', value: ['fr'] },
-  { label: 'FR + 中文', value: ['fr', 'cn'] },
-  { label: 'FR + English', value: ['fr', 'en'] },
-  { label: 'FR + Español', value: ['fr', 'es'] },
+  ...additionalLangs.map(lang => ({
+    label: `FR + ${lang.name}`,
+    value: ['fr', lang.code]
+  }))
 ]
 
 const STORAGE_KEY = 'test_civique_lang_combo'

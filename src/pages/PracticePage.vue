@@ -1,132 +1,180 @@
 <script setup>
-  import { ref, computed, inject, watch } from 'vue'
-  import rawQuestions from '../data/questions.json'
-  
-  import ProgressBar from '../practice/ProgressBar.vue'
-  import QuestionCard from '../practice/QuestionCard.vue'
-  import OptionsList from '../practice/OptionsList.vue'
-  import AnswerResult from '../practice/AnswerResult.vue'
-  
-/* ====== 语言模式 ====== */
-// globalLanguages: 全局可选的语言池 (来自 Navbar)
-// activeLanguages: 当前练习页面实际显示的语言 (本地控制)
-const globalLanguages = inject('globalLanguages')
-const activeLanguages = ref([...globalLanguages.value])
+import { ref, computed, inject, watch, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
+import rawQuestions from '../data/questions.json'
+import langData from '../data/language.json'
 
-// 当全局语言池改变时，同步更新本地显示语言
+import ProgressBar from '../practice/ProgressBar.vue'
+import QuestionCard from '../practice/QuestionCard.vue'
+import OptionsList from '../practice/OptionsList.vue'
+import AnswerResult from '../practice/AnswerResult.vue'
+
+/* ====== 路由与模式 ====== */
+const route = useRoute()
+const categoryId = computed(() => route.query.category)
+const examMode = computed(() => route.query.mode === 'mock')
+const examType = computed(() => route.query.exam)
+
+/* ====== 语言模式 (Last Version Logic) ====== */
+const globalLanguages = inject('globalLanguages')
+const activeLanguages = ref(['fr'])
+
+const LANG_PREF_KEY = 'test_civique_lang_pref'
+
+function syncActiveLanguages(pool) {
+  const filtered = activeLanguages.value.filter(lang => pool.includes(lang))
+  activeLanguages.value = filtered.length === 0 && pool.length > 0 ? [pool[0]] : filtered
+}
+
+// 监听全局池变化
 watch(globalLanguages, (newPool) => {
-  // 确保本地显示的语言都在新的池子里
-  activeLanguages.value = activeLanguages.value.filter(lang => newPool.includes(lang))
-  // 如果过滤后为空，则默认显示池子里的第一种语言
-  if (activeLanguages.value.length === 0 && newPool.length > 0) {
-    activeLanguages.value = [newPool[0]]
-  }
+  syncActiveLanguages(newPool)
 }, { deep: true })
 
-/* ====== 数据适配 ====== */
-function adaptQuestions(raw) {
-  return raw.map(q => {
-    // 自动提取所有 question_XX 和 text_XX
+// 语言切换行为
+function toggleLanguage(lang) {
+  const idx = activeLanguages.value.indexOf(lang)
+  if (idx > -1) {
+    if (activeLanguages.value.length > 1) activeLanguages.value.splice(idx, 1)
+  } else {
+    activeLanguages.value.push(lang)
+  }
+}
+
+// 持久化语言偏好
+watch(activeLanguages, (newVal) => {
+  localStorage.setItem(LANG_PREF_KEY, JSON.stringify(newVal))
+}, { deep: true })
+
+/* ====== 数据适配与随机化 ====== */
+function shuffleArray(array) {
+  return [...array].sort(() => Math.random() - 0.5)
+}
+
+function adaptQuestions(raw, category, isMock, type) {
+  let pool = raw
+  
+  if (isMock) {
+    pool = raw.filter(q => q.exam_type === type)
+    pool = shuffleArray(pool).slice(0, 40)
+  } else if (category) {
+    pool = raw.filter(q => q.category_id === category)
+  }
+
+  return pool.map(q => {
     const question = {}
     const options = {}
-
     Object.keys(q).forEach(key => {
       if (key.startsWith('question_')) {
-        const lang = key.replace('question_', '')
-        question[lang] = q[key]
+        question[key.replace('question_', '')] = q[key]
       }
     })
-
-    // 假设 options 数组中每个对象包含 text_XX
     if (q.options && q.options.length > 0) {
-      const langs = Object.keys(q.options[0])
-        .filter(k => k.startsWith('text_'))
-        .map(k => k.replace('text_', ''))
-      
-      langs.forEach(lang => {
-        options[lang] = q.options.map(o => o[`text_${lang}`])
+      Object.keys(q.options[0]).forEach(k => {
+        if (k.startsWith('text_')) {
+          const lang = k.replace('text_', '')
+          options[lang] = q.options.map(o => o[k])
+        }
       })
     }
-
-    return {
-      id: q._id,
-      question,
-      options,
-      answer: q.correct_index,
-    }
+    return { id: q._id, question, options, answer: q.correct_index }
   })
 }
 
-const questions = adaptQuestions(rawQuestions)
-
-/* ====== 语言设置 ====== */
-const langLabels = {
-  fr: 'FR',
-  cn: '中文',
-  en: 'EN',
-  es: 'ES'
-}
+const questions = ref([])
+const index = ref(0)
+const answers = ref({})
+const validatedMap = ref({})
+const examFinished = ref(false)
 
 /* ====== 状态与持久化 ====== */
-const STORAGE_KEY = 'test_civique_progress'
-const savedProgress = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}')
+const STORAGE_KEY_PREFIX = 'test_civique_progress_'
+const storageKey = computed(() => {
+  if (examMode.value) return `${STORAGE_KEY_PREFIX}mock_${examType.value}`
+  return `${STORAGE_KEY_PREFIX}${categoryId.value || 'all'}`
+})
 
-const index = ref(savedProgress.index || 0)
-const answers = ref(savedProgress.answers || {}) // { questionId: selectedIndex }
-const validatedMap = ref(savedProgress.validatedMap || {}) // { questionId: boolean }
+function loadProgress() {
+  const saved = JSON.parse(localStorage.getItem(storageKey.value) || '{}')
+  
+  // 加载语言偏好
+  const savedLangs = JSON.parse(localStorage.getItem(LANG_PREF_KEY) || '[]')
+  if (savedLangs.length > 0) {
+    activeLanguages.value = savedLangs
+  } else {
+    activeLanguages.value = [...globalLanguages.value]
+  }
+  syncActiveLanguages(globalLanguages.value)
 
-// 导出当前题目的状态
+  // 模拟考试模式下不恢复答题进度
+  if (!examMode.value) {
+    index.value = saved.index || 0
+    answers.value = saved.answers || {}
+    validatedMap.value = saved.validatedMap || {}
+  }
+}
+
+onMounted(() => {
+  questions.value = adaptQuestions(rawQuestions, categoryId.value, examMode.value, examType.value)
+  loadProgress()
+})
+
+watch(categoryId, () => {
+  questions.value = adaptQuestions(rawQuestions, categoryId.value, examMode.value, examType.value)
+  loadProgress()
+})
+
 const selected = computed({
-  get: () => answers.value[questions[index.value].id] ?? null,
+  get: () => {
+    const q = questions.value[index.value]
+    return q ? (answers.value[q.id] ?? null) : null
+  },
   set: (val) => {
-    answers.value[questions[index.value].id] = val
+    const q = questions.value[index.value]
+    if (q) answers.value[q.id] = val
   }
 })
 
 const validated = computed({
-  get: () => validatedMap.value[questions[index.value].id] ?? false,
+  get: () => {
+    const q = questions.value[index.value]
+    return q ? (validatedMap.value[q.id] ?? false) : false
+  },
   set: (val) => {
-    validatedMap.value[questions[index.value].id] = val
+    const q = questions.value[index.value]
+    if (q) validatedMap.value[q.id] = val
   }
 })
 
-// 语言偏好
-if (savedProgress.activeLanguages) {
-  activeLanguages.value = savedProgress.activeLanguages
-}
-
 function saveProgress() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify({
+  if (examMode.value) return 
+  localStorage.setItem(storageKey.value, JSON.stringify({
     index: index.value,
     answers: answers.value,
-    validatedMap: validatedMap.value,
-    activeLanguages: activeLanguages.value
+    validatedMap: validatedMap.value
   }))
 }
 
-const current = computed(() => questions[index.value])
+const current = computed(() => questions.value[index.value])
+const isCorrect = computed(() => current.value && selected.value === current.value.answer)
 
-const isCorrect = computed(
-  () => selected.value === current.value.answer
-)
+const score = computed(() => {
+  return Object.keys(validatedMap.value).filter(id => {
+    const q = questions.value.find(quest => quest.id === id)
+    return q && answers.value[id] === q.answer
+  }).length
+})
 
 /* ====== 行为 ====== */
-function toggleLanguage(lang) {
-  const idx = activeLanguages.value.indexOf(lang)
-  if (idx > -1) {
-    if (activeLanguages.value.length > 1) {
-      activeLanguages.value.splice(idx, 1)
-    }
-  } else {
-    activeLanguages.value.push(lang)
-  }
-  saveProgress()
-}
+const langLabels = computed(() => {
+  const labels = { fr: 'FR' }
+  langData.forEach(lang => { labels[lang.code] = lang.name })
+  return labels
+})
 
 function selectOption(i) {
   if (validated.value) return
   selected.value = i
-  saveProgress()
 }
 
 function validate() {
@@ -135,62 +183,115 @@ function validate() {
 }
 
 function next() {
-  index.value = (index.value + 1) % questions.length
-  // 不再在这里重置 selected/validated，因为它们是 computed
-  saveProgress()
+  if (index.value < questions.value.length - 1) {
+    index.value++
+    saveProgress()
+  } else if (examMode.value) {
+    examFinished.value = true
+  } else {
+    index.value = 0
+  }
 }
 </script>
 
 <template>
-  <main class="container" v-if="current">
-    <h2>Entraînement</h2>
-
-    <ProgressBar
-      :current="index + (validated ? 1 : 0)"
-      :total="questions.length"
-    />
-
-    <div class="lang-switch" v-if="globalLanguages.length > 1">
-      <button 
-        v-for="lang in globalLanguages" 
-        :key="lang"
-        :class="{ active: activeLanguages.includes(lang) }"
-        @click="toggleLanguage(lang)"
-      >
-        {{ langLabels[lang] || lang.toUpperCase() }}
-      </button>
+  <main class="container">
+    <div class="header-nav">
+      <router-link to="/" class="back-link">← Retour</router-link>
+      <div v-if="examMode" class="exam-badge">Simulation {{ examType }}</div>
     </div>
 
-    <QuestionCard
-      :question="current.question"
-      :activeLanguages="activeLanguages"
-    />
+    <!-- 考试结果 -->
+    <div v-if="examFinished" class="result-view">
+      <div class="result-card" :class="{ pass: score >= 32 }">
+        <h3>{{ score >= 32 ? 'Félicitations !' : 'Continuez vos efforts' }}</h3>
+        <div class="score-circle">
+          <span class="score-num">{{ score }}</span>
+          <span class="score-total">/ 40</span>
+        </div>
+        <p v-if="score >= 32">Vous avez réussi la simulation (seuil 32/40).</p>
+        <p v-else>Il vous manque {{ 32 - score }} points pour réussir (seuil 32/40).</p>
+        <button class="btn-back" style="width: 100%" @click="$router.push('/')">Retour à l'accueil</button>
+      </div>
+    </div>
 
-    <OptionsList
-      :options="current.options"
-      :activeLanguages="activeLanguages"
-      :selected="selected"
-      :validated="validated"
-      :correctIndex="current.answer"
-      @select="selectOption"
-    />
+    <!-- 答题界面 -->
+    <div v-else-if="current">
+      <h2 v-if="!examMode">Entraînement</h2>
+      <h2 v-else>Question {{ index + 1 }} / 40</h2>
 
-    <AnswerResult
-      :validated="validated"
-      :isCorrect="isCorrect"
-      :canValidate="selected !== null"
-      @validate="validate"
-      @next="next"
-    />
+      <ProgressBar
+        :current="index + (validated ? 1 : 0)"
+        :total="questions.length"
+      />
+
+      <div class="lang-switch" v-if="globalLanguages.length > 1">
+        <button 
+          v-for="lang in globalLanguages" 
+          :key="lang"
+          :class="{ active: activeLanguages.includes(lang) }"
+          @click="toggleLanguage(lang)"
+        >
+          {{ langLabels[lang] || lang.toUpperCase() }}
+        </button>
+      </div>
+
+      <QuestionCard
+        :question="current.question"
+        :activeLanguages="activeLanguages"
+      />
+
+      <OptionsList
+        :options="current.options"
+        :activeLanguages="activeLanguages"
+        :selected="selected"
+        :validated="validated"
+        :correctIndex="current.answer"
+        @select="selectOption"
+      />
+
+      <AnswerResult
+        :validated="validated"
+        :isCorrect="isCorrect"
+        :canValidate="selected !== null"
+        @validate="validate"
+        @next="next"
+      />
+    </div>
+
+    <div v-else class="loading">
+      Chargement des questions...
+    </div>
   </main>
 </template>
-  
 
 <style scoped>
 .container {
   padding: var(--space-lg);
   max-width: 600px;
   margin: 0 auto;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.back-link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.exam-badge {
+  background: var(--color-primary);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
 }
 
 h2 {
@@ -226,5 +327,58 @@ h2 {
   border-color: var(--color-primary);
   color: var(--color-primary);
 }
+
+.result-view {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.result-card {
+  background: white;
+  padding: 40px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  border: 2px solid #eee;
+  max-width: 400px;
+  width: 100%;
+}
+
+.result-card.pass { border-color: var(--color-success); }
+
+.score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 8px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 24px auto;
+}
+
+.pass .score-circle { border-color: var(--color-success); }
+
+.score-num { font-size: 2.5rem; font-weight: 800; color: var(--color-text-main); }
+.score-total { font-size: 1rem; color: var(--color-text-secondary); }
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: var(--color-text-secondary);
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  background: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
 </style>
-    

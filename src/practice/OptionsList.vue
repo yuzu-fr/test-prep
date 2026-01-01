@@ -1,4 +1,6 @@
 <script setup>
+import { computed } from 'vue'
+
 const props = defineProps({
   options: Object,        // { fr: [], cn: [] }
   activeLanguages: Array,
@@ -8,6 +10,11 @@ const props = defineProps({
 })
 
 const emit = defineEmits(['select'])
+
+// 找到第一个在 options 中存在的语言，作为循环的基础
+const baseLang = computed(() => {
+  return props.activeLanguages.find(lang => props.options[lang]) || Object.keys(props.options)[0]
+})
 
 function optionClass(i) {
   return {
@@ -23,9 +30,9 @@ function optionClass(i) {
 </script>
 
 <template>
-  <ul class="options">
+  <ul class="options" v-if="baseLang && options[baseLang]">
     <li
-      v-for="(_, i) in options[activeLanguages[0]]"
+      v-for="(_, i) in options[baseLang]"
       :key="i"
       :class="optionClass(i)"
       @click="emit('select', i)"
@@ -35,7 +42,12 @@ function optionClass(i) {
         :key="lang"
         :class="['option-text', lang]"
       >
-        {{ options[lang][i] }}
+        <span v-if="options[lang] && options[lang][i]">
+          {{ options[lang][i] }}
+        </span>
+        <span v-else-if="lang === activeLanguages[0]" class="missing-lang">
+          [Pas de traduction en {{ lang.toUpperCase() }}]
+        </span>
       </div>
     </li>
   </ul>
@@ -93,6 +105,13 @@ function optionClass(i) {
   font-size: 0.9rem;
   margin-top: 4px;
   opacity: 0.8;
+}
+
+.missing-lang {
+  font-style: italic;
+  color: var(--color-text-secondary);
+  opacity: 0.6;
+  font-size: 0.85rem;
 }
 </style>
     
