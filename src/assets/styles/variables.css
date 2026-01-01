@@ -1,0 +1,27 @@
+:root {
+    /* 颜色系统 */
+    --color-primary: #4f7cff;
+    --color-success: #2ecc71;
+    --color-danger: #e74c3c;
+  
+    --color-text-main: #222;
+    --color-text-secondary: #666;
+    --color-border: #ddd;
+    --color-bg: #ffffff;
+    --color-bg-muted: #f7f8fa;
+  
+    /* 字体 */
+    --font-main: system-ui, -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  
+    /* 圆角 */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+  
+    /* 间距 */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+  }
+  
