@@ -1,0 +1,4207 @@
+[
+    {
+      "_id": "CSP_PVR_SIT_001",
+      "question_fr": "Lors d’une cérémonie officielle le 14 juillet, un défilé militaire est organisé. Que commémore cette date ?",
+      "question_cn": "7月14日官方仪式上举行阅兵，这一天纪念什么？",
+      "options": [
+        {
+          "text_fr": "La prise de la Bastille",
+          "text_cn": "攻占巴士底狱"
+        },
+        {
+          "text_fr": "La proclamation de la République",
+          "text_cn": "共和国宣布"
+        },
+        {
+          "text_fr": "La fin officielle de la monarchie",
+          "text_cn": "君主制正式结束"
+        },
+        {
+          "text_fr": "L’adoption de la Constitution",
+          "text_cn": "宪法通过"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 1
+    },
+    {
+      "_id": "CSP_PVR_SIT_002",
+      "question_fr": "Un citoyen voit le portrait de Marianne dans une mairie. Que représente Marianne ?",
+      "question_cn": "一名公民在市政厅看到玛丽安娜画像，她代表什么？",
+      "options": [
+        {
+          "text_fr": "Un symbole de la République française",
+          "text_cn": "法兰西共和国的象征"
+        },
+        {
+          "text_fr": "Une reine de France",
+          "text_cn": "法国女王"
+        },
+        {
+          "text_fr": "Une figure religieuse",
+          "text_cn": "宗教人物"
+        },
+        {
+          "text_fr": "Une actrice célèbre",
+          "text_cn": "著名演员"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 2
+    },
+    {
+      "_id": "CSP_PVR_SIT_003",
+      "question_fr": "Un employeur refuse un candidat uniquement à cause de son sexe. Quel principe républicain est violé ?",
+      "question_cn": "雇主仅因性别拒绝录用候选人，违反了哪一共和国原则？",
+      "options": [
+        {
+          "text_fr": "Le principe d’égalité",
+          "text_cn": "平等原则"
+        },
+        {
+          "text_fr": "La liberté d’expression",
+          "text_cn": "言论自由"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 3
+    },
+    {
+      "_id": "CSP_PVR_SIT_004",
+      "question_fr": "Dans une école publique, tous les élèves suivent les mêmes programmes. Quel principe est appliqué ?",
+      "question_cn": "在公立学校，所有学生学习相同课程，体现了什么原则？",
+      "options": [
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        },
+        {
+          "text_fr": "La liberté individuelle",
+          "text_cn": "个人自由"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La décentralisation",
+          "text_cn": "权力下放"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 4
+    },
+    {
+      "_id": "CSP_PVR_SIT_005",
+      "question_fr": "Un élève refuse un cours obligatoire pour des raisons religieuses dans une école publique. Que dit la loi ?",
+      "question_cn": "公立学校中，学生因宗教原因拒绝必修课，法律如何规定？",
+      "options": [
+        {
+          "text_fr": "L’école est obligatoire pour tous",
+          "text_cn": "学校教育对所有人都是强制的"
+        },
+        {
+          "text_fr": "La religion est prioritaire",
+          "text_cn": "宗教优先"
+        },
+        {
+          "text_fr": "Les cours sont optionnels",
+          "text_cn": "课程是可选的"
+        },
+        {
+          "text_fr": "Chaque élève choisit",
+          "text_cn": "学生可自行选择"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 5
+    },
+    {
+      "_id": "CSP_PVR_SIT_006",
+      "question_fr": "Un agent public ne porte aucun signe religieux visible pendant son travail. Quel principe respecte-t-il ?",
+      "question_cn": "公务人员在工作中不佩戴明显宗教标志，遵守了什么原则？",
+      "options": [
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        },
+        {
+          "text_fr": "L’égalité territoriale",
+          "text_cn": "地域平等"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 6
+    },
+    {
+      "_id": "CSP_PVR_SIT_007",
+      "question_fr": "Une personne décide de ne pratiquer aucune religion. Est-ce autorisé en France ?",
+      "question_cn": "一名公民选择不信仰任何宗教，在法国是否合法？",
+      "options": [
+        {
+          "text_fr": "Oui, c’est un droit",
+          "text_cn": "是的，这是合法权利"
+        },
+        {
+          "text_fr": "Non, une religion est obligatoire",
+          "text_cn": "不，必须信仰宗教"
+        },
+        {
+          "text_fr": "Seulement avec autorisation",
+          "text_cn": "需经许可"
+        },
+        {
+          "text_fr": "Uniquement pour les étrangers",
+          "text_cn": "仅限外国人"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 7
+    },
+    {
+      "_id": "CSP_PVR_SIT_008",
+      "question_fr": "Lors d’un événement officiel, on hisse un drapeau bleu, blanc et rouge. Que symbolise-t-il ?",
+      "question_cn": "官方活动中升起蓝白红三色旗，它象征什么？",
+      "options": [
+        {
+          "text_fr": "La République française",
+          "text_cn": "法兰西共和国"
+        },
+        {
+          "text_fr": "L’Union européenne",
+          "text_cn": "欧盟"
+        },
+        {
+          "text_fr": "Une région",
+          "text_cn": "大区"
+        },
+        {
+          "text_fr": "Une religion",
+          "text_cn": "宗教"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 8
+    },
+    {
+      "_id": "CSP_PVR_SIT_009",
+      "question_fr": "Une association aide des personnes en difficulté. Quel est son rôle principal ?",
+      "question_cn": "一个协会帮助困难群体，其主要作用是什么？",
+      "options": [
+        {
+          "text_fr": "Favoriser la solidarité",
+          "text_cn": "促进社会互助"
+        },
+        {
+          "text_fr": "Rendre la justice",
+          "text_cn": "执行司法"
+        },
+        {
+          "text_fr": "Imposer des lois",
+          "text_cn": "制定法律"
+        },
+        {
+          "text_fr": "Gérer l’État",
+          "text_cn": "管理国家"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 9
+    },
+    {
+      "_id": "CSP_PVR_SIT_010",
+      "question_fr": "Un citoyen critique pacifiquement le gouvernement sur un réseau social. Quel droit exerce-t-il ?",
+      "question_cn": "公民在社交网络上和平批评政府，行使了哪项权利？",
+      "options": [
+        {
+          "text_fr": "La liberté d’expression",
+          "text_cn": "言论自由"
+        },
+        {
+          "text_fr": "Le droit de vote",
+          "text_cn": "选举权"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        },
+        {
+          "text_fr": "Le droit de grève",
+          "text_cn": "罢工权"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 10
+    },
+    {
+      "_id": "CSP_PVR_SIT_011",
+      "question_fr": "Lors d’une cérémonie officielle, on chante la Marseillaise. Quel est ce chant pour la France ?",
+      "question_cn": "在官方仪式上演唱《马赛曲》，它对法国来说是什么？",
+      "options": [
+        {
+          "text_fr": "L’hymne national",
+          "text_cn": "国歌"
+        },
+        {
+          "text_fr": "Un chant religieux",
+          "text_cn": "宗教歌曲"
+        },
+        {
+          "text_fr": "Une chanson populaire",
+          "text_cn": "流行歌曲"
+        },
+        {
+          "text_fr": "Un chant régional",
+          "text_cn": "地方歌曲"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 11
+    },
+    {
+      "_id": "CSP_PVR_SIT_012",
+      "question_fr": "Un citoyen voit la devise \"Liberté, Égalité, Fraternité\" sur un bâtiment public. Que représente-t-elle ?",
+      "question_cn": "公民在公共建筑上看到“自由、平等、博爱”，它代表什么？",
+      "options": [
+        {
+          "text_fr": "La devise de la République",
+          "text_cn": "共和国格言"
+        },
+        {
+          "text_fr": "Un slogan politique",
+          "text_cn": "政治口号"
+        },
+        {
+          "text_fr": "Une loi",
+          "text_cn": "法律"
+        },
+        {
+          "text_fr": "Un principe religieux",
+          "text_cn": "宗教原则"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 12
+    },
+    {
+      "_id": "CSP_PVR_SIT_013",
+      "question_fr": "Un citoyen change librement de religion sans sanction. Quel principe est respecté ?",
+      "question_cn": "公民可以自由改变宗教信仰且不受惩罚，这体现了什么原则？",
+      "options": [
+        {
+          "text_fr": "La liberté de religion",
+          "text_cn": "宗教自由"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "L’égalité territoriale",
+          "text_cn": "地域平等"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 13
+    },
+    {
+      "_id": "CSP_PVR_SIT_014",
+      "question_fr": "Un employeur traite de la même manière des salariés d’origines différentes. Quel principe applique-t-il ?",
+      "question_cn": "雇主平等对待不同出身的员工，体现了什么原则？",
+      "options": [
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La liberté d’expression",
+          "text_cn": "言论自由"
+        },
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 14
+    },
+    {
+      "_id": "CSP_PVR_SIT_015",
+      "question_fr": "Dans un service public, les usagers sont accueillis sans distinction de religion. Quel principe est respecté ?",
+      "question_cn": "公共服务中不因宗教差别对待使用者，遵守了什么原则？",
+      "options": [
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La liberté individuelle",
+          "text_cn": "个人自由"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 15
+    },
+    {
+      "_id": "CSP_PVR_SIT_016",
+      "question_fr": "Un citoyen participe à une association pour aider les autres. Quelle valeur républicaine illustre-t-il ?",
+      "question_cn": "公民参与协会帮助他人，体现了哪一共和国价值？",
+      "options": [
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        },
+        {
+          "text_fr": "La liberté",
+          "text_cn": "自由"
+        },
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 16
+    },
+    {
+      "_id": "CSP_PVR_SIT_017",
+      "question_fr": "Une personne exprime une opinion différente de la majorité sans être sanctionnée. Quel droit exerce-t-elle ?",
+      "question_cn": "个人表达与多数不同的观点且不受惩罚，行使了哪项权利？",
+      "options": [
+        {
+          "text_fr": "La liberté d’expression",
+          "text_cn": "言论自由"
+        },
+        {
+          "text_fr": "Le droit de grève",
+          "text_cn": "罢工权"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        },
+        {
+          "text_fr": "Le droit de vote",
+          "text_cn": "选举权"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 17
+    },
+    {
+      "_id": "CSP_PVR_SIT_018",
+      "question_fr": "Dans une école publique, aucun enseignement religieux n’est obligatoire. Quel principe s’applique ?",
+      "question_cn": "公立学校不强制宗教教育，适用了什么原则？",
+      "options": [
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        },
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 18
+    },
+    {
+      "_id": "CSP_PVR_SIT_019",
+      "question_fr": "Un citoyen respecte les lois même s’il n’est pas d’accord. Quel principe applique-t-il ?",
+      "question_cn": "公民即使不同意也遵守法律，体现了什么原则？",
+      "options": [
+        {
+          "text_fr": "Le respect des lois de la République",
+          "text_cn": "遵守共和国法律"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La liberté individuelle",
+          "text_cn": "个人自由"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 19
+    },
+    {
+      "_id": "CSP_PVR_SIT_020",
+      "question_fr": "Dans un bâtiment public, la devise républicaine est affichée. Où peut-on la voir ?",
+      "question_cn": "公共建筑中展示共和国格言，这种情况说明什么？",
+      "options": [
+        {
+          "text_fr": "Sur les bâtiments publics",
+          "text_cn": "公共建筑上"
+        },
+        {
+          "text_fr": "Uniquement dans les églises",
+          "text_cn": "仅在教堂"
+        },
+        {
+          "text_fr": "Dans les entreprises privées",
+          "text_cn": "私人企业"
+        },
+        {
+          "text_fr": "Seulement à l’école",
+          "text_cn": "仅在学校"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 20
+    },
+    {
+      "_id": "CSP_PVR_SIT_021",
+      "question_fr": "Un citoyen est libre de choisir sa profession. Quel principe cela illustre-t-il ?",
+      "question_cn": "公民可以自由选择职业，这体现了什么原则？",
+      "options": [
+        {
+          "text_fr": "La liberté",
+          "text_cn": "自由"
+        },
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 21
+    },
+    {
+      "_id": "CSP_PVR_SIT_022",
+      "question_fr": "Un citoyen voit le coq comme symbole sportif français. Que représente-t-il ?",
+      "question_cn": "公民看到公鸡作为法国体育象征，它代表什么？",
+      "options": [
+        {
+          "text_fr": "Un symbole traditionnel de la France",
+          "text_cn": "法国的传统象征"
+        },
+        {
+          "text_fr": "Un symbole religieux",
+          "text_cn": "宗教象征"
+        },
+        {
+          "text_fr": "Un parti politique",
+          "text_cn": "政党"
+        },
+        {
+          "text_fr": "Une institution",
+          "text_cn": "机构"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 22
+    },
+    {
+      "_id": "CSP_PVR_SIT_023",
+      "question_fr": "Un citoyen participe à la vie démocratique par une association. De quel type de participation s’agit-il ?",
+      "question_cn": "公民通过协会参与民主生活，这属于什么形式的参与？",
+      "options": [
+        {
+          "text_fr": "Une participation citoyenne",
+          "text_cn": "公民参与"
+        },
+        {
+          "text_fr": "Une obligation légale",
+          "text_cn": "法律义务"
+        },
+        {
+          "text_fr": "Une activité religieuse",
+          "text_cn": "宗教活动"
+        },
+        {
+          "text_fr": "Une activité commerciale",
+          "text_cn": "商业活动"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 23
+    },
+    {
+      "_id": "CSP_PVR_SIT_024",
+      "question_fr": "Un citoyen respecte les autres malgré leurs différences. Quelle valeur applique-t-il ?",
+      "question_cn": "公民尊重他人的差异，体现了什么价值？",
+      "options": [
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La liberté",
+          "text_cn": "自由"
+        },
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        },
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 24
+    },
+    {
+      "_id": "CSP_PVR_SIT_025",
+      "question_fr": "Dans un service public, les agents sont neutres politiquement. Quel principe est respecté ?",
+      "question_cn": "公共服务中工作人员保持政治中立，体现了什么原则？",
+      "options": [
+        {
+          "text_fr": "La neutralité de l’État",
+          "text_cn": "国家中立"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La liberté individuelle",
+          "text_cn": "个人自由"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 25
+    },
+    {
+      "_id": "CSP_PVR_SIT_026",
+      "question_fr": "Un citoyen choisit de ne pas exprimer ses opinions. Est-ce autorisé ?",
+      "question_cn": "公民选择不表达自己的观点，这是否合法？",
+      "options": [
+        {
+          "text_fr": "Oui, c’est une liberté",
+          "text_cn": "是的，这是自由"
+        },
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不，这是禁止的"
+        },
+        {
+          "text_fr": "Seulement avec autorisation",
+          "text_cn": "需许可"
+        },
+        {
+          "text_fr": "Uniquement pour les étrangers",
+          "text_cn": "仅限外国人"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 26
+    },
+    {
+      "_id": "CSP_PVR_SIT_027",
+      "question_fr": "Une personne pratique librement sa religion sans troubler l’ordre public. Est-ce autorisé ?",
+      "question_cn": "个人在不影响公共秩序的情况下自由进行宗教活动，是否合法？",
+      "options": [
+        {
+          "text_fr": "Oui, c’est un droit",
+          "text_cn": "是的，这是权利"
+        },
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不，禁止"
+        },
+        {
+          "text_fr": "Uniquement dans les lieux privés",
+          "text_cn": "仅限私人场所"
+        },
+        {
+          "text_fr": "Seulement pour les citoyens",
+          "text_cn": "仅限公民"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 27
+    },
+    {
+      "_id": "CSP_PVR_SIT_028",
+      "question_fr": "Un citoyen respecte les autres cultures vivant en France. Quelle valeur applique-t-il ?",
+      "question_cn": "公民尊重生活在法国的其他文化，体现了什么价值？",
+      "options": [
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La liberté",
+          "text_cn": "自由"
+        },
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        },
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 28
+    },
+    {
+      "_id": "CSP_PVR_SIT_029",
+      "question_fr": "Dans une école publique, les élèves sont accueillis sans distinction d’origine. Quel principe est appliqué ?",
+      "question_cn": "公立学校不因出身区别对待学生，体现了什么原则？",
+      "options": [
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La liberté",
+          "text_cn": "自由"
+        },
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 29
+    },
+    {
+      "_id": "CSP_PVR_SIT_030",
+      "question_fr": "Un citoyen participe à une fête nationale le 14 juillet. Quel événement célèbre-t-il ?",
+      "question_cn": "公民在7月14日参加国庆活动，庆祝的是什么？",
+      "options": [
+        {
+          "text_fr": "La fête nationale française",
+          "text_cn": "法国国庆"
+        },
+        {
+          "text_fr": "La fin de la monarchie",
+          "text_cn": "君主制结束"
+        },
+        {
+          "text_fr": "La signature d’un traité européen",
+          "text_cn": "欧洲条约签署"
+        },
+        {
+          "text_fr": "Une victoire sportive",
+          "text_cn": "体育胜利"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 30
+    },
+    {
+      "_id": "CSP_PVR_SIT_031",
+      "question_fr": "Un citoyen respecte les lois mêmes s’il les critique. Que démontre-t-il ?",
+      "question_cn": "公民即使批评法律仍然遵守法律，这表明什么？",
+      "options": [
+        {
+          "text_fr": "Le respect de l’État de droit",
+          "text_cn": "尊重法治国家"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 31
+    },
+    {
+      "_id": "CSP_PVR_SIT_032",
+      "question_fr": "Dans une mairie, les agents accueillent tous les usagers de la même manière. Quel principe est respecté ?",
+      "question_cn": "市政厅工作人员平等接待所有使用者，体现了什么原则？",
+      "options": [
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La liberté",
+          "text_cn": "自由"
+        },
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 32
+    },
+    {
+      "_id": "CSP_PVR_SIT_033",
+      "question_fr": "Un citoyen s’exprime librement sans insulter autrui. Quelle limite respecte-t-il ?",
+      "question_cn": "公民自由表达但不侮辱他人，遵守了什么界限？",
+      "options": [
+        {
+          "text_fr": "Le respect des autres",
+          "text_cn": "尊重他人"
+        },
+        {
+          "text_fr": "La censure",
+          "text_cn": "审查"
+        },
+        {
+          "text_fr": "La neutralité",
+          "text_cn": "中立"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 33
+    },
+    {
+      "_id": "CSP_PVR_SIT_034",
+      "question_fr": "Un citoyen voit la devise républicaine dans une école. Que rappelle-t-elle ?",
+      "question_cn": "公民在学校看到共和国格言，它提醒什么？",
+      "options": [
+        {
+          "text_fr": "Les valeurs de la République",
+          "text_cn": "共和国价值观"
+        },
+        {
+          "text_fr": "Les règles religieuses",
+          "text_cn": "宗教规则"
+        },
+        {
+          "text_fr": "Les lois européennes",
+          "text_cn": "欧洲法律"
+        },
+        {
+          "text_fr": "Les traditions locales",
+          "text_cn": "地方传统"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 34
+    },
+    {
+      "_id": "CSP_PVR_SIT_035",
+      "question_fr": "Un citoyen est libre de penser différemment des autres. Quel principe cela illustre-t-il ?",
+      "question_cn": "公民可以有不同于他人的思想，这体现了什么原则？",
+      "options": [
+        {
+          "text_fr": "La liberté de pensée",
+          "text_cn": "思想自由"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        },
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 35
+    },
+    {
+      "_id": "CSP_PVR_SIT_036",
+      "question_fr": "Un citoyen respecte les symboles de la République. Que montre-t-il ?",
+      "question_cn": "公民尊重共和国象征，这表明什么？",
+      "options": [
+        {
+          "text_fr": "L’attachement aux valeurs républicaines",
+          "text_cn": "对共和国价值的认同"
+        },
+        {
+          "text_fr": "Une obligation religieuse",
+          "text_cn": "宗教义务"
+        },
+        {
+          "text_fr": "Une tradition locale",
+          "text_cn": "地方传统"
+        },
+        {
+          "text_fr": "Une opinion politique",
+          "text_cn": "政治观点"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 36
+    },
+    {
+      "_id": "CSP_PVR_SIT_037",
+      "question_fr": "Un citoyen respecte la liberté et l’égalité de tous. Quelle devise applique-t-il ?",
+      "question_cn": "公民尊重所有人的自由与平等，体现了哪一句格言？",
+      "options": [
+        {
+          "text_fr": "Liberté, Égalité, Fraternité",
+          "text_cn": "自由、平等、博爱"
+        },
+        {
+          "text_fr": "Unité et travail",
+          "text_cn": "团结与劳动"
+        },
+        {
+          "text_fr": "Ordre et autorité",
+          "text_cn": "秩序与权威"
+        },
+        {
+          "text_fr": "Foi et tradition",
+          "text_cn": "信仰与传统"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": true,
+      "exam_type": "CSP",
+      "category_id": "CSP_01",
+      "order": 37
+    },
+    {
+      "_id": "SIT_CSP03_001",
+      "question_fr": "Une personne est accusée d’une infraction et se défend devant un tribunal avec un avocat. Quel droit exerce-t-elle ?",
+      "question_cn": "一名被指控违法的人在法庭上由律师辩护，行使了什么权利？",
+      "options": [
+        {
+          "text_fr": "Le droit à la défense",
+          "text_cn": "辩护权"
+        },
+        {
+          "text_fr": "La liberté d’expression",
+          "text_cn": "言论自由"
+        },
+        {
+          "text_fr": "Le droit de vote",
+          "text_cn": "选举权"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 1
+    },
+    {
+      "_id": "SIT_CSP03_002",
+      "question_fr": "Une femme majeure décide d’avorter dans le cadre légal. Est-ce autorisé en France ?",
+      "question_cn": "一名成年女性在法律规定范围内选择堕胎，在法国是否合法？",
+      "options": [
+        {
+          "text_fr": "Oui, c’est autorisé par la loi",
+          "text_cn": "是的，法律允许"
+        },
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不，禁止"
+        },
+        {
+          "text_fr": "Seulement avec autorisation religieuse",
+          "text_cn": "需宗教许可"
+        },
+        {
+          "text_fr": "Uniquement pour les étrangères",
+          "text_cn": "仅限外国人"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 2
+    },
+    {
+      "_id": "SIT_CSP03_003",
+      "question_fr": "Une personne manifeste pacifiquement dans la rue après avoir déclaré la manifestation. Quel droit exerce-t-elle ?",
+      "question_cn": "个人依法申报并和平示威，行使了什么权利？",
+      "options": [
+        {
+          "text_fr": "Le droit de manifester",
+          "text_cn": "示威权"
+        },
+        {
+          "text_fr": "Le droit de grève",
+          "text_cn": "罢工权"
+        },
+        {
+          "text_fr": "Le droit de vote",
+          "text_cn": "选举权"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 3
+    },
+    {
+      "_id": "SIT_CSP03_004",
+      "question_fr": "Une personne jette un mégot par terre dans la rue. Que risque-t-elle ?",
+      "question_cn": "个人在街上乱扔烟头，可能面临什么？",
+      "options": [
+        {
+          "text_fr": "Une sanction",
+          "text_cn": "处罚"
+        },
+        {
+          "text_fr": "Une récompense",
+          "text_cn": "奖励"
+        },
+        {
+          "text_fr": "Aucune conséquence",
+          "text_cn": "没有后果"
+        },
+        {
+          "text_fr": "Un avertissement sans suite",
+          "text_cn": "不产生后果的提醒"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 4
+    },
+    {
+      "_id": "SIT_CSP03_005",
+      "question_fr": "Une personne ne respecte pas la loi française. Que peut-il se passer ?",
+      "question_cn": "个人不遵守法国法律，可能会发生什么？",
+      "options": [
+        {
+          "text_fr": "Elle peut être sanctionnée",
+          "text_cn": "可能受到处罚"
+        },
+        {
+          "text_fr": "Elle est récompensée",
+          "text_cn": "会得到奖励"
+        },
+        {
+          "text_fr": "Il n’y a aucune conséquence",
+          "text_cn": "没有任何后果"
+        },
+        {
+          "text_fr": "Elle décide elle-même de la loi",
+          "text_cn": "自行决定法律"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 5
+    },
+    {
+      "_id": "SIT_CSP03_006",
+      "question_fr": "Une personne trie ses déchets à la maison. Pourquoi agit-elle ainsi ?",
+      "question_cn": "个人在家中进行垃圾分类，原因是什么？",
+      "options": [
+        {
+          "text_fr": "Pour protéger l’environnement",
+          "text_cn": "保护环境"
+        },
+        {
+          "text_fr": "Pour des raisons religieuses",
+          "text_cn": "宗教原因"
+        },
+        {
+          "text_fr": "Par obligation familiale",
+          "text_cn": "家庭义务"
+        },
+        {
+          "text_fr": "Par tradition locale",
+          "text_cn": "地方传统"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 6
+    },
+    {
+      "_id": "SIT_CSP03_007",
+      "question_fr": "Une personne aide quelqu’un en danger sans se mettre en danger. Quelle obligation respecte-t-elle ?",
+      "question_cn": "个人在不危及自身安全的情况下帮助他人，履行了什么义务？",
+      "options": [
+        {
+          "text_fr": "L’assistance à personne en danger",
+          "text_cn": "紧急救助义务"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La liberté",
+          "text_cn": "自由"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 7
+    },
+    {
+      "_id": "SIT_CSP03_008",
+      "question_fr": "Une personne est mariée à une seule personne en France. Pourquoi ?",
+      "question_cn": "在法国，一个人只能与一人结婚，原因是？",
+      "options": [
+        {
+          "text_fr": "La polygamie est interdite",
+          "text_cn": "禁止一夫多妻"
+        },
+        {
+          "text_fr": "Par tradition",
+          "text_cn": "传统"
+        },
+        {
+          "text_fr": "Par religion",
+          "text_cn": "宗教原因"
+        },
+        {
+          "text_fr": "Par choix administratif",
+          "text_cn": "行政选择"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 8
+    },
+    {
+      "_id": "SIT_CSP03_009",
+      "question_fr": "Une personne exprime ses opinions sans insulter les autres. Quel droit exerce-t-elle ?",
+      "question_cn": "个人在不侮辱他人的情况下表达观点，行使了什么权利？",
+      "options": [
+        {
+          "text_fr": "La liberté d’expression",
+          "text_cn": "言论自由"
+        },
+        {
+          "text_fr": "Le droit de grève",
+          "text_cn": "罢工权"
+        },
+        {
+          "text_fr": "Le droit de vote",
+          "text_cn": "选举权"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 9
+    },
+    {
+      "_id": "SIT_CSP03_010",
+      "question_fr": "Une personne est victime de violences. Que doit-elle faire en priorité ?",
+      "question_cn": "个人遭受暴力侵害，首先应该做什么？",
+      "options": [
+        {
+          "text_fr": "Alerter la police ou la gendarmerie",
+          "text_cn": "报警或联系宪兵"
+        },
+        {
+          "text_fr": "Se taire",
+          "text_cn": "保持沉默"
+        },
+        {
+          "text_fr": "Se venger",
+          "text_cn": "报复"
+        },
+        {
+          "text_fr": "Quitter le pays",
+          "text_cn": "离开国家"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 10
+    },
+    {
+      "_id": "SIT_CSP03_011",
+      "question_fr": "Une personne respecte la dignité humaine des autres. Que signifie cela ?",
+      "question_cn": "尊重他人的人类尊严，意味着什么？",
+      "options": [
+        {
+          "text_fr": "Respecter chaque personne",
+          "text_cn": "尊重每一个人"
+        },
+        {
+          "text_fr": "Imposer ses idées",
+          "text_cn": "强加观点"
+        },
+        {
+          "text_fr": "Ignorer les autres",
+          "text_cn": "忽视他人"
+        },
+        {
+          "text_fr": "Limiter les droits",
+          "text_cn": "限制权利"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 11
+    },
+    {
+      "_id": "SIT_CSP03_012",
+      "question_fr": "Une personne se rend aux urgences pour une situation grave. Pourquoi ?",
+      "question_cn": "个人在紧急严重情况下前往急诊，原因是？",
+      "options": [
+        {
+          "text_fr": "La situation est urgente",
+          "text_cn": "情况紧急"
+        },
+        {
+          "text_fr": "Par habitude",
+          "text_cn": "习惯"
+        },
+        {
+          "text_fr": "Pour éviter le médecin traitant",
+          "text_cn": "避开家庭医生"
+        },
+        {
+          "text_fr": "Par choix personnel",
+          "text_cn": "个人选择"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 12
+    },
+    {
+      "_id": "SIT_CSP03_013",
+      "question_fr": "Une personne est condamnée pour un crime. Quelle est la gravité de cette infraction ?",
+      "question_cn": "个人因犯罪被判刑，该违法行为的严重程度是？",
+      "options": [
+        {
+          "text_fr": "La plus grave",
+          "text_cn": "最严重"
+        },
+        {
+          "text_fr": "Une simple contravention",
+          "text_cn": "轻微违规"
+        },
+        {
+          "text_fr": "Une infraction administrative",
+          "text_cn": "行政违法"
+        },
+        {
+          "text_fr": "Une erreur sans conséquence",
+          "text_cn": "无后果错误"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 13
+    },
+    {
+      "_id": "SIT_CSP03_014",
+      "question_fr": "Une personne respecte les règles même si elles limitent sa liberté. Pourquoi ?",
+      "question_cn": "个人即使自由受限也遵守规则，原因是？",
+      "options": [
+        {
+          "text_fr": "Pour protéger l’intérêt général",
+          "text_cn": "保护公共利益"
+        },
+        {
+          "text_fr": "Par peur",
+          "text_cn": "害怕"
+        },
+        {
+          "text_fr": "Par habitude",
+          "text_cn": "习惯"
+        },
+        {
+          "text_fr": "Sans raison",
+          "text_cn": "没有原因"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 14
+    },
+    {
+      "_id": "SIT_CSP03_015",
+      "question_fr": "Une personne utilise les réseaux sociaux en respectant la loi. Que fait-elle ?",
+      "question_cn": "个人合法使用社交网络，说明什么？",
+      "options": [
+        {
+          "text_fr": "Elle respecte ses droits et devoirs",
+          "text_cn": "遵守权利与义务"
+        },
+        {
+          "text_fr": "Elle enfreint la loi",
+          "text_cn": "违法"
+        },
+        {
+          "text_fr": "Elle ignore les règles",
+          "text_cn": "忽视规则"
+        },
+        {
+          "text_fr": "Elle agit illégalement",
+          "text_cn": "非法行为"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 15
+    },
+    {
+      "_id": "SIT_CSP03_016",
+      "question_fr": "Une personne se marie légalement à la mairie. Que respecte-t-elle ?",
+      "question_cn": "个人在市政厅合法结婚，遵守了什么？",
+      "options": [
+        {
+          "text_fr": "La loi française",
+          "text_cn": "法国法律"
+        },
+        {
+          "text_fr": "Une règle religieuse",
+          "text_cn": "宗教规则"
+        },
+        {
+          "text_fr": "Une tradition familiale",
+          "text_cn": "家庭传统"
+        },
+        {
+          "text_fr": "Une coutume locale",
+          "text_cn": "地方习俗"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 16
+    },
+    {
+      "_id": "SIT_CSP03_017",
+      "question_fr": "Une personne peut divorcer même si l’autre n’est pas d’accord. Est-ce possible ?",
+      "question_cn": "即使对方不同意，个人也可以离婚，这是否可能？",
+      "options": [
+        {
+          "text_fr": "Oui, c’est possible",
+          "text_cn": "是的，可以"
+        },
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不，禁止"
+        },
+        {
+          "text_fr": "Seulement pour les hommes",
+          "text_cn": "仅限男性"
+        },
+        {
+          "text_fr": "Seulement pour les étrangers",
+          "text_cn": "仅限外国人"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 17
+    },
+    {
+      "_id": "SIT_CSP03_018",
+      "question_fr": "Une personne respecte la liberté de la presse. Que cela garantit-il ?",
+      "question_cn": "尊重新闻自由，保障了什么？",
+      "options": [
+        {
+          "text_fr": "L’information libre",
+          "text_cn": "信息自由"
+        },
+        {
+          "text_fr": "La censure",
+          "text_cn": "审查"
+        },
+        {
+          "text_fr": "La propagande",
+          "text_cn": "宣传"
+        },
+        {
+          "text_fr": "Le contrôle de l’État",
+          "text_cn": "国家控制"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 18
+    },
+    {
+      "_id": "SIT_CSP03_019",
+      "question_fr": "Une personne respecte les règles environnementales. Pourquoi ?",
+      "question_cn": "个人遵守环保规定，原因是？",
+      "options": [
+        {
+          "text_fr": "Pour préserver l’environnement",
+          "text_cn": "保护环境"
+        },
+        {
+          "text_fr": "Par obligation religieuse",
+          "text_cn": "宗教义务"
+        },
+        {
+          "text_fr": "Par tradition",
+          "text_cn": "传统"
+        },
+        {
+          "text_fr": "Par habitude",
+          "text_cn": "习惯"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 19
+    },
+    {
+      "_id": "SIT_CSP03_020",
+      "question_fr": "Une personne respecte la loi même en ligne. Que cela montre-t-il ?",
+      "question_cn": "个人在网络上也遵守法律，说明什么？",
+      "options": [
+        {
+          "text_fr": "La loi s’applique partout",
+          "text_cn": "法律适用于任何地方"
+        },
+        {
+          "text_fr": "Internet est sans règles",
+          "text_cn": "互联网无法律"
+        },
+        {
+          "text_fr": "Les lois sont facultatives",
+          "text_cn": "法律可选"
+        },
+        {
+          "text_fr": "Seuls les adultes sont concernés",
+          "text_cn": "仅成人适用"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 20
+    },
+    {
+      "_id": "SIT_CSP03_021",
+      "question_fr": "Une personne respecte les autres sans discrimination. Quel principe applique-t-elle ?",
+      "question_cn": "个人不歧视他人，体现了什么原则？",
+      "options": [
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        },
+        {
+          "text_fr": "La liberté",
+          "text_cn": "自由"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 21
+    },
+    {
+      "_id": "SIT_CSP03_022",
+      "question_fr": "Une personne utilise un avocat gratuit car elle a peu de ressources. Quelle aide reçoit-elle ?",
+      "question_cn": "经济困难的人获得免费律师，属于什么帮助？",
+      "options": [
+        {
+          "text_fr": "L’aide juridictionnelle",
+          "text_cn": "法律援助"
+        },
+        {
+          "text_fr": "Une aide religieuse",
+          "text_cn": "宗教援助"
+        },
+        {
+          "text_fr": "Une aide familiale",
+          "text_cn": "家庭援助"
+        },
+        {
+          "text_fr": "Une aide privée",
+          "text_cn": "私人援助"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 22
+    },
+    {
+      "_id": "SIT_CSP03_023",
+      "question_fr": "Une personne est contrôlée par la police. Que doit-elle faire ?",
+      "question_cn": "个人接受警方检查时应如何做？",
+      "options": [
+        {
+          "text_fr": "Obéir aux instructions",
+          "text_cn": "服从指示"
+        },
+        {
+          "text_fr": "Refuser systématiquement",
+          "text_cn": "一律拒绝"
+        },
+        {
+          "text_fr": "S’enfuir",
+          "text_cn": "逃跑"
+        },
+        {
+          "text_fr": "Discuter violemment",
+          "text_cn": "激烈争吵"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 23
+    },
+    {
+      "_id": "SIT_CSP03_024",
+      "question_fr": "Une personne respecte la Charte de l’environnement. Que fait-elle ?",
+      "question_cn": "个人遵守环境宪章，说明什么？",
+      "options": [
+        {
+          "text_fr": "Elle protège la nature",
+          "text_cn": "保护自然"
+        },
+        {
+          "text_fr": "Elle enfreint la loi",
+          "text_cn": "违法"
+        },
+        {
+          "text_fr": "Elle agit pour elle seule",
+          "text_cn": "只为自己"
+        },
+        {
+          "text_fr": "Elle ignore les règles",
+          "text_cn": "忽视规则"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 24
+    },
+    {
+      "_id": "SIT_CSP03_025",
+      "question_fr": "Une personne respecte les droits des autres sur les réseaux sociaux. Pourquoi ?",
+      "question_cn": "个人在社交网络上尊重他人权利，原因是？",
+      "options": [
+        {
+          "text_fr": "Les droits s’appliquent aussi en ligne",
+          "text_cn": "权利同样适用于网络"
+        },
+        {
+          "text_fr": "Internet est privé",
+          "text_cn": "互联网是私人空间"
+        },
+        {
+          "text_fr": "Il n’y a pas de règles",
+          "text_cn": "没有规则"
+        },
+        {
+          "text_fr": "C’est facultatif",
+          "text_cn": "可选"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 25
+    },
+    {
+      "_id": "SIT_CSP03_026",
+      "question_fr": "Une personne signale une situation de traite des êtres humains. Pourquoi ?",
+      "question_cn": "个人举报人口贩卖行为，原因是？",
+      "options": [
+        {
+          "text_fr": "C’est un crime grave",
+          "text_cn": "这是严重犯罪"
+        },
+        {
+          "text_fr": "C’est une tradition",
+          "text_cn": "这是传统"
+        },
+        {
+          "text_fr": "C’est une opinion",
+          "text_cn": "这是观点"
+        },
+        {
+          "text_fr": "C’est autorisé",
+          "text_cn": "这是允许的"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 26
+    },
+    {
+      "_id": "SIT_CSP03_027",
+      "question_fr": "Une personne respecte la dignité humaine même en désaccord. Que montre-t-elle ?",
+      "question_cn": "即使有分歧也尊重人类尊严，体现了什么？",
+      "options": [
+        {
+          "text_fr": "Le respect des droits fondamentaux",
+          "text_cn": "尊重基本权利"
+        },
+        {
+          "text_fr": "La faiblesse",
+          "text_cn": "软弱"
+        },
+        {
+          "text_fr": "L’indifférence",
+          "text_cn": "冷漠"
+        },
+        {
+          "text_fr": "La peur",
+          "text_cn": "恐惧"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 27
+    },
+    {
+      "_id": "SIT_CSP03_028",
+      "question_fr": "Une personne refuse de respecter la loi. Est-ce autorisé ?",
+      "question_cn": "个人拒绝遵守法律，是否被允许？",
+      "options": [
+        {
+          "text_fr": "Non, la loi s’impose à tous",
+          "text_cn": "不，法律对所有人有效"
+        },
+        {
+          "text_fr": "Oui, c’est un choix personnel",
+          "text_cn": "是，个人选择"
+        },
+        {
+          "text_fr": "Seulement pour les citoyens",
+          "text_cn": "仅限公民"
+        },
+        {
+          "text_fr": "Seulement en ligne",
+          "text_cn": "仅网络中"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 28
+    },
+    {
+      "_id": "SIT_CSP03_029",
+      "question_fr": "Une personne respecte la liberté de croyance d’autrui. Que fait-elle ?",
+      "question_cn": "个人尊重他人的信仰自由，说明什么？",
+      "options": [
+        {
+          "text_fr": "Elle respecte les droits fondamentaux",
+          "text_cn": "尊重基本权利"
+        },
+        {
+          "text_fr": "Elle impose ses idées",
+          "text_cn": "强加观点"
+        },
+        {
+          "text_fr": "Elle discrimine",
+          "text_cn": "歧视"
+        },
+        {
+          "text_fr": "Elle enfreint la loi",
+          "text_cn": "违法"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 29
+    },
+    {
+      "_id": "SIT_CSP03_030",
+      "question_fr": "Une personne respecte la loi et les droits des autres. Que montre-t-elle ?",
+      "question_cn": "个人遵守法律并尊重他人权利，体现了什么？",
+      "options": [
+        {
+          "text_fr": "Le civisme",
+          "text_cn": "公民意识"
+        },
+        {
+          "text_fr": "La faiblesse",
+          "text_cn": "软弱"
+        },
+        {
+          "text_fr": "La peur",
+          "text_cn": "恐惧"
+        },
+        {
+          "text_fr": "L’indifférence",
+          "text_cn": "冷漠"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CSP",
+      "category_id": "CSP_03",
+      "order": 30
+    },
+    {
+      "_id": "SIT_CR01_001",
+      "question_fr": "Un citoyen participe à une association locale pour aider les personnes âgées. Quel type d’action réalise-t-il ?",
+      "question_cn": "公民参加当地协会帮助老人，这属于什么行为？",
+      "options": [
+        {
+          "text_fr": "Une participation citoyenne",
+          "text_cn": "公民参与"
+        },
+        {
+          "text_fr": "Une obligation légale",
+          "text_cn": "法律义务"
+        },
+        {
+          "text_fr": "Une activité religieuse",
+          "text_cn": "宗教活动"
+        },
+        {
+          "text_fr": "Une activité commerciale",
+          "text_cn": "商业活动"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 1
+    },
+    {
+      "_id": "SIT_CR01_002",
+      "question_fr": "Un citoyen exprime son opinion politique sur un blog sans insulter personne. Quel droit exerce-t-il ?",
+      "question_cn": "公民在博客上理性表达政治观点，行使了什么权利？",
+      "options": [
+        {
+          "text_fr": "La liberté d’expression",
+          "text_cn": "言论自由"
+        },
+        {
+          "text_fr": "Le droit de vote",
+          "text_cn": "选举权"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        },
+        {
+          "text_fr": "Le droit syndical",
+          "text_cn": "工会权"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 2
+    },
+    {
+      "_id": "SIT_CR01_003",
+      "question_fr": "Un étranger présente son titre de séjour lors d’un contrôle administratif. À quoi sert ce document ?",
+      "question_cn": "外国人在行政检查中出示居留证，该证件的作用是？",
+      "options": [
+        {
+          "text_fr": "Prouver le droit de séjourner en France",
+          "text_cn": "证明在法国合法居留"
+        },
+        {
+          "text_fr": "Voter aux élections",
+          "text_cn": "参加选举"
+        },
+        {
+          "text_fr": "Obtenir un emploi automatiquement",
+          "text_cn": "自动获得工作"
+        },
+        {
+          "text_fr": "Changer de nationalité",
+          "text_cn": "改变国籍"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 3
+    },
+    {
+      "_id": "SIT_CR01_004",
+      "question_fr": "Une personne se déplace librement dans différents pays européens. Quel droit exerce-t-elle ?",
+      "question_cn": "个人在欧洲国家间自由出行，行使了什么权利？",
+      "options": [
+        {
+          "text_fr": "La liberté de circulation",
+          "text_cn": "行动自由"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        },
+        {
+          "text_fr": "La liberté d’association",
+          "text_cn": "结社自由"
+        },
+        {
+          "text_fr": "La liberté syndicale",
+          "text_cn": "工会自由"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 4
+    },
+    {
+      "_id": "SIT_CR01_005",
+      "question_fr": "Un citoyen consulte le site officiel de l’État pour voir les symboles de la République. Où peut-il aller ?",
+      "question_cn": "公民想在官方网站查看共和国象征，应访问哪里？",
+      "options": [
+        {
+          "text_fr": "Un site officiel de l’État",
+          "text_cn": "国家官方网站"
+        },
+        {
+          "text_fr": "Un site privé",
+          "text_cn": "私人网站"
+        },
+        {
+          "text_fr": "Un réseau social",
+          "text_cn": "社交网络"
+        },
+        {
+          "text_fr": "Un site étranger",
+          "text_cn": "外国网站"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 5
+    },
+    {
+      "_id": "SIT_CR01_006",
+      "question_fr": "Lors d’une cérémonie officielle, on chante l’hymne national. De quoi s’agit-il ?",
+      "question_cn": "官方仪式上演唱国歌，这是指什么？",
+      "options": [
+        {
+          "text_fr": "La Marseillaise",
+          "text_cn": "马赛曲"
+        },
+        {
+          "text_fr": "Un chant religieux",
+          "text_cn": "宗教歌曲"
+        },
+        {
+          "text_fr": "Une chanson populaire",
+          "text_cn": "流行歌曲"
+        },
+        {
+          "text_fr": "Un hymne européen",
+          "text_cn": "欧洲颂歌"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 6
+    },
+    {
+      "_id": "SIT_CR01_007",
+      "question_fr": "Un élève apprend les paroles de l’hymne national à l’école. Pourquoi ?",
+      "question_cn": "学生在学校学习国歌歌词，原因是？",
+      "options": [
+        {
+          "text_fr": "C’est un symbole de la République",
+          "text_cn": "这是共和国象征"
+        },
+        {
+          "text_fr": "C’est une obligation religieuse",
+          "text_cn": "宗教义务"
+        },
+        {
+          "text_fr": "C’est une activité sportive",
+          "text_cn": "体育活动"
+        },
+        {
+          "text_fr": "C’est une option facultative",
+          "text_cn": "选修内容"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 7
+    },
+    {
+      "_id": "SIT_CR01_008",
+      "question_fr": "Une personne choisit librement son mode de vie sans nuire aux autres. Quel principe s’applique ?",
+      "question_cn": "个人在不伤害他人的前提下自由选择生活方式，体现什么原则？",
+      "options": [
+        {
+          "text_fr": "La liberté individuelle",
+          "text_cn": "个人自由"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 8
+    },
+    {
+      "_id": "SIT_CR01_009",
+      "question_fr": "Une personne pratique sa religion dans le respect des lois. Est-ce autorisé ?",
+      "question_cn": "个人在遵守法律的前提下进行宗教活动，是否允许？",
+      "options": [
+        {
+          "text_fr": "Oui, c’est autorisé",
+          "text_cn": "是的，允许"
+        },
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不，禁止"
+        },
+        {
+          "text_fr": "Seulement à l’école",
+          "text_cn": "仅限学校"
+        },
+        {
+          "text_fr": "Seulement pour les citoyens",
+          "text_cn": "仅限公民"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 9
+    },
+    {
+      "_id": "SIT_CR01_010",
+      "question_fr": "Des parents refusent que leur enfant participe à un cours de sport mixte à l’école publique. Est-ce possible ?",
+      "question_cn": "家长因课程男女混合拒绝孩子上体育课，在公立学校是否允许？",
+      "options": [
+        {
+          "text_fr": "Non, ce n’est pas autorisé",
+          "text_cn": "不允许"
+        },
+        {
+          "text_fr": "Oui, c’est un droit",
+          "text_cn": "允许"
+        },
+        {
+          "text_fr": "Seulement sur demande écrite",
+          "text_cn": "仅书面申请"
+        },
+        {
+          "text_fr": "Seulement pour motifs religieux",
+          "text_cn": "仅宗教原因"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 10
+    },
+    {
+      "_id": "SIT_CR01_011",
+      "question_fr": "Lors d’une cérémonie officielle, une devise est affichée sur un bâtiment public. Quelle est-elle ?",
+      "question_cn": "公共建筑上展示的共和国格言是什么？",
+      "options": [
+        {
+          "text_fr": "Liberté, égalité, fraternité",
+          "text_cn": "自由、平等、博爱"
+        },
+        {
+          "text_fr": "Travail, famille, patrie",
+          "text_cn": "劳动、家庭、祖国"
+        },
+        {
+          "text_fr": "Paix et justice",
+          "text_cn": "和平与正义"
+        },
+        {
+          "text_fr": "Unité et foi",
+          "text_cn": "团结与信仰"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 11
+    },
+    {
+      "_id": "SIT_CR01_012",
+      "question_fr": "Un homme répudie sa femme sans décision de justice. Est-ce légal en France ?",
+      "question_cn": "男性未经法院判决单方面休妻，在法国是否合法？",
+      "options": [
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不，禁止"
+        },
+        {
+          "text_fr": "Oui, c’est autorisé",
+          "text_cn": "是的，允许"
+        },
+        {
+          "text_fr": "Seulement dans certains cas",
+          "text_cn": "仅部分情况"
+        },
+        {
+          "text_fr": "Seulement à l’étranger",
+          "text_cn": "仅国外"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 12
+    },
+    {
+      "_id": "SIT_CR01_013",
+      "question_fr": "Un citoyen paie des impôts chaque année. À quoi servent-ils ?",
+      "question_cn": "公民每年缴纳税款，这些税款的用途是？",
+      "options": [
+        {
+          "text_fr": "Financer les dépenses publiques",
+          "text_cn": "用于公共支出"
+        },
+        {
+          "text_fr": "Financer des activités privées",
+          "text_cn": "私人活动"
+        },
+        {
+          "text_fr": "Financer uniquement l’armée",
+          "text_cn": "仅军费"
+        },
+        {
+          "text_fr": "Financer des entreprises",
+          "text_cn": "企业补贴"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 13
+    },
+    {
+      "_id": "SIT_CR01_014",
+      "question_fr": "Une personne brûle publiquement un drapeau français lors d’une manifestation. Est-ce autorisé ?",
+      "question_cn": "在示威中公开焚烧法国国旗是否合法？",
+      "options": [
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不，禁止"
+        },
+        {
+          "text_fr": "Oui, c’est une opinion",
+          "text_cn": "允许，属于观点"
+        },
+        {
+          "text_fr": "Seulement avec autorisation",
+          "text_cn": "需许可"
+        },
+        {
+          "text_fr": "Seulement en privé",
+          "text_cn": "仅私下"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 14
+    },
+    {
+      "_id": "SIT_CR01_015",
+      "question_fr": "L’État met en place des lois contre les discriminations. Pourquoi ?",
+      "question_cn": "国家制定反歧视法律，目的是什么？",
+      "options": [
+        {
+          "text_fr": "Garantir l’égalité",
+          "text_cn": "保障平等"
+        },
+        {
+          "text_fr": "Limiter les libertés",
+          "text_cn": "限制自由"
+        },
+        {
+          "text_fr": "Favoriser certains groupes",
+          "text_cn": "偏向某些群体"
+        },
+        {
+          "text_fr": "Imposer une religion",
+          "text_cn": "强制宗教"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 15
+    },
+    {
+      "_id": "SIT_CR01_016",
+      "question_fr": "Sur une pièce de monnaie, on voit un visage féminin symbolique. Qui est-ce ?",
+      "question_cn": "在硬币上看到象征性的女性形象，她是谁？",
+      "options": [
+        {
+          "text_fr": "Marianne",
+          "text_cn": "玛丽安娜"
+        },
+        {
+          "text_fr": "Jeanne d’Arc",
+          "text_cn": "圣女贞德"
+        },
+        {
+          "text_fr": "La Reine",
+          "text_cn": "女王"
+        },
+        {
+          "text_fr": "La Liberté",
+          "text_cn": "自由女神"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 16
+    },
+    {
+      "_id": "SIT_CR01_017",
+      "question_fr": "Des citoyens créent une association sportive. Quel droit exercent-ils ?",
+      "question_cn": "公民成立体育协会，行使了什么权利？",
+      "options": [
+        {
+          "text_fr": "La liberté d’association",
+          "text_cn": "结社自由"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        },
+        {
+          "text_fr": "La liberté de circulation",
+          "text_cn": "行动自由"
+        },
+        {
+          "text_fr": "Le droit de vote",
+          "text_cn": "选举权"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 17
+    },
+    {
+      "_id": "SIT_CR01_018",
+      "question_fr": "Une personne choisit librement ses opinions et ses choix de vie. Que représente cela ?",
+      "question_cn": "个人自由形成观点并选择生活方式，这体现了什么？",
+      "options": [
+        {
+          "text_fr": "La liberté",
+          "text_cn": "自由"
+        },
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La laïcité",
+          "text_cn": "政教分离"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 18
+    },
+    {
+      "_id": "SIT_CR01_019",
+      "question_fr": "Lors d’une cérémonie officielle, un chant symbolique est interprété. De quoi s’agit-il ?",
+      "question_cn": "官方仪式中演奏具有象征意义的歌曲，指的是？",
+      "options": [
+        {
+          "text_fr": "La Marseillaise",
+          "text_cn": "马赛曲"
+        },
+        {
+          "text_fr": "Un chant religieux",
+          "text_cn": "宗教歌曲"
+        },
+        {
+          "text_fr": "Une chanson populaire",
+          "text_cn": "流行歌曲"
+        },
+        {
+          "text_fr": "Un chant régional",
+          "text_cn": "地方歌曲"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 19
+    },
+    {
+      "_id": "SIT_CR01_020",
+      "question_fr": "Un citoyen voit Marianne sur un document officiel. Où peut-elle apparaître ?",
+      "question_cn": "公民在官方文件上看到玛丽安娜，她可能出现在？",
+      "options": [
+        {
+          "text_fr": "Sur des documents officiels",
+          "text_cn": "官方文件"
+        },
+        {
+          "text_fr": "Sur des publicités",
+          "text_cn": "广告"
+        },
+        {
+          "text_fr": "Sur des documents privés",
+          "text_cn": "私人文件"
+        },
+        {
+          "text_fr": "Sur des réseaux sociaux",
+          "text_cn": "社交网络"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 20
+    },
+    {
+      "_id": "SIT_CR01_021",
+      "question_fr": "Un employeur refuse d’embaucher des femmes dans son entreprise. Que dit la loi ?",
+      "question_cn": "雇主拒绝雇佣女性，法律如何规定？",
+      "options": [
+        {
+          "text_fr": "C’est interdit par la loi",
+          "text_cn": "法律禁止"
+        },
+        {
+          "text_fr": "C’est autorisé",
+          "text_cn": "允许"
+        },
+        {
+          "text_fr": "Seulement dans le privé",
+          "text_cn": "仅私企"
+        },
+        {
+          "text_fr": "Seulement avec justification",
+          "text_cn": "有理由即可"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 21
+    },
+    {
+      "_id": "SIT_CR01_022",
+      "question_fr": "Dans une administration, hommes et femmes sont traités de la même manière. Quelle valeur est appliquée ?",
+      "question_cn": "行政机构中男女受到同等对待，体现了哪一价值？",
+      "options": [
+        {
+          "text_fr": "L’égalité",
+          "text_cn": "平等"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La liberté",
+          "text_cn": "自由"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 22
+    },
+    {
+      "_id": "SIT_CR01_023",
+      "question_fr": "Dans une école, tous les cours sont dispensés en français. Pourquoi ?",
+      "question_cn": "学校所有课程都用法语授课，原因是？",
+      "options": [
+        {
+          "text_fr": "Le français est la langue officielle",
+          "text_cn": "法语是官方语言"
+        },
+        {
+          "text_fr": "Par tradition locale",
+          "text_cn": "地方传统"
+        },
+        {
+          "text_fr": "Par choix des enseignants",
+          "text_cn": "教师选择"
+        },
+        {
+          "text_fr": "Par décision des parents",
+          "text_cn": "家长决定"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 23
+    },
+    {
+      "_id": "SIT_CR01_024",
+      "question_fr": "Un citoyen reconnaît le drapeau tricolore et l’hymne national. De quoi s’agit-il ?",
+      "question_cn": "公民识别三色旗和国歌，它们属于什么？",
+      "options": [
+        {
+          "text_fr": "Des symboles officiels de la République",
+          "text_cn": "共和国官方象征"
+        },
+        {
+          "text_fr": "Des symboles religieux",
+          "text_cn": "宗教象征"
+        },
+        {
+          "text_fr": "Des symboles privés",
+          "text_cn": "私人象征"
+        },
+        {
+          "text_fr": "Des symboles européens",
+          "text_cn": "欧洲象征"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 24
+    },
+    {
+      "_id": "SIT_CR01_025",
+      "question_fr": "Une personne insulte publiquement quelqu’un en raison de son handicap. Est-ce autorisé ?",
+      "question_cn": "因他人残疾而公开侮辱他人是否合法？",
+      "options": [
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不，禁止"
+        },
+        {
+          "text_fr": "Oui, c’est une opinion",
+          "text_cn": "允许，属于观点"
+        },
+        {
+          "text_fr": "Seulement en privé",
+          "text_cn": "仅私下"
+        },
+        {
+          "text_fr": "Seulement en ligne",
+          "text_cn": "仅网络"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 25
+    },
+    {
+      "_id": "SIT_CR01_026",
+      "question_fr": "La France est une République démocratique. Quel est son régime politique ?",
+      "question_cn": "法国是民主共和国，其政体是？",
+      "options": [
+        {
+          "text_fr": "Une République",
+          "text_cn": "共和国"
+        },
+        {
+          "text_fr": "Une monarchie",
+          "text_cn": "君主制"
+        },
+        {
+          "text_fr": "Une dictature",
+          "text_cn": "独裁制"
+        },
+        {
+          "text_fr": "Un empire",
+          "text_cn": "帝国"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 26
+    },
+    {
+      "_id": "SIT_CR01_027",
+      "question_fr": "Dans une école publique, les élèves suivent les mêmes règles quelles que soient leurs croyances. Pourquoi ?",
+      "question_cn": "公立学校不因信仰不同而区别对待学生，原因是？",
+      "options": [
+        {
+          "text_fr": "Le principe de laïcité",
+          "text_cn": "政教分离原则"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 27
+    },
+    {
+      "_id": "SIT_CR01_028",
+      "question_fr": "Un citoyen apprend que la loi de séparation des Églises et de l’État date de 1905. Que signifie cette loi ?",
+      "question_cn": "公民了解到政教分离法案于1905年通过，这意味着什么？",
+      "options": [
+        {
+          "text_fr": "L’État est neutre vis-à-vis des religions",
+          "text_cn": "国家对宗教保持中立"
+        },
+        {
+          "text_fr": "L’État impose une religion",
+          "text_cn": "国家强制宗教"
+        },
+        {
+          "text_fr": "La religion dirige l’État",
+          "text_cn": "宗教管理国家"
+        },
+        {
+          "text_fr": "La religion est interdite",
+          "text_cn": "宗教被禁止"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 28
+    },
+    {
+      "_id": "SIT_CR01_029",
+      "question_fr": "Une personne déclare ne croire en aucune religion. Est-ce autorisé en France ?",
+      "question_cn": "个人声明不信仰任何宗教，在法国是否允许？",
+      "options": [
+        {
+          "text_fr": "Oui, c’est un droit",
+          "text_cn": "是的，这是权利"
+        },
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不，禁止"
+        },
+        {
+          "text_fr": "Seulement pour les citoyens",
+          "text_cn": "仅限公民"
+        },
+        {
+          "text_fr": "Seulement pour les étrangers",
+          "text_cn": "仅限外国人"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 29
+    },
+    {
+      "_id": "SIT_CR01_030",
+      "question_fr": "Un citoyen bénéficie de la neutralité de l’État face aux religions. Quel droit est garanti ?",
+      "question_cn": "公民享受国家对宗教中立，这保障了哪项权利？",
+      "options": [
+        {
+          "text_fr": "La liberté de conscience",
+          "text_cn": "思想与良心自由"
+        },
+        {
+          "text_fr": "La liberté d’association",
+          "text_cn": "结社自由"
+        },
+        {
+          "text_fr": "La liberté de circulation",
+          "text_cn": "行动自由"
+        },
+        {
+          "text_fr": "La liberté syndicale",
+          "text_cn": "工会自由"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 30
+    },
+    {
+      "_id": "SIT_CR01_031",
+      "question_fr": "Dans une école publique, qui peut porter des signes religieux très visibles ?",
+      "question_cn": "在公立学校，谁可以佩戴明显宗教标志？",
+      "options": [
+        {
+          "text_fr": "Les usagers, pas les agents",
+          "text_cn": "学生和家长可以，工作人员不可以"
+        },
+        {
+          "text_fr": "Tout le monde",
+          "text_cn": "所有人"
+        },
+        {
+          "text_fr": "Personne",
+          "text_cn": "任何人都不可以"
+        },
+        {
+          "text_fr": "Seulement les enseignants",
+          "text_cn": "仅教师"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 31
+    },
+    {
+      "_id": "SIT_CR01_032",
+      "question_fr": "Dans une préfecture, l’État ne favorise aucune religion. Que signifie cette attitude ?",
+      "question_cn": "在省政府中，国家不偏向任何宗教，这意味着什么？",
+      "options": [
+        {
+          "text_fr": "La neutralité de l’État",
+          "text_cn": "国家中立"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 32
+    },
+    {
+      "_id": "SIT_CR01_033",
+      "question_fr": "Un citoyen se rend à la mairie pour une démarche administrative. Que peut-il faire ?",
+      "question_cn": "公民前往市政厅办理行政事务，可以做什么？",
+      "options": [
+        {
+          "text_fr": "Accéder au service public sans discrimination",
+          "text_cn": "无歧视地使用公共服务"
+        },
+        {
+          "text_fr": "Imposer ses opinions",
+          "text_cn": "强加观点"
+        },
+        {
+          "text_fr": "Refuser les règles",
+          "text_cn": "拒绝规则"
+        },
+        {
+          "text_fr": "Exiger un traitement privilégié",
+          "text_cn": "要求特殊待遇"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 33
+    },
+    {
+      "_id": "SIT_CR01_034",
+      "question_fr": "Dans une préfecture, qui doit respecter la neutralité religieuse ?",
+      "question_cn": "在省政府中，谁必须遵守宗教中立原则？",
+      "options": [
+        {
+          "text_fr": "Les agents publics",
+          "text_cn": "公务人员"
+        },
+        {
+          "text_fr": "Les usagers",
+          "text_cn": "办事群众"
+        },
+        {
+          "text_fr": "Les visiteurs étrangers",
+          "text_cn": "外国访客"
+        },
+        {
+          "text_fr": "Les associations",
+          "text_cn": "协会"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 34
+    },
+    {
+      "_id": "SIT_CR01_035",
+      "question_fr": "Un agent public reste neutre vis-à-vis des usagers. Est-ce obligatoire ?",
+      "question_cn": "公务人员对公众保持中立，这是否是义务？",
+      "options": [
+        {
+          "text_fr": "Oui, c’est obligatoire",
+          "text_cn": "是的，必须"
+        },
+        {
+          "text_fr": "Non, c’est facultatif",
+          "text_cn": "不，可选择"
+        },
+        {
+          "text_fr": "Seulement dans certains services",
+          "text_cn": "仅部分部门"
+        },
+        {
+          "text_fr": "Seulement en présence d’élèves",
+          "text_cn": "仅在学校"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 35
+    },
+    {
+      "_id": "SIT_CR01_036",
+      "question_fr": "Un citoyen bénéficie de la laïcité dans les services publics. Que lui garantit-elle ?",
+      "question_cn": "公民在公共服务中受益于政教分离原则，它保障了什么？",
+      "options": [
+        {
+          "text_fr": "L’égalité et la liberté de conscience",
+          "text_cn": "平等与良心自由"
+        },
+        {
+          "text_fr": "Une religion officielle",
+          "text_cn": "官方宗教"
+        },
+        {
+          "text_fr": "Une préférence religieuse",
+          "text_cn": "宗教偏好"
+        },
+        {
+          "text_fr": "Un avantage financier",
+          "text_cn": "经济优势"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 36
+    },
+    {
+      "_id": "SIT_CR01_037",
+      "question_fr": "Une personne décide de changer de religion au cours de sa vie. Est-ce autorisé ?",
+      "question_cn": "个人一生中改变宗教信仰，在法国是否允许？",
+      "options": [
+        {
+          "text_fr": "Oui, c’est un droit",
+          "text_cn": "是的，这是权利"
+        },
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不，禁止"
+        },
+        {
+          "text_fr": "Seulement avec autorisation",
+          "text_cn": "需许可"
+        },
+        {
+          "text_fr": "Seulement une fois",
+          "text_cn": "仅一次"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 37
+    },
+    {
+      "_id": "SIT_CR01_038",
+      "question_fr": "Un enseignant explique la laïcité à ses élèves. Que représente ce principe ?",
+      "question_cn": "教师向学生解释政教分离原则，这一原则代表什么？",
+      "options": [
+        {
+          "text_fr": "La séparation de l’État et des religions",
+          "text_cn": "国家与宗教分离"
+        },
+        {
+          "text_fr": "L’interdiction des religions",
+          "text_cn": "禁止宗教"
+        },
+        {
+          "text_fr": "La domination religieuse",
+          "text_cn": "宗教统治"
+        },
+        {
+          "text_fr": "Une tradition culturelle",
+          "text_cn": "文化传统"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 38
+    },
+    {
+      "_id": "SIT_CR01_039",
+      "question_fr": "À l’école, certains comportements sont interdits par la Charte de la laïcité. Lesquels ?",
+      "question_cn": "在学校中，政教分离宪章禁止哪些行为？",
+      "options": [
+        {
+          "text_fr": "Les pressions religieuses",
+          "text_cn": "宗教施压"
+        },
+        {
+          "text_fr": "Les débats",
+          "text_cn": "讨论"
+        },
+        {
+          "text_fr": "Les questions",
+          "text_cn": "提问"
+        },
+        {
+          "text_fr": "Les échanges culturels",
+          "text_cn": "文化交流"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 39
+    },
+    {
+      "_id": "SIT_CR01_040",
+      "question_fr": "Un citoyen lit l’article 1er de la Constitution française. Que rappelle-t-il ?",
+      "question_cn": "公民阅读法国宪法第一条，它强调了什么？",
+      "options": [
+        {
+          "text_fr": "La France est une République indivisible, laïque, démocratique et sociale",
+          "text_cn": "法国是不可分割的、世俗的、民主的和社会的共和国"
+        },
+        {
+          "text_fr": "La France est une monarchie",
+          "text_cn": "法国是君主制国家"
+        },
+        {
+          "text_fr": "La religion est obligatoire",
+          "text_cn": "宗教是强制的"
+        },
+        {
+          "text_fr": "Les lois sont facultatives",
+          "text_cn": "法律是可选的"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_001",
+      "order": 40
+    },
+    {
+      "_id": "SIT_CR03_001",
+      "question_fr": "Un couple souhaite avoir un enfant grâce à une assistance médicale. À quelle liberté cela fait-il référence ?",
+      "question_cn": "一对夫妇通过医学辅助生育要孩子，这涉及哪种自由？",
+      "options": [
+        {
+          "text_fr": "La liberté de fonder une famille",
+          "text_cn": "组建家庭的自由"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        },
+        {
+          "text_fr": "La liberté d’expression",
+          "text_cn": "言论自由"
+        },
+        {
+          "text_fr": "La liberté de circulation",
+          "text_cn": "行动自由"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 1
+    },
+    {
+      "_id": "SIT_CR03_002",
+      "question_fr": "L’État limite certaines libertés pendant une crise sanitaire. Au nom de quoi agit-il ?",
+      "question_cn": "国家在公共卫生危机中限制部分自由，其依据是什么？",
+      "options": [
+        {
+          "text_fr": "L’intérêt général",
+          "text_cn": "公共利益"
+        },
+        {
+          "text_fr": "Une opinion politique",
+          "text_cn": "政治观点"
+        },
+        {
+          "text_fr": "Une croyance religieuse",
+          "text_cn": "宗教信仰"
+        },
+        {
+          "text_fr": "Une tradition",
+          "text_cn": "传统"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 2
+    },
+    {
+      "_id": "SIT_CR03_003",
+      "question_fr": "Deux personnes majeures souhaitent se marier librement. Quel droit exercent-elles ?",
+      "question_cn": "两名成年人自由结婚，行使了什么权利？",
+      "options": [
+        {
+          "text_fr": "Le droit de se marier",
+          "text_cn": "结婚权"
+        },
+        {
+          "text_fr": "Le droit de vote",
+          "text_cn": "选举权"
+        },
+        {
+          "text_fr": "Le droit de grève",
+          "text_cn": "罢工权"
+        },
+        {
+          "text_fr": "Le droit de circuler",
+          "text_cn": "行动权"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 3
+    },
+    {
+      "_id": "SIT_CR03_004",
+      "question_fr": "Un couple décide de divorcer même si l’un des deux n’est pas d’accord. Est-ce possible ?",
+      "question_cn": "夫妻中一方不同意仍然离婚，这是否可能？",
+      "options": [
+        {
+          "text_fr": "Oui, c’est possible",
+          "text_cn": "可以"
+        },
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不可以"
+        },
+        {
+          "text_fr": "Seulement pour les hommes",
+          "text_cn": "仅男性"
+        },
+        {
+          "text_fr": "Seulement avec accord religieux",
+          "text_cn": "需宗教同意"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 4
+    },
+    {
+      "_id": "SIT_CR03_005",
+      "question_fr": "Un citoyen apprend que la peine de mort n’existe plus en France. Que signifie cela ?",
+      "question_cn": "公民得知法国已废除死刑，这意味着什么？",
+      "options": [
+        {
+          "text_fr": "Elle est interdite",
+          "text_cn": "被禁止"
+        },
+        {
+          "text_fr": "Elle est autorisée",
+          "text_cn": "被允许"
+        },
+        {
+          "text_fr": "Elle est facultative",
+          "text_cn": "可选择"
+        },
+        {
+          "text_fr": "Elle dépend du juge",
+          "text_cn": "取决于法官"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 5
+    },
+    {
+      "_id": "SIT_CR03_006",
+      "question_fr": "Un citoyen lit la Déclaration de 1789. Quelle phrase pourrait-il y trouver ?",
+      "question_cn": "公民阅读1789年人权宣言，可能看到哪句话？",
+      "options": [
+        {
+          "text_fr": "Les hommes naissent et demeurent libres et égaux en droits",
+          "text_cn": "人生而自由，在权利上一律平等"
+        },
+        {
+          "text_fr": "La religion est obligatoire",
+          "text_cn": "宗教是强制的"
+        },
+        {
+          "text_fr": "La monarchie est absolue",
+          "text_cn": "君主制是绝对的"
+        },
+        {
+          "text_fr": "Le travail est imposé",
+          "text_cn": "劳动是强制的"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 6
+    },
+    {
+      "_id": "SIT_CR03_007",
+      "question_fr": "Une femme souhaite interrompre sa grossesse dans le cadre légal. Est-ce autorisé ?",
+      "question_cn": "女性在法律框架内选择堕胎，是否合法？",
+      "options": [
+        {
+          "text_fr": "Oui, c’est autorisé",
+          "text_cn": "合法"
+        },
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不合法"
+        },
+        {
+          "text_fr": "Seulement avec accord familial",
+          "text_cn": "需家庭同意"
+        },
+        {
+          "text_fr": "Seulement pour les étrangères",
+          "text_cn": "仅限外国人"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 7
+    },
+    {
+      "_id": "SIT_CR03_008",
+      "question_fr": "Un citoyen consulte la Constitution française. Que contient-elle ?",
+      "question_cn": "公民查阅法国宪法，宪法包含什么？",
+      "options": [
+        {
+          "text_fr": "Les règles fondamentales de la République",
+          "text_cn": "共和国的基本规则"
+        },
+        {
+          "text_fr": "Des règles religieuses",
+          "text_cn": "宗教规则"
+        },
+        {
+          "text_fr": "Des coutumes locales",
+          "text_cn": "地方习俗"
+        },
+        {
+          "text_fr": "Des lois européennes",
+          "text_cn": "欧洲法律"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 8
+    },
+    {
+      "_id": "SIT_CR03_009",
+      "question_fr": "Un journal publie des informations sans censure. Quelle liberté est garantie ?",
+      "question_cn": "报纸自由发布信息，保障了哪项自由？",
+      "options": [
+        {
+          "text_fr": "La liberté de la presse",
+          "text_cn": "新闻自由"
+        },
+        {
+          "text_fr": "La liberté religieuse",
+          "text_cn": "宗教自由"
+        },
+        {
+          "text_fr": "La liberté syndicale",
+          "text_cn": "工会自由"
+        },
+        {
+          "text_fr": "La liberté de circulation",
+          "text_cn": "行动自由"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 9
+    },
+    {
+      "_id": "SIT_CR03_010",
+      "question_fr": "L’État protège l’environnement dans ses lois. Quel texte le prévoit ?",
+      "question_cn": "国家在法律中保护环境，这由哪个文本规定？",
+      "options": [
+        {
+          "text_fr": "La Charte de l’environnement",
+          "text_cn": "环境宪章"
+        },
+        {
+          "text_fr": "La Constitution européenne",
+          "text_cn": "欧洲宪法"
+        },
+        {
+          "text_fr": "Le Code du travail",
+          "text_cn": "劳动法"
+        },
+        {
+          "text_fr": "La Déclaration de 1958",
+          "text_cn": "1958年宣言"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 10
+    },
+    {
+      "_id": "SIT_CR03_011",
+      "question_fr": "Un agent public respecte chaque personne sans humiliation. Que signifie ce comportement ?",
+      "question_cn": "公务人员尊重每个人、不加羞辱，这体现了什么？",
+      "options": [
+        {
+          "text_fr": "Le respect de la dignité humaine",
+          "text_cn": "尊重人的尊严"
+        },
+        {
+          "text_fr": "La liberté d’expression",
+          "text_cn": "言论自由"
+        },
+        {
+          "text_fr": "La fraternité",
+          "text_cn": "博爱"
+        },
+        {
+          "text_fr": "La solidarité",
+          "text_cn": "互助"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 11
+    },
+    {
+      "_id": "SIT_CR03_012",
+      "question_fr": "Des citoyens défilent pacifiquement dans la rue après autorisation. Que signifie cette action ?",
+      "question_cn": "公民在获准后和平游行，这说明什么？",
+      "options": [
+        {
+          "text_fr": "L’exercice du droit de manifester",
+          "text_cn": "行使示威权"
+        },
+        {
+          "text_fr": "Un trouble à l’ordre public",
+          "text_cn": "扰乱公共秩序"
+        },
+        {
+          "text_fr": "Une infraction",
+          "text_cn": "违法"
+        },
+        {
+          "text_fr": "Un acte religieux",
+          "text_cn": "宗教行为"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 12
+    },
+    {
+      "_id": "SIT_CR03_013",
+      "question_fr": "Un couple se renseigne sur la PMA. Que signifie ce sigle ?",
+      "question_cn": "一对夫妇咨询PMA，PMA是什么意思？",
+      "options": [
+        {
+          "text_fr": "Procréation médicalement assistée",
+          "text_cn": "医学辅助生育"
+        },
+        {
+          "text_fr": "Protection médicale administrative",
+          "text_cn": "医疗行政保护"
+        },
+        {
+          "text_fr": "Programme médical annuel",
+          "text_cn": "年度医疗计划"
+        },
+        {
+          "text_fr": "Procédure médicale avancée",
+          "text_cn": "高级医疗程序"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 13
+    },
+    {
+      "_id": "SIT_CR03_014",
+      "question_fr": "Un citoyen apprend que la Constitution est très difficile à modifier. Pourquoi ?",
+      "question_cn": "公民得知宪法很难修改，这是为什么？",
+      "options": [
+        {
+          "text_fr": "C’est le texte fondamental de la République",
+          "text_cn": "它是共和国的根本文本"
+        },
+        {
+          "text_fr": "C’est un texte local",
+          "text_cn": "地方性文本"
+        },
+        {
+          "text_fr": "C’est une loi ordinaire",
+          "text_cn": "普通法律"
+        },
+        {
+          "text_fr": "C’est un règlement administratif",
+          "text_cn": "行政条例"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 14
+    },
+    {
+      "_id": "SIT_CR03_015",
+      "question_fr": "Une personne choisit librement sa religion ou de ne pas en avoir. Quelle liberté est exercée ?",
+      "question_cn": "个人自由选择信仰或不信仰，行使了什么自由？",
+      "options": [
+        {
+          "text_fr": "La liberté de conscience",
+          "text_cn": "良心自由"
+        },
+        {
+          "text_fr": "La liberté d’expression",
+          "text_cn": "言论自由"
+        },
+        {
+          "text_fr": "La liberté syndicale",
+          "text_cn": "工会自由"
+        },
+        {
+          "text_fr": "La liberté de circulation",
+          "text_cn": "行动自由"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 15
+    },
+    {
+      "_id": "SIT_CR03_016",
+      "question_fr": "Des salariés cessent le travail pour défendre leurs droits. De quel droit s’agit-il ?",
+      "question_cn": "员工停止工作以维护自身权利，这是哪项权利？",
+      "options": [
+        {
+          "text_fr": "Le droit de grève",
+          "text_cn": "罢工权"
+        },
+        {
+          "text_fr": "Le droit de vote",
+          "text_cn": "选举权"
+        },
+        {
+          "text_fr": "Le droit de manifester",
+          "text_cn": "示威权"
+        },
+        {
+          "text_fr": "Le droit de circulation",
+          "text_cn": "行动权"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 16
+    },
+    {
+      "_id": "SIT_CR03_017",
+      "question_fr": "Un élève étudie la Constitution française à l’école. Qu’est-ce que ce texte ?",
+      "question_cn": "学生在学校学习法国宪法，宪法是什么？",
+      "options": [
+        {
+          "text_fr": "La loi fondamentale de l’État",
+          "text_cn": "国家的根本法律"
+        },
+        {
+          "text_fr": "Une loi locale",
+          "text_cn": "地方性法律"
+        },
+        {
+          "text_fr": "Un règlement scolaire",
+          "text_cn": "校规"
+        },
+        {
+          "text_fr": "Une loi européenne",
+          "text_cn": "欧洲法律"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 17
+    },
+    {
+      "_id": "SIT_CR03_018",
+      "question_fr": "Une femme majeure souhaite interrompre sa grossesse. Qui peut en faire la demande ?",
+      "question_cn": "成年女性希望终止妊娠，谁可以提出申请？",
+      "options": [
+        {
+          "text_fr": "La femme concernée",
+          "text_cn": "当事女性本人"
+        },
+        {
+          "text_fr": "Le conjoint uniquement",
+          "text_cn": "仅配偶"
+        },
+        {
+          "text_fr": "La famille",
+          "text_cn": "家庭"
+        },
+        {
+          "text_fr": "L’administration",
+          "text_cn": "行政部门"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 18
+    },
+    {
+      "_id": "SIT_CR03_019",
+      "question_fr": "Une femme française majeure participe aux élections. Est-ce un droit ?",
+      "question_cn": "成年法国女性参加选举，这是权利吗？",
+      "options": [
+        {
+          "text_fr": "Oui, c’est un droit",
+          "text_cn": "是的，这是权利"
+        },
+        {
+          "text_fr": "Non, c’est interdit",
+          "text_cn": "不，禁止"
+        },
+        {
+          "text_fr": "Seulement pour les hommes",
+          "text_cn": "仅男性"
+        },
+        {
+          "text_fr": "Seulement pour certaines élections",
+          "text_cn": "仅部分选举"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 19
+    },
+    {
+      "_id": "SIT_CR03_020",
+      "question_fr": "Une personne utilise les réseaux sociaux en respectant la loi. Que doit-elle éviter ?",
+      "question_cn": "个人合法使用社交网络时应避免什么？",
+      "options": [
+        {
+          "text_fr": "Les propos haineux ou diffamatoires",
+          "text_cn": "仇恨或诽谤言论"
+        },
+        {
+          "text_fr": "Les débats",
+          "text_cn": "讨论"
+        },
+        {
+          "text_fr": "Les échanges d’idées",
+          "text_cn": "观点交流"
+        },
+        {
+          "text_fr": "Les informations publiques",
+          "text_cn": "公开信息"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 20
+    },
+    {
+      "_id": "SIT_CR03_021",
+      "question_fr": "Une personne jette un mégot par terre dans la rue. Quelle est la conséquence ?",
+      "question_cn": "个人在街上乱扔烟头，后果是什么？",
+      "options": [
+        {
+          "text_fr": "Une sanction",
+          "text_cn": "处罚"
+        },
+        {
+          "text_fr": "Une récompense",
+          "text_cn": "奖励"
+        },
+        {
+          "text_fr": "Aucune conséquence",
+          "text_cn": "没有后果"
+        },
+        {
+          "text_fr": "Un droit supplémentaire",
+          "text_cn": "额外权利"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 21
+    },
+    {
+      "_id": "SIT_CR03_022",
+      "question_fr": "L’État limite certaines libertés pour protéger la population. Est-ce possible ?",
+      "question_cn": "国家为保护公众限制部分自由，是否允许？",
+      "options": [
+        {
+          "text_fr": "Oui, dans l’intérêt général",
+          "text_cn": "可以，为了公共利益"
+        },
+        {
+          "text_fr": "Non, jamais",
+          "text_cn": "不可以"
+        },
+        {
+          "text_fr": "Seulement pour les étrangers",
+          "text_cn": "仅限外国人"
+        },
+        {
+          "text_fr": "Seulement en temps de paix",
+          "text_cn": "仅和平时期"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 22
+    },
+    {
+      "_id": "SIT_CR03_023",
+      "question_fr": "Une personne adopte un comportement écologique au quotidien. Quelle action est correcte ?",
+      "question_cn": "个人在日常生活中采取环保行为，哪种做法正确？",
+      "options": [
+        {
+          "text_fr": "Trier ses déchets",
+          "text_cn": "垃圾分类"
+        },
+        {
+          "text_fr": "Jeter tout ensemble",
+          "text_cn": "全部混丢"
+        },
+        {
+          "text_fr": "Brûler les déchets",
+          "text_cn": "焚烧垃圾"
+        },
+        {
+          "text_fr": "Les abandonner dans la nature",
+          "text_cn": "丢弃在自然中"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 23
+    },
+    {
+      "_id": "SIT_CR03_024",
+      "question_fr": "Un citoyen respecte une règle imposée par la loi. Quelle est sa nature ?",
+      "question_cn": "公民遵守法律规定的规则，这属于什么？",
+      "options": [
+        {
+          "text_fr": "Une obligation",
+          "text_cn": "义务"
+        },
+        {
+          "text_fr": "Un choix personnel",
+          "text_cn": "个人选择"
+        },
+        {
+          "text_fr": "Une recommandation",
+          "text_cn": "建议"
+        },
+        {
+          "text_fr": "Une tradition",
+          "text_cn": "传统"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 24
+    },
+    {
+      "_id": "SIT_CR03_025",
+      "question_fr": "La liberté d’expression est limitée dans certains cas. Pour quel motif ?",
+      "question_cn": "言论自由在某些情况下会被限制，其原因是？",
+      "options": [
+        {
+          "text_fr": "Protéger l’ordre public",
+          "text_cn": "保护公共秩序"
+        },
+        {
+          "text_fr": "Empêcher les opinions",
+          "text_cn": "阻止观点"
+        },
+        {
+          "text_fr": "Favoriser une religion",
+          "text_cn": "偏向宗教"
+        },
+        {
+          "text_fr": "Limiter les débats",
+          "text_cn": "限制讨论"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 25
+    },
+    {
+      "_id": "SIT_CR03_026",
+      "question_fr": "Un citoyen trie ses déchets à la maison. Pourquoi ?",
+      "question_cn": "公民在家中进行垃圾分类，原因是？",
+      "options": [
+        {
+          "text_fr": "Pour protéger l’environnement",
+          "text_cn": "保护环境"
+        },
+        {
+          "text_fr": "Par obligation religieuse",
+          "text_cn": "宗教义务"
+        },
+        {
+          "text_fr": "Par tradition familiale",
+          "text_cn": "家庭传统"
+        },
+        {
+          "text_fr": "Par habitude",
+          "text_cn": "习惯"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 26
+    },
+    {
+      "_id": "SIT_CR03_027",
+      "question_fr": "Une personne est victime de violences. Quelle est la bonne réaction ?",
+      "question_cn": "个人遭受暴力侵害，正确的做法是？",
+      "options": [
+        {
+          "text_fr": "Alerter la police ou la gendarmerie",
+          "text_cn": "报警或联系宪兵"
+        },
+        {
+          "text_fr": "Se taire",
+          "text_cn": "沉默"
+        },
+        {
+          "text_fr": "Se venger",
+          "text_cn": "报复"
+        },
+        {
+          "text_fr": "Quitter le pays",
+          "text_cn": "离开国家"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 27
+    },
+    {
+      "_id": "SIT_CR03_028",
+      "question_fr": "Face aux ordres des policiers ou gendarmes, que doit faire un citoyen ?",
+      "question_cn": "面对警察或宪兵的指令，公民应如何做？",
+      "options": [
+        {
+          "text_fr": "Obéir aux instructions",
+          "text_cn": "服从指示"
+        },
+        {
+          "text_fr": "Refuser systématiquement",
+          "text_cn": "一律拒绝"
+        },
+        {
+          "text_fr": "S’enfuir",
+          "text_cn": "逃跑"
+        },
+        {
+          "text_fr": "Discuter violemment",
+          "text_cn": "激烈争吵"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 28
+    },
+    {
+      "_id": "SIT_CR03_029",
+      "question_fr": "La police intervient dans une situation dangereuse. Quel est son rôle principal ?",
+      "question_cn": "警方介入危险情况，其主要职责是什么？",
+      "options": [
+        {
+          "text_fr": "Assurer la sécurité et l’ordre public",
+          "text_cn": "维护安全和公共秩序"
+        },
+        {
+          "text_fr": "Rendre la justice",
+          "text_cn": "审判案件"
+        },
+        {
+          "text_fr": "Voter les lois",
+          "text_cn": "通过法律"
+        },
+        {
+          "text_fr": "Gérer les écoles",
+          "text_cn": "管理学校"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 29
+    },
+    {
+      "_id": "SIT_CR03_030",
+      "question_fr": "Une personne porte secours à quelqu’un en danger. Quel exemple est-ce ?",
+      "question_cn": "个人帮助处于危险中的他人，这是哪种行为？",
+      "options": [
+        {
+          "text_fr": "Une assistance à personne en danger",
+          "text_cn": "紧急救助"
+        },
+        {
+          "text_fr": "Une infraction",
+          "text_cn": "违法"
+        },
+        {
+          "text_fr": "Une option facultative",
+          "text_cn": "可选行为"
+        },
+        {
+          "text_fr": "Une activité professionnelle",
+          "text_cn": "职业行为"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 30
+    },
+    {
+      "_id": "SIT_CR03_031",
+      "question_fr": "Une limitation de vitesse est imposée sur la route. Pourquoi ?",
+      "question_cn": "道路限速的原因是？",
+      "options": [
+        {
+          "text_fr": "Protéger l’intérêt général",
+          "text_cn": "保护公共利益"
+        },
+        {
+          "text_fr": "Empêcher de circuler",
+          "text_cn": "阻止通行"
+        },
+        {
+          "text_fr": "Favoriser certains conducteurs",
+          "text_cn": "偏向部分司机"
+        },
+        {
+          "text_fr": "Par tradition",
+          "text_cn": "传统"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 31
+    },
+    {
+      "_id": "SIT_CR03_032",
+      "question_fr": "Un citoyen est témoin de violences dans la rue. Quelle attitude doit-il adopter ?",
+      "question_cn": "公民目睹街头暴力，应采取什么态度？",
+      "options": [
+        {
+          "text_fr": "Alerter les secours",
+          "text_cn": "通知救援"
+        },
+        {
+          "text_fr": "Filmer et diffuser",
+          "text_cn": "拍摄传播"
+        },
+        {
+          "text_fr": "Ignorer",
+          "text_cn": "忽视"
+        },
+        {
+          "text_fr": "Participer",
+          "text_cn": "参与"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 32
+    },
+    {
+      "_id": "SIT_CR03_033",
+      "question_fr": "Une personne commet un crime. Quelle est la gravité de cette infraction ?",
+      "question_cn": "个人犯下犯罪，该违法行为的严重程度是？",
+      "options": [
+        {
+          "text_fr": "La plus grave",
+          "text_cn": "最严重"
+        },
+        {
+          "text_fr": "Une simple contravention",
+          "text_cn": "轻微违规"
+        },
+        {
+          "text_fr": "Une erreur administrative",
+          "text_cn": "行政错误"
+        },
+        {
+          "text_fr": "Un désaccord",
+          "text_cn": "分歧"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 33
+    },
+    {
+      "_id": "SIT_CR03_034",
+      "question_fr": "Quelle obligation concerne toute personne vivant en France ?",
+      "question_cn": "所有居住在法国的人都必须履行的义务是什么？",
+      "options": [
+        {
+          "text_fr": "Respecter la loi",
+          "text_cn": "遵守法律"
+        },
+        {
+          "text_fr": "Voter",
+          "text_cn": "投票"
+        },
+        {
+          "text_fr": "Être citoyen",
+          "text_cn": "成为公民"
+        },
+        {
+          "text_fr": "Être fonctionnaire",
+          "text_cn": "成为公务员"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 34
+    },
+    {
+      "_id": "SIT_CR03_035",
+      "question_fr": "Un meurtre est jugé par la justice. De quel type d’infraction s’agit-il ?",
+      "question_cn": "谋杀由司法机关审理，属于哪类违法行为？",
+      "options": [
+        {
+          "text_fr": "Un crime",
+          "text_cn": "犯罪"
+        },
+        {
+          "text_fr": "Un délit",
+          "text_cn": "轻罪"
+        },
+        {
+          "text_fr": "Une contravention",
+          "text_cn": "违章"
+        },
+        {
+          "text_fr": "Une faute",
+          "text_cn": "过失"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 35
+    },
+    {
+      "_id": "SIT_CR03_036",
+      "question_fr": "Un vol simple est puni par la loi. De quel type d’infraction s’agit-il ?",
+      "question_cn": "普通盗窃受到法律惩罚，属于哪类违法？",
+      "options": [
+        {
+          "text_fr": "Un délit",
+          "text_cn": "轻罪"
+        },
+        {
+          "text_fr": "Un crime",
+          "text_cn": "犯罪"
+        },
+        {
+          "text_fr": "Une contravention",
+          "text_cn": "违章"
+        },
+        {
+          "text_fr": "Un acte légal",
+          "text_cn": "合法行为"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 36
+    },
+    {
+      "_id": "SIT_CR03_037",
+      "question_fr": "Lors d’un événement public, qui veille au maintien de l’ordre ?",
+      "question_cn": "公共活动中，谁负责维护公共秩序？",
+      "options": [
+        {
+          "text_fr": "La police et la gendarmerie",
+          "text_cn": "警察和宪兵"
+        },
+        {
+          "text_fr": "Les citoyens",
+          "text_cn": "公民"
+        },
+        {
+          "text_fr": "Les associations",
+          "text_cn": "协会"
+        },
+        {
+          "text_fr": "Les écoles",
+          "text_cn": "学校"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 37
+    },
+    {
+      "_id": "SIT_CR03_038",
+      "question_fr": "Concernant les déchets ménagers, quelle pratique est correcte ?",
+      "question_cn": "关于生活垃圾，哪种做法是正确的？",
+      "options": [
+        {
+          "text_fr": "Les trier selon les règles",
+          "text_cn": "按规定分类"
+        },
+        {
+          "text_fr": "Les jeter dans la nature",
+          "text_cn": "丢弃在自然中"
+        },
+        {
+          "text_fr": "Les brûler",
+          "text_cn": "焚烧"
+        },
+        {
+          "text_fr": "Les abandonner sur la voie publique",
+          "text_cn": "丢在公共道路"
+        }
+      ],
+      "correct_index": 0,
+      "question_type": "single",
+      "is_official_question": false,
+      "exam_type": "CR",
+      "category_id": "CR_003",
+      "order": 38
+    }
+  ]

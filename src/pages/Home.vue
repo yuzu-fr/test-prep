@@ -1,12 +1,20 @@
 <script setup>
-import { ref, computed } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, computed, onMounted } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 import themes from '../data/categories.json'
 
 const router = useRouter()
+const route = useRoute()
 
 const step = ref(1)
 const selectedExam = ref(null)
+
+onMounted(() => {
+  if (route.query.exam) {
+    selectedExam.value = route.query.exam
+    step.value = 2
+  }
+})
 
 const examTypes = [
   { 
@@ -27,8 +35,13 @@ function selectExam(type) {
 }
 
 function startPractice(themeId) {
-  // 拼接官方 ID 格式，例如 CSP_01
-  const fullId = `${selectedExam.value}_${themeId}`
+  // 拼接官方 ID 格式
+  // CSP 使用 CSP_01 格式，CR 使用 CR_001 格式
+  const suffix = themeId.replace(/^0/, '') // 移除前导 0
+  const fullId = selectedExam.value === 'CR' 
+    ? `CR_00${suffix}` 
+    : `CSP_0${suffix}`
+    
   router.push({ path: '/practice', query: { category: fullId } })
 }
 
