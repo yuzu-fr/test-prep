@@ -361,14 +361,19 @@ onUnmounted(() => {
           <span 
             v-for="(_, i) in questions" 
             :key="i" 
-            :class="{ active: i === index, answered: answers[questions[i].id] !== undefined }"
+            :class="{ 
+              active: i === index, 
+              answered: phase === 'exam' && answers[questions[i].id] !== undefined,
+              correct: phase === 'review' && answers[questions[i].id] === questions[i].answer,
+              wrong: phase === 'review' && (answers[questions[i].id] === undefined || answers[questions[i].id] !== questions[i].answer)
+            }"
             @click="index = i"
           ></span>
         </div>
       </div>
 
       <ProgressBar
-        v-if="phase !== 'exam'"
+        v-if="phase !== 'exam' && phase !== 'review'"
         :current="index + (validated || phase === 'review' ? 1 : 0)"
         :total="questions.length"
       />
@@ -473,6 +478,22 @@ onUnmounted(() => {
           <div class="stat-card full-width">
             <div class="stat-label">⏱ Temps utilisé</div>
             <div class="stat-value">{{ results.timeUsed }}</div>
+          </div>
+        </div>
+
+        <div class="result-summary-dots">
+          <label>Plan de l'examen</label>
+          <div class="exam-progress-dots grid-dots">
+            <span 
+              v-for="(_, i) in questions" 
+              :key="i" 
+              :class="{ 
+                correct: answers[questions[i].id] === questions[i].answer,
+                wrong: answers[questions[i].id] === undefined || answers[questions[i].id] !== questions[i].answer
+              }"
+              @click="phase = 'review'; index = i"
+              :title="'Question ' + (i+1)"
+            ></span>
           </div>
         </div>
 
@@ -642,7 +663,20 @@ onUnmounted(() => {
 }
 
 .exam-progress-dots span.answered { background: #ccc; }
-.exam-progress-dots span.active { background: var(--color-primary); transform: scale(1.3); }
+
+.exam-progress-dots span.active { 
+  background: var(--color-primary) !important;
+  transform: scale(1.5);
+  box-shadow: 0 4px 12px rgba(79, 124, 255, 0.4);
+  z-index: 2;
+}
+.exam-progress-dots span.correct { background: var(--color-success) !important; }
+.exam-progress-dots span.wrong { background: var(--color-danger) !important; }
+
+.exam-progress-dots span:hover:not(.active) {
+  background: #d0dbff;
+  transform: scale(1.3);
+}
 
 .nav-btns {
   display: flex;
@@ -940,6 +974,27 @@ onUnmounted(() => {
 .lang-switch button:hover:not(.active) {
   border-color: var(--color-primary);
   color: var(--color-primary);
+}
+
+.result-summary-dots {
+  margin-bottom: 32px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 16px;
+}
+
+.result-summary-dots label {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.grid-dots {
+  justify-content: center;
+  gap: 6px !important;
 }
 
 .quiz-actions {
