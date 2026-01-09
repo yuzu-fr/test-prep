@@ -35,9 +35,7 @@ function selectExam(type) {
 }
 
 function startPractice(themeId) {
-  // 拼接官方 ID 格式
-  // CSP 使用 CSP_01 格式，CR 使用 CR_001 格式
-  const suffix = themeId.replace(/^0/, '') // 移除前导 0
+  const suffix = themeId.replace(/^0/, '')
   const fullId = selectedExam.value === 'CR' 
     ? `CR_00${suffix}` 
     : `CSP_0${suffix}`
@@ -46,7 +44,6 @@ function startPractice(themeId) {
 }
 
 function startMockExam() {
-  // 模拟考试模式 (40题)
   router.push({ 
     path: '/practice', 
     query: { 
@@ -64,7 +61,7 @@ function reset() {
 
 <template>
   <main class="container">
-    <!-- Header avec Info Officielle -->
+    <!-- Header -->
     <header class="hero">
       <h1>TestCivique Prep</h1>
       <p class="subtitle">Préparation officielle conforme à la loi du 26 janvier 2024</p>
@@ -103,7 +100,7 @@ function reset() {
       </div>
     </section>
 
-    <!-- Étape 2 : Choisir le mode d'étude -->
+    <!-- Étape 2 : Mode d'étude -->
     <section v-else class="step-view">
       <div class="view-header">
         <button class="btn-back" @click="reset">← Changer d'examen</button>
@@ -111,6 +108,22 @@ function reset() {
       </div>
 
       <div class="prep-layout">
+        <!-- FAQ & Mémos Shortcut -->
+        <div class="shortcut-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px;">
+          <router-link to="/faq" class="mock-card" style="background: #f8f9fa; border: 1px solid var(--color-border); color: var(--color-text-main); display: flex; text-decoration: none; margin-bottom: 0;">
+            <div class="card-content">
+              <h3 style="color: var(--color-primary); margin-bottom: 4px; font-size: 1.1rem;">💡 FAQ</h3>
+              <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.85rem;">Infos officielles</p>
+            </div>
+          </router-link>
+          <router-link to="/knowledge" class="mock-card" style="background: #f8f9fa; border: 1px solid var(--color-border); color: var(--color-text-main); display: flex; text-decoration: none; margin-bottom: 0;">
+            <div class="card-content">
+              <h3 style="color: var(--color-primary); margin-bottom: 4px; font-size: 1.1rem;">📚 Mémos</h3>
+              <p style="color: var(--color-text-secondary); margin: 0; font-size: 0.85rem;">Fiches de révision</p>
+            </div>
+          </router-link>
+        </div>
+
         <!-- Simulation d'examen -->
         <div class="mock-exam-section">
           <div class="mock-card" @click="startMockExam">
@@ -142,6 +155,12 @@ function reset() {
 </template>
 
 <style scoped>
+.container {
+  padding: var(--space-lg);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .hero {
   text-align: center;
   margin-bottom: 48px;
@@ -188,7 +207,6 @@ function reset() {
   margin-bottom: 32px;
 }
 
-/* Exam Grid */
 .exam-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -219,7 +237,10 @@ function reset() {
   color: var(--color-primary);
 }
 
-/* Mock Card */
+.view-header {
+  margin-bottom: 32px;
+}
+
 .mock-card {
   background: var(--color-primary);
   color: white;
@@ -230,10 +251,16 @@ function reset() {
   align-items: center;
   cursor: pointer;
   margin-bottom: 40px;
+  transition: all 0.2s;
 }
 
-.mock-card h3 { color: white; margin-bottom: 8px; }
-.mock-card p { color: rgba(255,255,255,0.9); margin: 0; }
+.mock-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.mock-card h3 { color: inherit; margin-bottom: 8px; }
+.mock-card p { color: inherit; opacity: 0.9; margin: 0; }
 
 .btn-mock {
   background: white;
@@ -244,7 +271,6 @@ function reset() {
   font-weight: 700;
 }
 
-/* Theme Grid */
 .theme-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -289,5 +315,10 @@ function reset() {
   color: var(--color-text-secondary);
   cursor: pointer;
   margin-bottom: 12px;
+}
+
+.subsection-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 </style>

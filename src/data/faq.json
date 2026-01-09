@@ -1,0 +1,103 @@
+[
+    {
+      "category": "Examen civique – Présentation générale",
+      "items": [
+        {
+          "question": "Quel est l’objectif de l’examen civique ?",
+          "answer": {
+            "fr": "L’examen civique vise à évaluer la compréhension des principes et valeurs de la République française ainsi que la capacité à se repérer dans la société et la vie quotidienne en France.",
+            "cn": "公民考试旨在评估考生对法国共和国基本原则与价值的理解，以及在法国社会和日常生活中应具备的基本认知能力。",
+            "en": "The civic exam aims to assess understanding of Republican values and the ability to navigate everyday life in French society."
+          }
+        },
+        {
+          "question": "À qui s’adresse l’examen civique ?",
+          "answer": {
+            "fr": "L’examen civique s’adresse principalement aux personnes sollicitant un premier titre de séjour pluriannuel ou engagées dans un parcours d’intégration en France.",
+            "cn": "公民考试主要面向首次申请多年期居留或处于法国融入流程中的人士。",
+            "en": "The civic exam is mainly intended for people applying for a first multi-year residence permit or following an integration pathway."
+          }
+        }
+      ]
+    },
+    {
+      "category": "Examen civique – Contenu et structure de l’épreuve",
+      "items": [
+        {
+          "question": "Quels sont les grands thèmes abordés dans l’examen civique ?",
+          "answer": {
+            "fr": "L’examen civique est structuré autour de plusieurs grands thèmes couvrant les valeurs de la République, les institutions, les droits et devoirs, l’histoire, la culture et la vie en société.",
+            "cn": "公民考试围绕多个核心主题展开，涵盖共和国价值、制度、公民权利与义务、历史文化以及社会生活。",
+            "en": "The civic exam is structured around several key themes covering Republican values, institutions, rights and duties, history, culture, and life in society."
+          }
+        },
+        {
+          "question": "Comment se répartissent les thèmes de l’examen civique ?",
+          "answer": {
+            "fr": "À titre indicatif, l’examen comprend des questions réparties entre les thèmes suivants : principes et valeurs de la République, système institutionnel et politique, droits et devoirs, histoire et culture, et vie dans la société française.",
+            "cn": "作为参考，考试题目通常分布在以下主题中：共和国原则与价值、政治与制度体系、权利与义务、历史与文化，以及法国社会生活。",
+            "en": "Indicatively, questions are distributed across themes such as Republican values, political and institutional systems, rights and duties, history and culture, and life in French society."
+          }
+        },
+        {
+          "question": "Les questions portent-elles uniquement sur des connaissances théoriques ?",
+          "answer": {
+            "fr": "Non. Une part importante de l’examen repose sur des mises en situation visant à évaluer la capacité à appliquer les connaissances dans des situations concrètes de la vie quotidienne.",
+            "cn": "不是。考试中包含大量情景题，用于评估考生在实际生活场景中运用知识的能力。",
+            "en": "No. A significant part of the exam consists of scenario-based questions assessing the ability to apply knowledge in everyday situations."
+          }
+        }
+      ]
+    },
+    {
+      "category": "Examen civique – Format et déroulement",
+      "items": [
+        {
+          "question": "Quel est le format de l’examen civique ?",
+          "answer": {
+            "fr": "L’examen civique se présente sous la forme d’un questionnaire à choix multiples, avec une seule réponse correcte par question.",
+            "cn": "公民考试通常采用选择题形式，每道题只有一个正确答案。",
+            "en": "The civic exam is usually a multiple-choice questionnaire with one correct answer per question."
+          }
+        },
+        {
+          "question": "Dans quelle langue se déroule l’examen civique ?",
+          "answer": {
+            "fr": "L’examen se déroule en français. Selon la situation du candidat, des dispositifs d’accompagnement linguistique peuvent être prévus.",
+            "cn": "考试以法语进行，根据个人情况可能提供语言辅助。",
+            "en": "The exam is conducted in French, with possible language support depending on the candidate’s situation."
+          }
+        }
+      ]
+    },
+    {
+      "category": "Préparation à l’examen civique",
+      "items": [
+        {
+          "question": "Comment se préparer efficacement à l’examen civique ?",
+          "answer": {
+            "fr": "La préparation repose sur la compréhension des valeurs de la République, l’entraînement régulier à des questions types et la familiarisation avec des situations concrètes de la vie quotidienne.",
+            "cn": "有效备考应着重理解共和国价值，通过题库反复练习，并熟悉常见的社会生活情景。",
+            "en": "Effective preparation involves understanding Republican values, practicing with sample questions, and becoming familiar with everyday-life situations."
+          }
+        },
+        {
+          "question": "À quoi servent les entraînements et examens blancs proposés sur ce site ?",
+          "answer": {
+            "fr": "Les entraînements et examens blancs permettent de se familiariser avec le format de l’épreuve, d’évaluer son niveau et d’identifier les thèmes à approfondir.",
+            "cn": "练习与模拟考试有助于熟悉考试形式，评估自身水平，并发现需要加强的知识点。",
+            "en": "Practice questions and mock exams help users understand the exam format, assess their level, and identify areas for improvement."
+          }
+        },
+        {
+          "question": "Ce site est-il un service officiel d’examen ?",
+          "answer": {
+            "fr": "Non. Ce site est un outil pédagogique et d’entraînement. Il ne propose ni inscription officielle, ni certification, ni service administratif.",
+            "cn": "不是。本网站仅为学习与备考工具，不提供官方报名、认证或任何行政服务。",
+            "en": "No. This site is a learning and practice tool and does not provide official registration, certification, or administrative services."
+          }
+        }
+      ]
+    }
+  ]
+  

@@ -1,0 +1,422 @@
+[
+    {
+      "card_id": "HIS_1337_100YW",
+      "category": "HIS",
+      "title_fr": "La guerre de Cent Ans",
+      "title_cn": "英法百年战争",
+      "title_en": "Hundred Years' War",
+      "front_prompt": {
+        "fr": "Quel conflit oppose la France et l’Angleterre au Moyen Âge ?",
+        "cn": "中世纪法国与英格兰之间的长期战争是什么？"
+      },
+      "core_fr": "La guerre de Cent Ans oppose la France et l’Angleterre de 1337 à 1453.",
+      "core_cn": "英法百年战争发生于1337年至1453年。",
+      "core_en": "The Hundred Years' War was fought between France and England from 1337 to 1453.",
+      "timeline_order": 1337,
+      "period": "Moyen Âge",
+      "tags": ["guerre", "royaume", "Angleterre"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1789_REV",
+      "category": "HIS",
+      "title_fr": "La Révolution française",
+      "title_cn": "法国大革命",
+      "title_en": "French Revolution",
+      "front_prompt": {
+        "fr": "Que se passe-t-il en France en 1789 ?",
+        "cn": "1789年法国发生了什么？"
+      },
+      "core_fr": "En 1789 débute la Révolution française, mettant fin à l’Ancien Régime.",
+      "core_cn": "1789年法国大革命爆发，旧制度被推翻。",
+      "core_en": "The French Revolution began in 1789, ending the Ancien Régime.",
+      "timeline_order": 1789,
+      "period": "Révolution / Républiques",
+      "tags": ["révolution", "Ancien Régime", "citoyenneté"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1789_DDHC",
+      "category": "HIS",
+      "title_fr": "La Déclaration des droits de l’homme et du citoyen",
+      "title_cn": "人权和公民权宣言",
+      "title_en": "Declaration of the Rights of Man",
+      "front_prompt": {
+        "fr": "Quel texte fondamental est adopté en 1789 ?",
+        "cn": "1789年通过的重要基本文本是什么？"
+      },
+      "core_fr": "La Déclaration des droits de l’homme et du citoyen est adoptée en 1789.",
+      "core_cn": "《人权和公民权宣言》于1789年通过。",
+      "core_en": "The Declaration of the Rights of Man was adopted in 1789.",
+      "timeline_order": 1789,
+      "period": "Révolution / Républiques",
+      "tags": ["droits", "liberté", "égalité"],
+      "difficulty": 3,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1791_MONARCHIE",
+      "category": "HIS",
+      "title_fr": "La monarchie constitutionnelle",
+      "title_cn": "君主立宪制",
+      "title_en": "Constitutional Monarchy",
+      "front_prompt": {
+        "fr": "Quel régime politique existe en France entre 1791 et 1792 ?",
+        "cn": "1791至1792年法国实行什么政体？"
+      },
+      "core_fr": "Entre 1791 et 1792, la France est une monarchie constitutionnelle.",
+      "core_cn": "1791至1792年法国实行君主立宪制。",
+      "core_en": "From 1791 to 1792, France was a constitutional monarchy.",
+      "timeline_order": 1791,
+      "period": "Révolution / Républiques",
+      "tags": ["monarchie", "constitution"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1792_REP1",
+      "category": "HIS",
+      "title_fr": "La Première République",
+      "title_cn": "第一共和国",
+      "title_en": "First French Republic",
+      "front_prompt": {
+        "fr": "Quand la Première République est-elle proclamée ?",
+        "cn": "法国第一共和国何时成立？"
+      },
+      "core_fr": "La Première République est proclamée en 1792.",
+      "core_cn": "1792年法兰西第一共和国成立。",
+      "core_en": "The First French Republic was proclaimed in 1792.",
+      "timeline_order": 1792,
+      "period": "Révolution / Républiques",
+      "tags": ["république", "souveraineté"],
+      "difficulty": 1,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1799_CONSULAT",
+      "category": "HIS",
+      "title_fr": "Le Consulat",
+      "title_cn": "执政府时期",
+      "title_en": "The Consulate",
+      "front_prompt": {
+        "fr": "Quel régime précède le Premier Empire ?",
+        "cn": "第一帝国之前的政体是什么？"
+      },
+      "core_fr": "Le Consulat dirige la France de 1799 à 1804 sous Napoléon Bonaparte.",
+      "core_cn": "1799至1804年法国处于执政府时期。",
+      "core_en": "From 1799 to 1804, France was governed under the Consulate.",
+      "timeline_order": 1799,
+      "period": "Révolution / Républiques",
+      "tags": ["Napoléon", "transition"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1804_EMPIRE1",
+      "category": "HIS",
+      "title_fr": "Le Premier Empire",
+      "title_cn": "第一帝国",
+      "title_en": "First French Empire",
+      "front_prompt": {
+        "fr": "Quel régime Napoléon Ier instaure-t-il en 1804 ?",
+        "cn": "拿破仑在1804年建立了什么政体？"
+      },
+      "core_fr": "Le Premier Empire est instauré en 1804 par Napoléon Ier.",
+      "core_cn": "1804年拿破仑建立第一帝国。",
+      "core_en": "The First French Empire was established in 1804.",
+      "timeline_order": 1804,
+      "period": "Empire / Monarchies",
+      "tags": ["empire", "Napoléon"],
+      "difficulty": 1,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1804_CODECIVIL",
+      "category": "HIS",
+      "title_fr": "Le Code civil",
+      "title_cn": "民法典",
+      "title_en": "Civil Code",
+      "front_prompt": {
+        "fr": "Quelle grande réforme juridique est adoptée en 1804 ?",
+        "cn": "1804年通过的重要法律改革是什么？"
+      },
+      "core_fr": "Le Code civil est promulgué en 1804 et structure durablement le droit français.",
+      "core_cn": "1804年颁布《民法典》，奠定法国法律体系基础。",
+      "core_en": "The Civil Code was promulgated in 1804 and structured French law.",
+      "timeline_order": 1804,
+      "period": "Empire / Monarchies",
+      "tags": ["droit", "égalité", "code"],
+      "difficulty": 3,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1871_COMMUNE",
+      "category": "HIS",
+      "title_fr": "La Commune de Paris",
+      "title_cn": "巴黎公社",
+      "title_en": "Paris Commune",
+      "front_prompt": {
+        "fr": "Quelle insurrection a lieu à Paris en 1871 ?",
+        "cn": "1871年巴黎发生了什么起义？"
+      },
+      "core_fr": "En 1871, la Commune de Paris est une insurrection populaire.",
+      "core_cn": "1871年巴黎爆发巴黎公社起义。",
+      "core_en": "In 1871, the Paris Commune was a popular uprising.",
+      "timeline_order": 1871,
+      "period": "Républiques modernes",
+      "tags": ["Commune", "révolte", "république"],
+      "difficulty": 3,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1905_LAICITE",
+      "category": "HIS",
+      "title_fr": "La séparation de l’Église et de l’État",
+      "title_cn": "政教分离",
+      "title_en": "Separation of Church and State",
+      "front_prompt": {
+        "fr": "Quelle loi fondatrice de la laïcité est adoptée en 1905 ?",
+        "cn": "1905年通过了哪项确立世俗主义的法律？"
+      },
+      "core_fr": "En 1905, la France adopte la loi de séparation de l’Église et de l’État.",
+      "core_cn": "1905年法国确立政教分离原则。",
+      "core_en": "In 1905, France adopted the law separating Church and State.",
+      "timeline_order": 1905,
+      "period": "Républiques modernes",
+      "tags": ["laïcité", "religion", "État"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1914_WWI",
+      "category": "HIS",
+      "title_fr": "La Première Guerre mondiale",
+      "title_cn": "第一次世界大战",
+      "title_en": "World War I",
+      "front_prompt": {
+        "fr": "Quel conflit mondial commence en 1914 ?",
+        "cn": "1914年爆发了哪场世界大战？"
+      },
+      "core_fr": "La Première Guerre mondiale a lieu de 1914 à 1918.",
+      "core_cn": "第一次世界大战发生于1914至1918年。",
+      "core_en": "World War I took place from 1914 to 1918.",
+      "timeline_order": 1914,
+      "period": "Guerres mondiales",
+      "tags": ["guerre", "Europe"],
+      "difficulty": 1,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1939_WWII",
+      "category": "HIS",
+      "title_fr": "La Seconde Guerre mondiale",
+      "title_cn": "第二次世界大战",
+      "title_en": "World War II",
+      "front_prompt": {
+        "fr": "Quand se déroule la Seconde Guerre mondiale ?",
+        "cn": "第二次世界大战发生在什么时候？"
+      },
+      "core_fr": "La Seconde Guerre mondiale se déroule de 1939 à 1945.",
+      "core_cn": "第二次世界大战发生于1939至1945年。",
+      "core_en": "World War II occurred from 1939 to 1945.",
+      "timeline_order": 1939,
+      "period": "Guerres mondiales",
+      "tags": ["occupation", "libération"],
+      "difficulty": 1,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1944_LIBERATION",
+      "category": "HIS",
+      "title_fr": "La Libération de Paris",
+      "title_cn": "巴黎解放",
+      "title_en": "Liberation of Paris",
+      "front_prompt": {
+        "fr": "Quel événement majeur a lieu à Paris en août 1944 ?",
+        "cn": "1944年8月巴黎发生了什么重要事件？"
+      },
+      "core_fr": "Paris est libérée en août 1944.",
+      "core_cn": "1944年8月巴黎解放。",
+      "core_en": "Paris was liberated in August 1944.",
+      "timeline_order": 1944,
+      "period": "Guerres mondiales",
+      "tags": ["Résistance", "libération"],
+      "difficulty": 1,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1944_WOMEN_VOTE",
+      "category": "HIS",
+      "title_fr": "Le droit de vote des femmes",
+      "title_cn": "女性选举权",
+      "title_en": "Women's Suffrage",
+      "front_prompt": {
+        "fr": "Quand les femmes obtiennent-elles le droit de vote en France ?",
+        "cn": "法国女性何时获得选举权？"
+      },
+      "core_fr": "Les femmes obtiennent le droit de vote en France en 1944.",
+      "core_cn": "1944年法国女性获得选举权。",
+      "core_en": "Women gained the right to vote in France in 1944.",
+      "timeline_order": 1944,
+      "period": "Républiques modernes",
+      "tags": ["femmes", "égalité", "citoyenneté"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1945_ONU",
+      "category": "HIS",
+      "title_fr": "La création de l’ONU",
+      "title_cn": "联合国成立",
+      "title_en": "United Nations",
+      "front_prompt": {
+        "fr": "Quelle organisation internationale est créée en 1945 ?",
+        "cn": "1945年成立了哪个国际组织？"
+      },
+      "core_fr": "L’Organisation des Nations unies est fondée en 1945.",
+      "core_cn": "联合国成立于1945年。",
+      "core_en": "The United Nations was founded in 1945.",
+      "timeline_order": 1945,
+      "period": "Républiques modernes",
+      "tags": ["ONU", "paix", "international"],
+      "difficulty": 1,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1960_INDEP",
+      "category": "HIS",
+      "title_fr": "Les indépendances africaines",
+      "title_cn": "非洲殖民地独立",
+      "title_en": "African Independences",
+      "front_prompt": {
+        "fr": "Quel grand mouvement de décolonisation marque l’année 1960 ?",
+        "cn": "1960年标志性的去殖民化事件是什么？"
+      },
+      "core_fr": "En 1960, de nombreuses colonies françaises d’Afrique et Madagascar deviennent indépendantes.",
+      "core_cn": "1960年，法国在非洲的殖民地及马达加斯加获得独立。",
+      "core_en": "In 1960, many French colonies in Africa and Madagascar gained independence.",
+      "timeline_order": 1960,
+      "period": "Décolonisation",
+      "tags": ["décolonisation", "Afrique"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1975_IVG",
+      "category": "HIS",
+      "title_fr": "La légalisation de l’IVG",
+      "title_cn": "堕胎合法化",
+      "title_en": "Legalization of Abortion",
+      "front_prompt": {
+        "fr": "Quelle loi sociétale majeure est adoptée en 1975 ?",
+        "cn": "1975年通过了哪项重要社会法案？"
+      },
+      "core_fr": "La loi Veil légalise l’interruption volontaire de grossesse en 1975.",
+      "core_cn": "1975年《韦伊法》使堕胎合法化。",
+      "core_en": "The Veil Law legalized abortion in 1975.",
+      "timeline_order": 1975,
+      "period": "Europe / Société contemporaine",
+      "tags": ["IVG", "droits des femmes"],
+      "difficulty": 3,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_1981_ABOLITION",
+      "category": "HIS",
+      "title_fr": "L’abolition de la peine de mort",
+      "title_cn": "废除死刑",
+      "title_en": "Abolition of Death Penalty",
+      "front_prompt": {
+        "fr": "Quelle peine est abolie en France en 1981 ?",
+        "cn": "法国在哪一年废除了死刑？"
+      },
+      "core_fr": "La peine de mort est abolie en France en 1981.",
+      "core_cn": "1981年法国废除死刑。",
+      "core_en": "France abolished the death penalty in 1981.",
+      "timeline_order": 1981,
+      "period": "Europe / Société contemporaine",
+      "tags": ["justice", "droits humains"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_2002_EURO",
+      "category": "HIS",
+      "title_fr": "L’euro",
+      "title_cn": "欧元",
+      "title_en": "Euro",
+      "front_prompt": {
+        "fr": "Quelle monnaie devient officielle en 2002 ?",
+        "cn": "2002年正式启用的货币是什么？"
+      },
+      "core_fr": "L’euro devient la monnaie officielle en France en 2002.",
+      "core_cn": "2002年欧元成为法国官方货币。",
+      "core_en": "The euro became the official currency in 2002.",
+      "timeline_order": 2002,
+      "period": "Europe / Société contemporaine",
+      "tags": ["Europe", "monnaie"],
+      "difficulty": 1,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_2013_MARIAGE",
+      "category": "HIS",
+      "title_fr": "Le mariage pour tous",
+      "title_cn": "同性婚姻合法",
+      "title_en": "Same-Sex Marriage",
+      "front_prompt": {
+        "fr": "Quelle réforme sociétale est adoptée en 2013 ?",
+        "cn": "2013年法国通过了哪项社会改革？"
+      },
+      "core_fr": "Le mariage pour tous est légalisé en France en 2013.",
+      "core_cn": "2013年法国同性婚姻合法。",
+      "core_en": "Same-sex marriage was legalized in France in 2013.",
+      "timeline_order": 2013,
+      "period": "Europe / Société contemporaine",
+      "tags": ["égalité", "famille"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "HIS_2024_IVG_CONST",
+      "category": "HIS",
+      "title_fr": "L’IVG dans la Constitution",
+      "title_cn": "堕胎权写入宪法",
+      "title_en": "Abortion Right in Constitution",
+      "front_prompt": {
+        "fr": "Quel droit est inscrit dans la Constitution en 2024 ?",
+        "cn": "2024年哪项权利被写入法国宪法？"
+      },
+      "core_fr": "En 2024, la France inscrit le droit à l’avortement dans sa Constitution.",
+      "core_cn": "2024年法国将堕胎权写入宪法。",
+      "core_en": "In 2024, France enshrined the right to abortion in its Constitution.",
+      "timeline_order": 2024,
+      "period": "Europe / Société contemporaine",
+      "tags": ["constitution", "droits"],
+      "difficulty": 3,
+      "exam_relevance": ["CSP","CR"]
+    }
+  ]
+  
