@@ -5,10 +5,20 @@
       "title_fr": "La guerre de Cent Ans",
       "title_cn": "英法百年战争",
       "title_en": "Hundred Years' War",
-      "front_prompt": {
-        "fr": "Quel conflit oppose la France et l’Angleterre au Moyen Âge ?",
-        "cn": "中世纪法国与英格兰之间的长期战争是什么？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand débute la guerre de Cent Ans ?",
+          "cn": "英法百年战争开始于哪一年？",
+          "en": "When did the Hundred Years' War begin?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quel conflit oppose la France et l’Angleterre en 1337 ?",
+          "cn": "1337年法国与英格兰之间爆发了什么战争？",
+          "en": "What conflict began between France and England in 1337?"
+        }
+      ],
       "core_fr": "La guerre de Cent Ans oppose la France et l’Angleterre de 1337 à 1453.",
       "core_cn": "英法百年战争发生于1337年至1453年。",
       "core_en": "The Hundred Years' War was fought between France and England from 1337 to 1453.",
@@ -25,10 +35,20 @@
       "title_fr": "La Révolution française",
       "title_cn": "法国大革命",
       "title_en": "French Revolution",
-      "front_prompt": {
-        "fr": "Que se passe-t-il en France en 1789 ?",
-        "cn": "1789年法国发生了什么？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand débute la Révolution française ?",
+          "cn": "法国大革命开始于哪一年？",
+          "en": "When did the French Revolution begin?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Que se passe-t-il en France en 1789 ?",
+          "cn": "1789年法国发生了什么？",
+          "en": "What happened in France in 1789?"
+        }
+      ],
       "core_fr": "En 1789 débute la Révolution française, mettant fin à l’Ancien Régime.",
       "core_cn": "1789年法国大革命爆发，旧制度被推翻。",
       "core_en": "The French Revolution began in 1789, ending the Ancien Régime.",
@@ -45,10 +65,20 @@
       "title_fr": "La Déclaration des droits de l’homme et du citoyen",
       "title_cn": "人权和公民权宣言",
       "title_en": "Declaration of the Rights of Man",
-      "front_prompt": {
-        "fr": "Quel texte fondamental est adopté en 1789 ?",
-        "cn": "1789年通过的重要基本文本是什么？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand est adoptée la Déclaration des droits de l’homme et du citoyen ?",
+          "cn": "《人权和公民权宣言》是哪一年通过的？",
+          "en": "When was the Declaration of the Rights of Man adopted?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quel texte fondamental est adopté en France en 1789 ?",
+          "cn": "1789年法国通过了哪一重要基本文本？",
+          "en": "Which fundamental text was adopted in France in 1789?"
+        }
+      ],
       "core_fr": "La Déclaration des droits de l’homme et du citoyen est adoptée en 1789.",
       "core_cn": "《人权和公民权宣言》于1789年通过。",
       "core_en": "The Declaration of the Rights of Man was adopted in 1789.",
@@ -65,10 +95,20 @@
       "title_fr": "La monarchie constitutionnelle",
       "title_cn": "君主立宪制",
       "title_en": "Constitutional Monarchy",
-      "front_prompt": {
-        "fr": "Quel régime politique existe en France entre 1791 et 1792 ?",
-        "cn": "1791至1792年法国实行什么政体？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand la France devient-elle une monarchie constitutionnelle ?",
+          "cn": "法国在什么时候实行君主立宪制？",
+          "en": "When did France become a constitutional monarchy?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quel régime politique existe en France en 1791 ?",
+          "cn": "1791年法国实行什么政体？",
+          "en": "Which political regime existed in France in 1791?"
+        }
+      ],
       "core_fr": "Entre 1791 et 1792, la France est une monarchie constitutionnelle.",
       "core_cn": "1791至1792年法国实行君主立宪制。",
       "core_en": "From 1791 to 1792, France was a constitutional monarchy.",
@@ -85,10 +125,20 @@
       "title_fr": "La Première République",
       "title_cn": "第一共和国",
       "title_en": "First French Republic",
-      "front_prompt": {
-        "fr": "Quand la Première République est-elle proclamée ?",
-        "cn": "法国第一共和国何时成立？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand la Première République est-elle proclamée ?",
+          "cn": "法国第一共和国是在什么时候成立的？",
+          "en": "When was the First French Republic proclaimed?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quel régime politique est instauré en France en 1792 ?",
+          "cn": "1792年法国建立了什么政体？",
+          "en": "Which political regime was established in France in 1792?"
+        }
+      ],
       "core_fr": "La Première République est proclamée en 1792.",
       "core_cn": "1792年法兰西第一共和国成立。",
       "core_en": "The First French Republic was proclaimed in 1792.",
@@ -105,10 +155,20 @@
       "title_fr": "Le Consulat",
       "title_cn": "执政府时期",
       "title_en": "The Consulate",
-      "front_prompt": {
-        "fr": "Quel régime précède le Premier Empire ?",
-        "cn": "第一帝国之前的政体是什么？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand débute le Consulat en France ?",
+          "cn": "法国的执政府时期开始于哪一年？",
+          "en": "When did the Consulate begin in France?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quel régime gouverne la France à partir de 1799 ?",
+          "cn": "1799年起法国由什么政体统治？",
+          "en": "Which regime governed France starting in 1799?"
+        }
+      ],
       "core_fr": "Le Consulat dirige la France de 1799 à 1804 sous Napoléon Bonaparte.",
       "core_cn": "1799至1804年法国处于执政府时期。",
       "core_en": "From 1799 to 1804, France was governed under the Consulate.",
@@ -125,10 +185,20 @@
       "title_fr": "Le Premier Empire",
       "title_cn": "第一帝国",
       "title_en": "First French Empire",
-      "front_prompt": {
-        "fr": "Quel régime Napoléon Ier instaure-t-il en 1804 ?",
-        "cn": "拿破仑在1804年建立了什么政体？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand Napoléon Ier instaure-t-il le Premier Empire ?",
+          "cn": "拿破仑一世是在什么时候建立第一帝国的？",
+          "en": "When did Napoleon I establish the First French Empire?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quel régime politique est instauré en France en 1804 ?",
+          "cn": "1804年法国建立了什么政体？",
+          "en": "Which political regime was established in France in 1804?"
+        }
+      ],
       "core_fr": "Le Premier Empire est instauré en 1804 par Napoléon Ier.",
       "core_cn": "1804年拿破仑建立第一帝国。",
       "core_en": "The First French Empire was established in 1804.",
@@ -145,10 +215,20 @@
       "title_fr": "Le Code civil",
       "title_cn": "民法典",
       "title_en": "Civil Code",
-      "front_prompt": {
-        "fr": "Quelle grande réforme juridique est adoptée en 1804 ?",
-        "cn": "1804年通过的重要法律改革是什么？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand le Code civil est-il promulgué en France ?",
+          "cn": "法国《民法典》是哪一年颁布的？",
+          "en": "When was the Civil Code promulgated in France?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quelle grande réforme juridique est adoptée en France en 1804 ?",
+          "cn": "1804年法国通过了哪项重要法律改革？",
+          "en": "Which major legal reform was adopted in France in 1804?"
+        }
+      ],
       "core_fr": "Le Code civil est promulgué en 1804 et structure durablement le droit français.",
       "core_cn": "1804年颁布《民法典》，奠定法国法律体系基础。",
       "core_en": "The Civil Code was promulgated in 1804 and structured French law.",
@@ -165,10 +245,20 @@
       "title_fr": "La Commune de Paris",
       "title_cn": "巴黎公社",
       "title_en": "Paris Commune",
-      "front_prompt": {
-        "fr": "Quelle insurrection a lieu à Paris en 1871 ?",
-        "cn": "1871年巴黎发生了什么起义？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand a lieu la Commune de Paris ?",
+          "cn": "巴黎公社发生在哪一年？",
+          "en": "When did the Paris Commune take place?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quelle insurrection a lieu à Paris en 1871 ?",
+          "cn": "1871年巴黎发生了什么起义？",
+          "en": "Which uprising took place in Paris in 1871?"
+        }
+      ],
       "core_fr": "En 1871, la Commune de Paris est une insurrection populaire.",
       "core_cn": "1871年巴黎爆发巴黎公社起义。",
       "core_en": "In 1871, the Paris Commune was a popular uprising.",
@@ -185,10 +275,20 @@
       "title_fr": "La séparation de l’Église et de l’État",
       "title_cn": "政教分离",
       "title_en": "Separation of Church and State",
-      "front_prompt": {
-        "fr": "Quelle loi fondatrice de la laïcité est adoptée en 1905 ?",
-        "cn": "1905年通过了哪项确立世俗主义的法律？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand la loi de séparation de l’Église et de l’État est-elle adoptée ?",
+          "cn": "法国政教分离法是哪一年通过的？",
+          "en": "When was the law separating Church and State adopted in France?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quelle loi fondatrice de la laïcité est adoptée en France en 1905 ?",
+          "cn": "1905年法国通过了哪项确立世俗主义的法律？",
+          "en": "Which founding law of secularism was adopted in France in 1905?"
+        }
+      ],
       "core_fr": "En 1905, la France adopte la loi de séparation de l’Église et de l’État.",
       "core_cn": "1905年法国确立政教分离原则。",
       "core_en": "In 1905, France adopted the law separating Church and State.",
@@ -205,10 +305,20 @@
       "title_fr": "La Première Guerre mondiale",
       "title_cn": "第一次世界大战",
       "title_en": "World War I",
-      "front_prompt": {
-        "fr": "Quel conflit mondial commence en 1914 ?",
-        "cn": "1914年爆发了哪场世界大战？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand débute la Première Guerre mondiale ?",
+          "cn": "第一次世界大战开始于哪一年？",
+          "en": "When did World War I begin?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quel conflit mondial commence en 1914 ?",
+          "cn": "1914年爆发了哪场世界大战？",
+          "en": "Which world conflict began in 1914?"
+        }
+      ],
       "core_fr": "La Première Guerre mondiale a lieu de 1914 à 1918.",
       "core_cn": "第一次世界大战发生于1914至1918年。",
       "core_en": "World War I took place from 1914 to 1918.",
@@ -225,10 +335,20 @@
       "title_fr": "La Seconde Guerre mondiale",
       "title_cn": "第二次世界大战",
       "title_en": "World War II",
-      "front_prompt": {
-        "fr": "Quand se déroule la Seconde Guerre mondiale ?",
-        "cn": "第二次世界大战发生在什么时候？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand débute la Seconde Guerre mondiale ?",
+          "cn": "第二次世界大战开始于哪一年？",
+          "en": "When did World War II begin?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quel conflit mondial commence en 1939 ?",
+          "cn": "1939年爆发了哪场世界大战？",
+          "en": "Which world conflict began in 1939?"
+        }
+      ],
       "core_fr": "La Seconde Guerre mondiale se déroule de 1939 à 1945.",
       "core_cn": "第二次世界大战发生于1939至1945年。",
       "core_en": "World War II occurred from 1939 to 1945.",
@@ -245,10 +365,20 @@
       "title_fr": "La Libération de Paris",
       "title_cn": "巴黎解放",
       "title_en": "Liberation of Paris",
-      "front_prompt": {
-        "fr": "Quel événement majeur a lieu à Paris en août 1944 ?",
-        "cn": "1944年8月巴黎发生了什么重要事件？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand Paris est-elle libérée pendant la Seconde Guerre mondiale ?",
+          "cn": "巴黎是在第二次世界大战期间哪一年获得解放的？",
+          "en": "When was Paris liberated during World War II?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quel événement majeur a lieu à Paris en août 1944 ?",
+          "cn": "1944年8月巴黎发生了什么重大事件？",
+          "en": "What major event took place in Paris in August 1944?"
+        }
+      ],
       "core_fr": "Paris est libérée en août 1944.",
       "core_cn": "1944年8月巴黎解放。",
       "core_en": "Paris was liberated in August 1944.",
@@ -265,10 +395,20 @@
       "title_fr": "Le droit de vote des femmes",
       "title_cn": "女性选举权",
       "title_en": "Women's Suffrage",
-      "front_prompt": {
-        "fr": "Quand les femmes obtiennent-elles le droit de vote en France ?",
-        "cn": "法国女性何时获得选举权？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand les femmes obtiennent-elles le droit de vote en France ?",
+          "cn": "法国女性是在什么时候获得选举权的？",
+          "en": "When did women gain the right to vote in France?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quel droit politique est accordé aux femmes en France en 1944 ?",
+          "cn": "1944年法国女性获得了哪项政治权利？",
+          "en": "Which political right was granted to women in France in 1944?"
+        }
+      ],
       "core_fr": "Les femmes obtiennent le droit de vote en France en 1944.",
       "core_cn": "1944年法国女性获得选举权。",
       "core_en": "Women gained the right to vote in France in 1944.",
@@ -285,10 +425,20 @@
       "title_fr": "La création de l’ONU",
       "title_cn": "联合国成立",
       "title_en": "United Nations",
-      "front_prompt": {
-        "fr": "Quelle organisation internationale est créée en 1945 ?",
-        "cn": "1945年成立了哪个国际组织？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand l’Organisation des Nations unies est-elle fondée ?",
+          "cn": "联合国是哪一年成立的？",
+          "en": "When was the United Nations founded?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quelle organisation internationale est créée en 1945 ?",
+          "cn": "1945年成立了哪个国际组织？",
+          "en": "Which international organization was created in 1945?"
+        }
+      ],
       "core_fr": "L’Organisation des Nations unies est fondée en 1945.",
       "core_cn": "联合国成立于1945年。",
       "core_en": "The United Nations was founded in 1945.",
@@ -305,10 +455,20 @@
       "title_fr": "Les indépendances africaines",
       "title_cn": "非洲殖民地独立",
       "title_en": "African Independences",
-      "front_prompt": {
-        "fr": "Quel grand mouvement de décolonisation marque l’année 1960 ?",
-        "cn": "1960年标志性的去殖民化事件是什么？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand a lieu la grande vague d’indépendances africaines françaises ?",
+          "cn": "法国非洲殖民地大规模独立发生在哪一年？",
+          "en": "When did the major wave of French African independences occur?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quel grand mouvement de décolonisation marque l’année 1960 ?",
+          "cn": "1960年标志性的去殖民化事件是什么？",
+          "en": "Which major decolonization movement marked the year 1960?"
+        }
+      ],
       "core_fr": "En 1960, de nombreuses colonies françaises d’Afrique et Madagascar deviennent indépendantes.",
       "core_cn": "1960年，法国在非洲的殖民地及马达加斯加获得独立。",
       "core_en": "In 1960, many French colonies in Africa and Madagascar gained independence.",
@@ -325,10 +485,20 @@
       "title_fr": "La légalisation de l’IVG",
       "title_cn": "堕胎合法化",
       "title_en": "Legalization of Abortion",
-      "front_prompt": {
-        "fr": "Quelle loi sociétale majeure est adoptée en 1975 ?",
-        "cn": "1975年通过了哪项重要社会法案？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand l’IVG est-elle légalisée en France ?",
+          "cn": "法国是哪一年实现堕胎合法化的？",
+          "en": "When was abortion legalized in France?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quelle loi sociétale majeure est adoptée en France en 1975 ?",
+          "cn": "1975年法国通过了哪项重要社会法案？",
+          "en": "Which major social law was adopted in France in 1975?"
+        }
+      ],
       "core_fr": "La loi Veil légalise l’interruption volontaire de grossesse en 1975.",
       "core_cn": "1975年《韦伊法》使堕胎合法化。",
       "core_en": "The Veil Law legalized abortion in 1975.",
@@ -345,10 +515,20 @@
       "title_fr": "L’abolition de la peine de mort",
       "title_cn": "废除死刑",
       "title_en": "Abolition of Death Penalty",
-      "front_prompt": {
-        "fr": "Quelle peine est abolie en France en 1981 ?",
-        "cn": "法国在哪一年废除了死刑？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand la peine de mort est-elle abolie en France ?",
+          "cn": "法国是哪一年废除死刑的？",
+          "en": "When was the death penalty abolished in France?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quelle peine est abolie en France en 1981 ?",
+          "cn": "1981年法国废除了哪一种刑罚？",
+          "en": "Which punishment was abolished in France in 1981?"
+        }
+      ],
       "core_fr": "La peine de mort est abolie en France en 1981.",
       "core_cn": "1981年法国废除死刑。",
       "core_en": "France abolished the death penalty in 1981.",
@@ -365,10 +545,20 @@
       "title_fr": "L’euro",
       "title_cn": "欧元",
       "title_en": "Euro",
-      "front_prompt": {
-        "fr": "Quelle monnaie devient officielle en 2002 ?",
-        "cn": "2002年正式启用的货币是什么？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand l’euro devient-il la monnaie officielle en France ?",
+          "cn": "欧元在哪一年成为法国官方货币？",
+          "en": "When did the euro become the official currency in France?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quelle monnaie devient officielle en France en 2002 ?",
+          "cn": "2002年法国正式启用了哪种货币？",
+          "en": "Which currency became official in France in 2002?"
+        }
+      ],
       "core_fr": "L’euro devient la monnaie officielle en France en 2002.",
       "core_cn": "2002年欧元成为法国官方货币。",
       "core_en": "The euro became the official currency in 2002.",
@@ -385,10 +575,20 @@
       "title_fr": "Le mariage pour tous",
       "title_cn": "同性婚姻合法",
       "title_en": "Same-Sex Marriage",
-      "front_prompt": {
-        "fr": "Quelle réforme sociétale est adoptée en 2013 ?",
-        "cn": "2013年法国通过了哪项社会改革？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand le mariage pour tous est-il légalisé en France ?",
+          "cn": "法国同性婚姻合法化发生在哪一年？",
+          "en": "When was same-sex marriage legalized in France?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quelle réforme sociétale est adoptée en France en 2013 ?",
+          "cn": "2013年法国通过了哪项社会改革？",
+          "en": "Which social reform was adopted in France in 2013?"
+        }
+      ],
       "core_fr": "Le mariage pour tous est légalisé en France en 2013.",
       "core_cn": "2013年法国同性婚姻合法。",
       "core_en": "Same-sex marriage was legalized in France in 2013.",
@@ -405,10 +605,20 @@
       "title_fr": "L’IVG dans la Constitution",
       "title_cn": "堕胎权写入宪法",
       "title_en": "Abortion Right in Constitution",
-      "front_prompt": {
-        "fr": "Quel droit est inscrit dans la Constitution en 2024 ?",
-        "cn": "2024年哪项权利被写入法国宪法？"
-      },
+      "front_prompt": [
+        {
+          "type": "event_to_year",
+          "fr": "Quand le droit à l’IVG est-il inscrit dans la Constitution française ?",
+          "cn": "法国是什么时候将堕胎权写入宪法的？",
+          "en": "When was the right to abortion enshrined in the French Constitution?"
+        },
+        {
+          "type": "year_to_event",
+          "fr": "Quel droit est inscrit dans la Constitution française en 2024 ?",
+          "cn": "2024年法国宪法中写入了哪项权利？",
+          "en": "Which right was enshrined in the French Constitution in 2024?"
+        }
+      ],
       "core_fr": "En 2024, la France inscrit le droit à l’avortement dans sa Constitution.",
       "core_cn": "2024年法国将堕胎权写入宪法。",
       "core_en": "In 2024, France enshrined the right to abortion in its Constitution.",

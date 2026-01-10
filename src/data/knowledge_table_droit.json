@@ -1,0 +1,260 @@
+{
+  "table_id": "CIV_INSTITUTIONS_FR",
+  "title": {
+    "fr": "Institutions politiques et administratives françaises",
+    "cn": "法国政治与行政机构",
+    "en": "French Political and Administrative Institutions"
+  },
+  "columns": [
+    { "key": "institution", "label": { "fr": "Institution", "cn": "机构", "en": "Institution" } },
+    { "key": "selection", "label": { "fr": "Mode de désignation", "cn": "产生方式", "en": "Selection Method" } },
+    { "key": "term", "label": { "fr": "Mandat", "cn": "任期", "en": "Term" } },
+    { "key": "independence", "label": { "fr": "Indépendance", "cn": "独立性", "en": "Independence" } },
+    { "key": "role", "label": { "fr": "Rôle clé", "cn": "核心职能", "en": "Key Role" } }
+  ],
+  "rows": [
+    {
+      "institution": {
+        "fr": "Président de la République",
+        "cn": "共和国总统",
+        "en": "President of the Republic"
+      },
+      "selection": {
+        "fr": "Suffrage universel direct (deux tours)",
+        "cn": "全民直接选举（两轮制）",
+        "en": "Direct universal suffrage (two rounds)"
+      },
+      "term": {
+        "fr": "5 ans",
+        "cn": "5年",
+        "en": "5 years"
+      },
+      "independence": {
+        "fr": "Pouvoir exécutif fort",
+        "cn": "不完全独立（行政权力强）",
+        "en": "Strong executive power"
+      },
+      "role": {
+        "fr": "Chef de l’État, nomme le Premier ministre",
+        "cn": "国家元首，任命总理",
+        "en": "Head of state, appoints the Prime Minister"
+      }
+    },
+    {
+      "institution": {
+        "fr": "Assemblée nationale",
+        "cn": "国民议会",
+        "en": "National Assembly"
+      },
+      "selection": {
+        "fr": "Suffrage universel direct",
+        "cn": "全民直接选举",
+        "en": "Direct universal suffrage"
+      },
+      "term": {
+        "fr": "5 ans",
+        "cn": "5年",
+        "en": "5 years"
+      },
+      "independence": {
+        "fr": "Partiellement indépendante",
+        "cn": "部分独立",
+        "en": "Partially independent"
+      },
+      "role": {
+        "fr": "Vote les lois et contrôle le gouvernement",
+        "cn": "立法并监督政府",
+        "en": "Passes laws and oversees the government"
+      }
+    },
+    {
+      "institution": {
+        "fr": "Sénat",
+        "cn": "参议院",
+        "en": "Senate"
+      },
+      "selection": {
+        "fr": "Suffrage indirect (grands électeurs)",
+        "cn": "间接选举（地方代表）",
+        "en": "Indirect suffrage (electoral college)"
+      },
+      "term": {
+        "fr": "6 ans (renouvellement par tiers)",
+        "cn": "6年（每3年改选1/3）",
+        "en": "6 years (renewed by thirds)"
+      },
+      "independence": {
+        "fr": "Stable et indépendante des électeurs directs",
+        "cn": "相对独立",
+        "en": "Relatively independent"
+      },
+      "role": {
+        "fr": "Représente les collectivités territoriales",
+        "cn": "代表地方利益",
+        "en": "Represents local authorities"
+      }
+    },
+    {
+      "institution": {
+        "fr": "Conseil municipal",
+        "cn": "市议会",
+        "en": "Municipal Council"
+      },
+      "selection": {
+        "fr": "Suffrage universel direct",
+        "cn": "全民直接选举",
+        "en": "Direct universal suffrage"
+      },
+      "term": {
+        "fr": "6 ans",
+        "cn": "6年",
+        "en": "6 years"
+      },
+      "independence": {
+        "fr": "Partielle",
+        "cn": "部分独立",
+        "en": "Partial"
+      },
+      "role": {
+        "fr": "Gère la commune et élit le maire",
+        "cn": "管理市政并选举市长",
+        "en": "Manages the municipality and elects the mayor"
+      }
+    },
+    {
+      "institution": {
+        "fr": "Maire",
+        "cn": "市长",
+        "en": "Mayor"
+      },
+      "selection": {
+        "fr": "Élu par le conseil municipal",
+        "cn": "由市议会内部选举",
+        "en": "Elected by the municipal council"
+      },
+      "term": {
+        "fr": "6 ans",
+        "cn": "6年",
+        "en": "6 years"
+      },
+      "independence": {
+        "fr": "Partielle",
+        "cn": "部分独立",
+        "en": "Partial"
+      },
+      "role": {
+        "fr": "Exécute les décisions municipales",
+        "cn": "执行市级行政",
+        "en": "Executes municipal administration"
+      }
+    },
+    {
+      "institution": {
+        "fr": "Conseil régional",
+        "cn": "地区议会",
+        "en": "Regional Council"
+      },
+      "selection": {
+        "fr": "Suffrage universel direct (proportionnel)",
+        "cn": "全民直选（比例代表制）",
+        "en": "Direct universal suffrage (proportional)"
+      },
+      "term": {
+        "fr": "6 ans",
+        "cn": "6年",
+        "en": "6 years"
+      },
+      "independence": {
+        "fr": "Indépendante",
+        "cn": "独立",
+        "en": "Independent"
+      },
+      "role": {
+        "fr": "Développement régional, transports, éducation",
+        "cn": "区域发展、交通、教育",
+        "en": "Regional development, transport, education"
+      }
+    },
+    {
+      "institution": {
+        "fr": "Conseil départemental",
+        "cn": "省议会",
+        "en": "Departmental Council"
+      },
+      "selection": {
+        "fr": "Suffrage universel direct",
+        "cn": "全民直接选举",
+        "en": "Direct universal suffrage"
+      },
+      "term": {
+        "fr": "6 ans",
+        "cn": "6年",
+        "en": "6 years"
+      },
+      "independence": {
+        "fr": "Indépendante",
+        "cn": "独立",
+        "en": "Independent"
+      },
+      "role": {
+        "fr": "Action sociale et aides locales",
+        "cn": "社会福利与地方援助",
+        "en": "Social welfare and local aid"
+      }
+    },
+    {
+      "institution": {
+        "fr": "Députés européens",
+        "cn": "欧洲议会议员",
+        "en": "Members of the European Parliament"
+      },
+      "selection": {
+        "fr": "Suffrage universel direct",
+        "cn": "全民直接选举",
+        "en": "Direct universal suffrage"
+      },
+      "term": {
+        "fr": "5 ans",
+        "cn": "5年",
+        "en": "5 years"
+      },
+      "independence": {
+        "fr": "Indépendante",
+        "cn": "独立",
+        "en": "Independent"
+      },
+      "role": {
+        "fr": "Législation et contrôle au niveau européen",
+        "cn": "欧盟层级立法与监督",
+        "en": "European-level legislation and oversight"
+      }
+    },
+    {
+      "institution": {
+        "fr": "Conseil constitutionnel",
+        "cn": "宪法委员会",
+        "en": "Constitutional Council"
+      },
+      "selection": {
+        "fr": "Nomination (Président + Présidents des assemblées)",
+        "cn": "任命（总统及两院议长）",
+        "en": "Appointment (President and parliamentary leaders)"
+      },
+      "term": {
+        "fr": "9 ans (renouvellement par tiers)",
+        "cn": "9年（每3年更换1/3）",
+        "en": "9 years (renewed by thirds)"
+      },
+      "independence": {
+        "fr": "Très élevée",
+        "cn": "高度独立",
+        "en": "Highly independent"
+      },
+      "role": {
+        "fr": "Contrôle de la constitutionnalité des lois",
+        "cn": "审查法律是否合宪",
+        "en": "Reviews constitutionality of laws"
+      }
+    }
+  ]
+}

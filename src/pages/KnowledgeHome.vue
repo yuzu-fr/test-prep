@@ -9,7 +9,8 @@ const themes = [
     name: 'Histoire', 
     desc: 'Les dates clés, les personnages et les événements fondateurs.',
     icon: '🏰',
-    active: true
+    active: true,
+    route: '/knowledge/history'
   },
   { 
     id: 'geography', 
@@ -18,18 +19,28 @@ const themes = [
     icon: '🌍',
     active: false
   },
-  { 
-    id: 'culture', 
-    name: 'Culture', 
-    desc: 'La langue française, les arts, les sciences et les sports.',
-    icon: '🎨',
-    active: false
-  }
-]
+    { 
+      id: 'culture', 
+      name: 'Culture', 
+      desc: 'La langue française, les arts, les sciences et les sports.',
+      icon: '🎨',
+      active: false
+    },
+    { 
+      id: 'droit', 
+      name: 'Droit', 
+      desc: 'Les lois, les institutions et les droits fondamentaux.',
+      icon: '💼',
+      active: true,
+      route: '/knowledge/droit'
+    }
+  ]
 
 function selectTheme(theme) {
-  if (theme.active) {
-    router.push('/knowledge/history')
+  if (theme.active && theme.route) {
+    router.push(theme.route)
+  }else{
+    
   }
 }
 </script>

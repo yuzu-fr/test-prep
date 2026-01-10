@@ -1,0 +1,332 @@
+[
+    {
+      "card_id": "CIV_PRESIDENT",
+      "category": "CIV",
+      "title_fr": "Le Président de la République",
+      "title_cn": "共和国总统",
+      "title_en": "President of the Republic",
+      "front_prompt": [
+        {
+          "type": "definition",
+          "fr": "Comment est élu le Président de la République en France ?",
+          "cn": "法国总统是如何产生的？",
+          "en": "How is the President of the Republic elected in France?"
+        },
+        {
+          "type": "role",
+          "fr": "Quel est le rôle du Président de la République ?",
+          "cn": "法国总统的主要职责是什么？",
+          "en": "What is the role of the President of the Republic?"
+        }
+      ],
+      "core_fr": "Le Président de la République est élu au suffrage universel direct pour cinq ans. Il est le chef de l’État et détient l’essentiel du pouvoir exécutif.",
+      "core_cn": "法国总统由全民直接选举产生，任期五年，是国家元首，掌握主要行政权力。",
+      "core_en": "The President is elected by direct universal suffrage for five years and is the head of state with strong executive powers.",
+      "timeline_order": 1958,
+      "period": "Ve République",
+      "tags": ["président", "exécutif", "élections"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "CIV_ASSEMBLEE_NATIONALE",
+      "category": "CIV",
+      "title_fr": "L’Assemblée nationale",
+      "title_cn": "国民议会",
+      "title_en": "National Assembly",
+      "front_prompt": [
+        {
+          "type": "definition",
+          "fr": "Comment sont élus les députés en France ?",
+          "cn": "法国国民议会议员是如何选举产生的？",
+          "en": "How are members of the National Assembly elected?"
+        },
+        {
+          "type": "role",
+          "fr": "Quel est le rôle de l’Assemblée nationale ?",
+          "cn": "国民议会的职能是什么？",
+          "en": "What is the role of the National Assembly?"
+        }
+      ],
+      "core_fr": "L’Assemblée nationale est élue au suffrage universel direct pour cinq ans. Elle vote les lois et contrôle le gouvernement.",
+      "core_cn": "国民议会由全民直接选举产生，任期五年，负责立法并监督政府。",
+      "core_en": "The National Assembly is elected by direct universal suffrage for five years. It passes laws and oversees the government.",
+      "timeline_order": 1958,
+      "period": "Ve République",
+      "tags": ["législatif", "députés"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "CIV_SENAT",
+      "category": "CIV",
+      "title_fr": "Le Sénat",
+      "title_cn": "参议院",
+      "title_en": "Senate",
+      "front_prompt": [
+        {
+          "type": "definition",
+          "fr": "Comment sont élus les sénateurs en France ?",
+          "cn": "法国参议员是如何产生的？",
+          "en": "How are senators elected in France?"
+        },
+        {
+          "type": "role",
+          "fr": "Quel est le rôle du Sénat ?",
+          "cn": "参议院的作用是什么？",
+          "en": "What is the role of the Senate?"
+        }
+      ],
+      "core_fr": "Le Sénat est élu au suffrage indirect par des grands électeurs. Il représente les collectivités territoriales.",
+      "core_cn": "参议院通过间接选举产生，代表地方利益。",
+      "core_en": "The Senate is elected by indirect suffrage and represents local authorities.",
+      "timeline_order": 1958,
+      "period": "Ve République",
+      "tags": ["sénat", "collectivités"],
+      "difficulty": 3,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "CIV_CONSEIL_MUNICIPAL",
+      "category": "CIV",
+      "title_fr": "Le Conseil municipal",
+      "title_cn": "市议会",
+      "title_en": "Municipal Council",
+      "front_prompt": [
+        {
+          "type": "definition",
+          "fr": "Comment est élu le conseil municipal ?",
+          "cn": "市议会是如何产生的？",
+          "en": "How is the municipal council elected?"
+        },
+        {
+          "type": "role",
+          "fr": "Quel est le rôle du conseil municipal ?",
+          "cn": "市议会的职能是什么？",
+          "en": "What is the role of the municipal council?"
+        }
+      ],
+      "core_fr": "Le conseil municipal est élu au suffrage universel direct. Il règle les affaires de la commune et élit le maire.",
+      "core_cn": "市议会由全民直接选举产生，负责市政事务并选举市长。",
+      "core_en": "The municipal council is directly elected and manages local affairs while electing the mayor.",
+      "timeline_order": 1982,
+      "period": "Décentralisation",
+      "tags": ["commune", "local"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "CIV_MAIRE",
+      "category": "CIV",
+      "title_fr": "Le Maire",
+      "title_cn": "市长",
+      "title_en": "Mayor",
+      "front_prompt": [
+        {
+          "type": "definition",
+          "fr": "Comment est élu le maire en France ?",
+          "cn": "法国市长是如何产生的？",
+          "en": "How is a mayor elected in France?"
+        },
+        {
+          "type": "role",
+          "fr": "Quel est le rôle du maire ?",
+          "cn": "市长的职责是什么？",
+          "en": "What is the role of a mayor?"
+        }
+      ],
+      "core_fr": "Le maire est élu par le conseil municipal. Il dirige l’administration communale.",
+      "core_cn": "市长由市议会内部选举产生，负责市级行政。",
+      "core_en": "The mayor is elected by the municipal council and manages local administration.",
+      "timeline_order": 1982,
+      "period": "Décentralisation",
+      "tags": ["maire", "commune"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "CIV_CONSEIL_REGIONAL",
+      "category": "CIV",
+      "title_fr": "Le Conseil régional",
+      "title_cn": "地区议会",
+      "title_en": "Regional Council",
+      "front_prompt": [
+        {
+          "type": "definition",
+          "fr": "Comment est élu le conseil régional ?",
+          "cn": "地区议会是如何选举产生的？",
+          "en": "How is the regional council elected?"
+        },
+        {
+          "type": "role",
+          "fr": "Quel est le rôle du conseil régional ?",
+          "cn": "地区议会的职能是什么？",
+          "en": "What is the role of the regional council?"
+        }
+      ],
+      "core_fr": "Le conseil régional est élu au suffrage universel direct. Il est chargé du développement régional.",
+      "core_cn": "地区议会由全民直接选举产生，负责区域发展事务。",
+      "core_en": "The regional council is directly elected and responsible for regional development.",
+      "timeline_order": 1982,
+      "period": "Décentralisation",
+      "tags": ["région", "développement"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "CIV_CONSEIL_DEPARTEMENTAL",
+      "category": "CIV",
+      "title_fr": "Le Conseil départemental",
+      "title_cn": "省议会",
+      "title_en": "Departmental Council",
+      "front_prompt": [
+        {
+          "type": "definition",
+          "fr": "Comment est élu le conseil départemental ?",
+          "cn": "省议会是如何产生的？",
+          "en": "How is the departmental council elected?"
+        },
+        {
+          "type": "role",
+          "fr": "Quel est le rôle du conseil départemental ?",
+          "cn": "省议会的职能是什么？",
+          "en": "What is the role of the departmental council?"
+        }
+      ],
+      "core_fr": "Le conseil départemental est élu au suffrage universel direct. Il gère notamment l’action sociale.",
+      "core_cn": "省议会由全民直接选举产生，主要负责社会福利事务。",
+      "core_en": "The departmental council is directly elected and manages social welfare policies.",
+      "timeline_order": 1982,
+      "period": "Décentralisation",
+      "tags": ["département", "social"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "CIV_EUROPE_MEP",
+      "category": "CIV",
+      "title_fr": "Les députés européens",
+      "title_cn": "欧洲议会议员",
+      "title_en": "Members of the European Parliament",
+      "front_prompt": [
+        {
+          "type": "definition",
+          "fr": "Comment sont élus les députés européens en France ?",
+          "cn": "法国的欧洲议会议员是如何选举产生的？",
+          "en": "How are Members of the European Parliament elected in France?"
+        },
+        {
+          "type": "role",
+          "fr": "Quel est le rôle des députés européens ?",
+          "cn": "欧洲议会议员的作用是什么？",
+          "en": "What is the role of Members of the European Parliament?"
+        }
+      ],
+      "core_fr": "Les députés européens sont élus au suffrage universel direct. Ils participent à la législation européenne.",
+      "core_cn": "欧洲议会议员由全民直接选举产生，参与欧盟立法。",
+      "core_en": "MEPs are directly elected and take part in European legislation.",
+      "timeline_order": 1979,
+      "period": "Union européenne",
+      "tags": ["Europe", "démocratie"],
+      "difficulty": 2,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "CIV_CONSEIL_CONSTITUTIONNEL",
+      "category": "CIV",
+      "title_fr": "Le Conseil constitutionnel",
+      "title_cn": "宪法委员会",
+      "title_en": "Constitutional Council",
+      "front_prompt": [
+        {
+          "type": "definition",
+          "fr": "Comment sont nommés les membres du Conseil constitutionnel ?",
+          "cn": "宪法委员会成员如何任命？",
+          "en": "How are members of the Constitutional Council appointed?"
+        },
+        {
+          "type": "role",
+          "fr": "Quel est le rôle du Conseil constitutionnel ?",
+          "cn": "宪法委员会的职能是什么？",
+          "en": "What is the role of the Constitutional Council?"
+        }
+      ],
+      "core_fr": "Le Conseil constitutionnel contrôle la conformité des lois à la Constitution et veille au bon déroulement des élections.",
+      "core_cn": "宪法委员会负责法律合宪性审查并监督选举。",
+      "core_en": "The Constitutional Council ensures laws comply with the Constitution and oversees elections.",
+      "timeline_order": 1958,
+      "period": "Ve République",
+      "tags": ["constitution", "contrôle"],
+      "difficulty": 3,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "CIV_DEFENSEUR_DROITS",
+      "category": "CIV",
+      "title_fr": "Le Défenseur des droits",
+      "title_cn": "权利保护专员",
+      "title_en": "Defender of Rights",
+      "front_prompt": [
+        {
+          "type": "definition",
+          "fr": "Comment est nommé le Défenseur des droits ?",
+          "cn": "权利保护专员是如何任命的？",
+          "en": "How is the Defender of Rights appointed?"
+        },
+        {
+          "type": "role",
+          "fr": "Quel est le rôle du Défenseur des droits ?",
+          "cn": "权利保护专员的职责是什么？",
+          "en": "What is the role of the Defender of Rights?"
+        }
+      ],
+      "core_fr": "Le Défenseur des droits protège les droits et libertés des citoyens face aux administrations.",
+      "core_cn": "权利保护专员负责保护公民权利并监督公共机构。",
+      "core_en": "The Defender of Rights protects citizens’ rights and oversees public administrations.",
+      "timeline_order": 2011,
+      "period": "Ve République",
+      "tags": ["droits", "citoyens"],
+      "difficulty": 3,
+      "exam_relevance": ["CSP","CR"]
+    },
+  
+    {
+      "card_id": "CIV_JUSTICE",
+      "category": "CIV",
+      "title_fr": "Les juridictions",
+      "title_cn": "司法机构",
+      "title_en": "Judicial System",
+      "front_prompt": [
+        {
+          "type": "definition",
+          "fr": "Comment fonctionne le système judiciaire français ?",
+          "cn": "法国司法体系是如何运作的？",
+          "en": "How does the French judicial system work?"
+        },
+        {
+          "type": "role",
+          "fr": "Quel est le rôle de la justice ?",
+          "cn": "司法机构的作用是什么？",
+          "en": "What is the role of the judiciary?"
+        }
+      ],
+      "core_fr": "La justice est indépendante et chargée de faire respecter la loi et de juger les litiges.",
+      "core_cn": "司法机构独立运行，负责审理案件并保障法律实施。",
+      "core_en": "The judiciary is independent and ensures the enforcement of the law.",
+      "timeline_order": 1958,
+      "period": "Ve République",
+      "tags": ["justice", "indépendance"],
+      "difficulty": 3,
+      "exam_relevance": ["CSP","CR"]
+    }
+  ]
+  
