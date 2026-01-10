@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { fetchKnowledgeTable, fetchKnowledgeCards } from '../services/knowledgeService'
 
 const props = defineProps({
   theme: {
@@ -12,6 +13,7 @@ const props = defineProps({
 const router = useRouter()
 const tableData = ref(null)
 const cards = ref([])
+const loading = ref(true)
 const viewMode = ref('table') // 'table' | 'review'
 const currentLang = ref('fr')
 
@@ -22,20 +24,19 @@ const isReviewFlipped = ref(false)
 
 // Dynamically load data
 onMounted(async () => {
-  // Load Table Data
   try {
-    const data = await import(`../data/knowledge_table_${props.theme}.json`)
-    tableData.value = data.default
-  } catch (e) {
-    console.error('Table data not found for theme:', props.theme)
-  }
+    // 1. Fetch Table Data
+    const tableResult = await fetchKnowledgeTable(props.theme)
+    if (tableResult) {
+      tableData.value = tableResult
+    }
 
-  // Load Cards Data (for Review)
-  try {
-    const cardsData = await import(`../data/knowledge_cards_${props.theme}.json`)
-    cards.value = cardsData.default
+    // 2. Fetch Cards Data (for Review)
+    cards.value = await fetchKnowledgeCards(props.theme)
   } catch (e) {
-    console.warn('Cards data not found for theme:', props.theme)
+    console.error('Failed to load theme data:', e)
+  } finally {
+    loading.value = false
   }
 })
 

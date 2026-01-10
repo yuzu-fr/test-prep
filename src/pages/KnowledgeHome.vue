@@ -1,46 +1,26 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { fetchKnowledgeCategories } from '../services/knowledgeService'
 
 const router = useRouter()
+const themes = ref([])
+const loading = ref(true)
 
-const themes = [
-  { 
-    id: 'history', 
-    name: 'Histoire', 
-    desc: 'Les dates clés, les personnages et les événements fondateurs.',
-    icon: '🏰',
-    active: true,
-    route: '/knowledge/history'
-  },
-  { 
-    id: 'geography', 
-    name: 'Géographie', 
-    desc: 'Les fleuves, les montagnes, les régions et les symboles.',
-    icon: '🌍',
-    active: false
-  },
-    { 
-      id: 'culture', 
-      name: 'Culture', 
-      desc: 'La langue française, les arts, les sciences et les sports.',
-      icon: '🎨',
-      active: false
-    },
-    { 
-      id: 'droit', 
-      name: 'Droit', 
-      desc: 'Les lois, les institutions et les droits fondamentaux.',
-      icon: '💼',
-      active: true,
-      route: '/knowledge/droit'
-    }
-  ]
+onMounted(async () => {
+  try {
+    themes.value = await fetchKnowledgeCategories()
+  } catch (e) {
+    console.error('Failed to fetch themes:', e)
+  } finally {
+    loading.value = false
+  }
+})
 
 function selectTheme(theme) {
-  if (theme.active && theme.route) {
-    router.push(theme.route)
-  }else{
-    
+  if (theme.active) {
+    // Navigate to /knowledge/:themeId
+    router.push(`/knowledge/${theme.id}`)
   }
 }
 </script>
@@ -52,7 +32,12 @@ function selectTheme(theme) {
       <p class="subtitle">Sélectionnez un thème pour explorer les fiches de révision.</p>
     </header>
 
-    <div class="theme-grid">
+    <div v-if="loading" class="loading-state">
+      <div class="spinner"></div>
+      <p>Chargement des thèmes...</p>
+    </div>
+
+    <div v-else class="theme-grid">
       <div 
         v-for="theme in themes" 
         :key="theme.id" 
@@ -62,8 +47,8 @@ function selectTheme(theme) {
       >
         <div class="theme-icon">{{ theme.icon }}</div>
         <div class="theme-content">
-          <h3>{{ theme.name }}</h3>
-          <p>{{ theme.desc }}</p>
+          <h3>{{ theme.title_fr }}</h3>
+          <p>{{ theme.description_fr }}</p>
         </div>
         <div v-if="theme.active" class="action-text">Explorer →</div>
         <div v-else class="status-tag">Bientôt disponible</div>
@@ -93,6 +78,25 @@ h1 {
 .subtitle {
   color: var(--color-text-secondary);
   font-size: 1.1rem;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #eee;
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 .theme-grid {

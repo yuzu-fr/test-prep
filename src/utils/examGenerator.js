@@ -40,14 +40,14 @@ export function generateExamPaper(knowledgePool, situationalPool, examType) {
   let usedIds = new Set();
 
   blueprint.forEach(target => {
-    let catKnow = shuffle(knowledgePool.filter(q => q.category_id === target.category));
-    let catSit = shuffle(situationalPool.filter(q => q.category_id === target.category));
+    let catKnow = shuffle(knowledgePool.filter(q => q.module_id === target.category));
+    let catSit = shuffle(situationalPool.filter(q => q.module_id === target.category));
 
     // Pick situational
     let pickedSit = catSit.slice(0, target.situation);
     pickedSit.forEach(q => {
-      examQuestions.push({ ...q, is_situational: true });
-      usedIds.add(q._id);
+      examQuestions.push({ ...q, question_form: 'situation' });
+      usedIds.add(q.id);
     });
 
     // Fill missing situational with knowledge from same category
@@ -56,17 +56,17 @@ export function generateExamPaper(knowledgePool, situationalPool, examType) {
 
     let pickedKnow = catKnow.slice(0, knowledgeTargetCount);
     pickedKnow.forEach(q => {
-      examQuestions.push({ ...q, is_situational: false });
-      usedIds.add(q._id);
+      examQuestions.push({ ...q, question_form: 'knowledge' });
+      usedIds.add(q.id);
     });
   });
 
   // Cross-category fallback if needed
   if (examQuestions.length < 40) {
-    let fallbackPool = shuffle(knowledgePool.filter(q => q.exam_type === examType && !usedIds.has(q._id)));
+    let fallbackPool = shuffle(knowledgePool.filter(q => q.exam_type === examType && !usedIds.has(q.id)));
     let extra = fallbackPool.slice(0, 40 - examQuestions.length);
     extra.forEach(q => {
-      examQuestions.push({ ...q, is_situational: false });
+      examQuestions.push({ ...q, question_form: 'knowledge' });
     });
   }
 

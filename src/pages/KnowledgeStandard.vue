@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { fetchKnowledgeCards } from '../services/knowledgeService'
 
 const props = defineProps({
   theme: {
@@ -13,6 +14,7 @@ const router = useRouter()
 
 // ====== State ======
 const cards = ref([])
+const loading = ref(true)
 const viewMode = ref('list') // 'list' | 'review'
 const currentLang = ref('fr') // 'fr' | 'cn' | 'en'
 
@@ -22,36 +24,25 @@ const shuffledItems = ref([]) // Each item: { card, prompt }
 const isReviewFlipped = ref(false)
 
 // ====== Data Loading ======
-const themeInfo = computed(() => {
-  const info = {
-    droit: {
-      title: 'Droit & Institutions',
-      subtitle: 'Les lois, les institutions et les droits fondamentaux de la République.',
-      file: 'knowledge_cards_droit.json'
-    },
-    geography: {
-      title: 'Géographie',
-      subtitle: 'Découvrez les régions, les fleuves et les symboles de la France.',
-      file: null
-    },
-    culture: {
-      title: 'Culture',
-      subtitle: 'La langue, les arts et les traditions françaises.',
-      file: null
-    }
+onMounted(async () => {
+  try {
+    cards.value = await fetchKnowledgeCards(props.theme)
+  } catch (e) {
+    console.error('Failed to load theme data:', e)
+  } finally {
+    loading.value = false
   }
-  return info[props.theme] || { title: 'Mémos', subtitle: '', file: null }
 })
 
-onMounted(async () => {
-  if (themeInfo.value.file) {
-    try {
-      const data = await import(`../data/${themeInfo.value.file}`)
-      cards.value = data.default
-    } catch (e) {
-      console.error('Failed to load theme data:', e)
-    }
+// Helper to get title for the current theme
+const themeTitle = computed(() => {
+  const titles = {
+    history: 'Histoire',
+    droit: 'Droit & Institutions',
+    geography: 'Géographie',
+    culture: 'Culture'
   }
+  return titles[props.theme] || 'Mémos'
 })
 
 // ====== Actions ======
@@ -117,7 +108,7 @@ function getReviewPromptText(item) {
     <header class="page-header">
       <div class="header-content">
         <router-link to="/knowledge" class="btn-back-nav">← Retour aux thèmes</router-link>
-        <h1>{{ viewMode === 'list' ? themeInfo.title : 'Révision : ' + themeInfo.title }}</h1>
+        <h1>{{ viewMode === 'list' ? themeTitle : 'Révision : ' + themeTitle }}</h1>
         
         <!-- Language Selector -->
         <div class="lang-selector">
@@ -135,8 +126,13 @@ function getReviewPromptText(item) {
       </div>
     </header>
 
+    <div v-if="loading" class="loading-state">
+      <div class="spinner"></div>
+      <p>Chargement des fiches...</p>
+    </div>
+
     <!-- LIST VIEW -->
-    <div v-if="viewMode === 'list'" class="list-view fade-in">
+    <div v-else-if="viewMode === 'list'" class="list-view fade-in">
       <div v-if="cards.length > 0" class="info-list">
         <div 
           v-for="card in cards" 
@@ -444,6 +440,25 @@ h1 {
 .main-action { width: 100%; padding: 16px !important; font-size: 1.1rem !important; border-radius: 16px !important; }
 
 /* Buttons & Helpers */
+.loading-state {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #eee;
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
 .btn-primary { background: var(--color-primary); color: white; border: none; padding: 10px 24px; border-radius: var(--radius-sm); font-weight: 700; cursor: pointer; transition: all 0.2s; }
 .btn-primary:hover:not(:disabled) { opacity: 0.9; transform: translateY(-1px); }
 .btn-secondary { background: white; border: 1px solid var(--color-border); padding: 8px 16px; border-radius: 20px; font-weight: 600; color: var(--color-text-secondary); cursor: pointer; }

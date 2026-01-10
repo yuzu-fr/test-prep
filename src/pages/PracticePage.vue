@@ -1,10 +1,9 @@
 <script setup>
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import rawQuestions from '../data/questions.json'
-import situationalQuestions from '../data/questions_situation.json'
 import langData from '../data/language.json'
 import { generateExamPaper } from '../utils/examGenerator'
+import { fetchPracticeQuestions, fetchAllQuestionsForExam, fetchModuleInfo } from '../services/questionService'
 
 import ProgressBar from '../practice/ProgressBar.vue'
 import QuestionCard from '../practice/QuestionCard.vue'
@@ -28,6 +27,8 @@ const phase = ref(examMode.value ? 'notice' : 'practice')
 
 /* ====== 数据状态 (Data State) ====== */
 const questions = ref([])
+const loading = ref(false)
+const moduleInfo = ref(null)
 const index = ref(0)
 const answers = ref({})
 const validatedMap = ref({})
@@ -129,47 +130,105 @@ function clearTimer() {
 
 /* ====== 数据加载与生成 ====== */
 function transformQuestion(q) {
-  const question = {}
-  const options = {}
-  Object.keys(q).forEach(key => {
-    if (key.startsWith('question_')) question[key.replace('question_', '')] = q[key]
-  })
-  if (q.options && q.options.length > 0) {
-    const langs = Object.keys(q.options[0]).filter(k => k.startsWith('text_')).map(k => k.replace('text_', ''))
-    langs.forEach(lang => {
-      options[lang] = q.options.map(o => o[`text_${lang}`])
+  try {
+    const question = {
+      fr: q.question_fr,
+      cn: q.question_cn,
+      en: q.question_en
+    }
+    
+    let rawOptions = q.options
+    if (typeof rawOptions === 'string') {
+      try {
+        rawOptions = JSON.parse(rawOptions)
+      } catch (e) {
+        rawOptions = []
+      }
+    }
+
+    if (!Array.isArray(rawOptions) || rawOptions.length === 0) return null
+
+    // Use a deterministic seed based on question ID to keep options stable across refreshes
+    // but randomized relative to the database order.
+    const seed = String(q.id).split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)
+    const indexedOptions = rawOptions.map((opt, idx) => ({ opt, originalIdx: idx }))
+    
+    // Deterministic shuffle
+    const deterministicShuffle = (array, seed) => {
+      let m = array.length, t, i;
+      while (m) {
+        i = Math.floor(Math.abs(Math.sin(seed++)) * m--);
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
+      }
+      return array;
+    }
+
+    deterministicShuffle(indexedOptions, seed)
+
+    // Find where the original correct option moved to
+    const newCorrectIndex = indexedOptions.findIndex(item => item.originalIdx === q.correct_index)
+
+    const options = {}
+    const availableLangs = ['fr', 'cn', 'en']
+    
+    availableLangs.forEach(lang => {
+      options[lang] = indexedOptions.map(item => item.opt[`text_${lang}`] || item.opt[lang])
     })
-  }
-  return { 
-    id: q._id,
-    question, 
-    options, 
-    answer: q.correct_index,
-    isSituational: !!q.is_situational || (q._id && q._id.includes('SIT'))
+
+    return { 
+      id: q.id,
+      question, 
+      options, 
+      answer: newCorrectIndex,
+      isSituational: q.question_form === 'situation'
+    }
+  } catch (err) {
+    console.error('[PracticePage] transform error for question:', q.id, err)
+    return null
   }
 }
 
-function initPractice() {
-  if (!Array.isArray(rawQuestions)) return
-  const pool = categoryId.value ? rawQuestions.filter(q => q.category_id === categoryId.value) : rawQuestions
-  questions.value = pool.map(q => transformQuestion(q))
-  loadProgress()
+async function initPractice() {
+  if (!categoryId.value) return
+  
+  loading.value = true
+  try {
+    const [rawQuestions, info] = await Promise.all([
+      fetchPracticeQuestions(categoryId.value),
+      fetchModuleInfo(categoryId.value)
+    ])
+    
+    moduleInfo.value = info
+    
+    if (!rawQuestions || rawQuestions.length === 0) {
+      questions.value = []
+    } else {
+      questions.value = rawQuestions.map(q => transformQuestion(q)).filter(q => q !== null)
+    }
+    loadProgress()
+  } catch (e) {
+    console.error('[PracticePage] Failed to load practice questions:', e)
+    router.push('/')
+  } finally {
+    loading.value = false
+  }
 }
 
 async function initExam() {
   phase.value = 'loading'
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      try {
-        const rawPaper = generateExamPaper(rawQuestions, situationalQuestions, examType.value)
-        questions.value = rawPaper.map(q => transformQuestion(q))
-        resolve()
-      } catch (e) {
-        console.error(e)
-        router.push('/')
-      }
-    }, 1000)
-  })
+  try {
+    const allQuestions = await fetchAllQuestionsForExam(examType.value)
+    const knowledgePool = allQuestions.filter(q => q.question_form === 'knowledge')
+    const situationalPool = allQuestions.filter(q => q.question_form === 'situation')
+    
+    const rawPaper = generateExamPaper(knowledgePool, situationalPool, examType.value)
+    questions.value = rawPaper.map(q => transformQuestion(q))
+  } catch (e) {
+    console.error('Failed to generate exam:', e)
+    router.push('/')
+  }
 }
 
 function startNewExam() {
@@ -196,7 +255,13 @@ function loadProgress() {
     answers.value = saved.answers || {}
     validatedMap.value = saved.validatedMap || {}
     const firstUnansweredIndex = questions.value.findIndex(q => !validatedMap.value[q.id])
-    index.value = (firstUnansweredIndex !== -1) ? firstUnansweredIndex : 0
+    if (firstUnansweredIndex === -1 && questions.value.length > 0) {
+      // All questions finished, go directly to review mode instead of finished card
+      phase.value = 'review'
+      index.value = 0
+    } else {
+      index.value = (firstUnansweredIndex !== -1) ? firstUnansweredIndex : 0
+    }
   }
 }
 
@@ -270,8 +335,17 @@ function next() {
     index.value++
     saveProgress()
   } else if (phase.value === 'practice') {
-    index.value = 0
+    phase.value = 'practice_finished'
   }
+}
+
+function restartPractice() {
+  // Clear progress for this category
+  localStorage.removeItem(storageKey.value)
+  answers.value = {}
+  validatedMap.value = {}
+  index.value = 0
+  phase.value = 'practice'
 }
 
 function selectOption(i) {
@@ -293,12 +367,14 @@ onMounted(async () => {
       startTimer()
     }
   } else {
-    initPractice()
+    await initPractice()
   }
 })
 
-watch(categoryId, () => {
-  if (!examMode.value) initPractice()
+watch(categoryId, async (newId) => {
+  if (!examMode.value && newId) {
+    await initPractice()
+  }
 })
 
 onUnmounted(() => {
@@ -340,11 +416,16 @@ onUnmounted(() => {
     </div>
 
     <!-- Phase: Exam or Practice or Review -->
+    <div v-else-if="loading" class="loading-view">
+      <div class="spinner"></div>
+      <p>Chargement des questions...</p>
+    </div>
+
     <div v-else-if="['exam', 'practice', 'review'].includes(phase) && current">
       <div class="quiz-header">
         <h2 v-if="phase === 'exam'">Question {{ index + 1 }} / 40</h2>
-        <h2 v-else-if="phase === 'review'">Correction : Question {{ index + 1 }} / 40</h2>
-        <h2 v-else>Entraînement</h2>
+        <h2 v-else-if="phase === 'review'">Révision : {{ moduleInfo?.title_fr || 'Thématique' }}</h2>
+        <h2 v-else>{{ moduleInfo?.title_fr || 'Entraînement' }}</h2>
         
         <div v-if="['exam', 'review'].includes(phase)" class="exam-progress-dots">
           <span 
@@ -354,7 +435,8 @@ onUnmounted(() => {
               active: i === index, 
               answered: phase === 'exam' && answers[questions[i].id] !== undefined,
               correct: phase === 'review' && answers[questions[i].id] === questions[i].answer,
-              wrong: phase === 'review' && (answers[questions[i].id] === undefined || answers[questions[i].id] !== questions[i].answer)
+              wrong: phase === 'review' && answers[questions[i].id] !== undefined && answers[questions[i].id] !== questions[i].answer,
+              skipped: phase === 'review' && answers[questions[i].id] === undefined
             }"
             @click="index = i"
           ></span>
@@ -402,7 +484,8 @@ onUnmounted(() => {
           <div class="nav-btns">
             <button class="btn-nav" :disabled="index === 0" @click="index--">Précédent</button>
             <button v-if="index < questions.length - 1" class="btn-nav primary" @click="index++">Suivant</button>
-            <button v-else class="btn-nav" @click="phase = 'result'">Retour aux résultats</button>
+            <button v-else-if="examMode" class="btn-nav" @click="phase = 'result'">Retour aux résultats</button>
+            <button v-else class="btn-nav primary" @click="phase = 'practice_finished'">Terminer la révision</button>
           </div>
         </template>
 
@@ -418,9 +501,54 @@ onUnmounted(() => {
       </div>
     </div>
 
+    <!-- Phase: Practice Finished -->
+    <div v-else-if="phase === 'practice_finished'" class="result-view fade-in">
+      <div class="result-card practice-end-card">
+        <div class="celebration-icon">🏆</div>
+        
+        <div class="result-header">
+          <span class="status-badge practice-badge">THÉMATIQUE TERMINÉE</span>
+          <h3>Félicitations !</h3>
+          <p class="practice-end-desc">
+            Vous avez terminé l'ensemble des questions pour :<br>
+            <strong>{{ moduleInfo?.title_fr || categoryId }}</strong>
+          </p>
+        </div>
+
+        <div class="practice-stats">
+          <div class="stat-item">
+            <span class="stat-num">{{ questions.length }}</span>
+            <span class="stat-label">Questions traitées</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Progression</span>
+          </div>
+        </div>
+
+        <div class="result-actions vertical">
+          <button class="btn-restart" @click="restartPractice">
+            <span class="btn-icon">🔄</span>
+            <div class="btn-text">
+              <span class="btn-title">Recommencer</span>
+              <span class="btn-subtitle">Reprendre cette série à zéro</span>
+            </div>
+          </button>
+          
+          <button class="btn-switch" @click="router.push({ path: '/', query: { exam: examType } })">
+            <span class="btn-icon">📚</span>
+            <div class="btn-text">
+              <span class="btn-title">Changer de thème</span>
+              <span class="btn-subtitle">Explorer d'autres catégories</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- Phase: Result -->
     <div v-else-if="phase === 'result'" class="result-view">
-      <div class="result-card" :class="{ pass: results.score >= 32 }">
+      <div class="result-card" :class="results.score >= 32 ? 'pass' : 'fail'">
         <div class="result-header">
           <div class="status-icon">{{ results.score >= 32 ? '🎉' : '⏳' }}</div>
           <span class="status-badge">{{ results.score >= 32 ? 'ADMIS' : 'ÉCHEC' }}</span>
@@ -430,9 +558,9 @@ onUnmounted(() => {
         <div class="score-section">
           <div class="score-circle-container">
             <svg class="score-ring" viewBox="0 0 100 100">
-              <circle class="ring-bg" cx="50" cy="50" r="45" />
-              <circle class="ring-fill" cx="50" cy="50" r="45" 
-                :style="{ strokeDasharray: `${(results.score / 40) * 283} 283` }" />
+              <circle class="ring-bg" cx="50" cy="50" r="45" fill="none" />
+              <circle class="ring-fill" cx="50" cy="50" r="45" fill="none"
+                :style="{ strokeDasharray: `${(results.score / 40) * 282.7} 282.7` }" />
             </svg>
             <div class="score-content">
               <span class="score-num">{{ results.score }}</span>
@@ -452,9 +580,22 @@ onUnmounted(() => {
           </div>
         </div>
 
-        <div class="result-actions">
-          <button class="btn-primary main-action" @click="phase = 'review'; index = 0">Revoir mes réponses</button>
-          <button class="btn-secondary" @click="router.push({ path: '/', query: { exam: examType } })">Retour à l'accueil</button>
+        <div class="result-actions vertical">
+          <button class="btn-restart" @click="phase = 'review'; index = 0">
+            <span class="btn-icon">👁️</span>
+            <div class="btn-text">
+              <span class="btn-title">Revoir mes réponses</span>
+              <span class="btn-subtitle">Vérifier chaque question</span>
+            </div>
+          </button>
+          
+          <button class="btn-switch" @click="router.push({ path: '/', query: { exam: examType } })">
+            <span class="btn-icon">🏠</span>
+            <div class="btn-text">
+              <span class="btn-title">Retour à l'accueil</span>
+              <span class="btn-subtitle">Quitter le mode examen</span>
+            </div>
+          </button>
         </div>
       </div>
     </div>
@@ -545,27 +686,51 @@ onUnmounted(() => {
 .exam-progress-dots {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
-  margin-top: 12px;
+  gap: 6px;
+  margin-top: 16px;
+  justify-content: center;
+  padding: 8px;
+  background: #f8fafc;
+  border-radius: 12px;
 }
 
 .exam-progress-dots span {
-  width: 8px;
-  height: 8px;
-  background: #eee;
+  width: 10px;
+  height: 10px;
+  background: #e2e8f0;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.exam-progress-dots span:hover {
+  transform: scale(1.2);
+  background: #cbd5e1;
+}
+
+.exam-progress-dots span.answered { 
+  background: #94a3b8;
 }
 
 .exam-progress-dots span.active { 
   background: var(--color-primary) !important;
-  transform: scale(1.5);
-  box-shadow: 0 4px 12px rgba(79, 124, 255, 0.4);
+  transform: scale(1.4);
+  box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.2);
+  z-index: 1;
 }
 
-.exam-progress-dots span.correct { background: var(--color-success) !important; }
-.exam-progress-dots span.wrong { background: var(--color-danger) !important; }
+.exam-progress-dots span.correct { 
+  background: #22c55e !important; /* Softer Green */
+}
+
+.exam-progress-dots span.wrong { 
+  background: #ef4444 !important; /* Softer Red */
+}
+
+.exam-progress-dots span.skipped { 
+  background: #cbd5e1 !important;
+  opacity: 0.6;
+}
 
 .nav-btns {
   display: flex;
@@ -630,9 +795,203 @@ onUnmounted(() => {
   border-top: 8px solid var(--color-success);
 }
 
+.practice-end-card {
+  border-top: 8px solid #ffd700 !important; /* Gold for trophy */
+}
+
+.celebration-icon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-20px);}
+  60% {transform: translateY(-10px);}
+}
+
+.practice-badge {
+  background: #fff9db !important;
+  color: #f08c00 !important;
+  border: 1px solid #ffe066;
+}
+
+.practice-end-desc {
+  color: var(--color-text-secondary);
+  margin-top: 12px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.practice-stats {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 32px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 16px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-num {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.result-actions.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.btn-restart, .btn-switch {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: left;
+  width: 100%;
+}
+
+.btn-restart {
+  background: var(--color-primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(79, 124, 255, 0.2);
+}
+
+.btn-restart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(79, 124, 255, 0.3);
+  filter: brightness(1.05);
+}
+
+.btn-switch {
+  background: white;
+  color: var(--color-text-main);
+  border: 2px solid var(--color-border);
+}
+
+.btn-switch:hover {
+  background: #f8f9fa;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.btn-switch .btn-icon {
+  background: #f0f2f5;
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.btn-subtitle {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.btn-switch .btn-subtitle {
+  color: var(--color-text-secondary);
+}
+
+.result-card.pass {
+  border-top: 8px solid var(--color-success);
+}
+
+.result-card.fail {
+  border-top: 8px solid var(--color-danger);
+}
+
+.score-circle-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 32px;
+}
+
+.score-ring {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.ring-bg {
+  stroke: #f1f5f9;
+  stroke-width: 8;
+}
+
+.ring-fill {
+  stroke: var(--color-success);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s ease;
+}
+
+.result-card.fail .ring-fill {
+  stroke: var(--color-danger);
+}
+
+.score-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .score-num {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 900;
+  line-height: 1;
+  color: var(--color-text-main);
+  margin: 0;
+}
+
+.score-total {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text-secondary);
 }
 
 .stat-card {

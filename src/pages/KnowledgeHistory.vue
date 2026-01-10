@@ -1,12 +1,14 @@
 <script setup>
-import { ref, computed } from 'vue'
-import historyCards from '../data/knowledge_cards_history.json'
+import { ref, computed, onMounted } from 'vue'
+import { fetchKnowledgeCards } from '../services/knowledgeService'
 
-defineProps({
+const props = defineProps({
   theme: String
 })
 
 // ====== State ======
+const historyCards = ref([])
+const loading = ref(true)
 const viewMode = ref('timeline') // 'timeline' | 'review'
 const activeCardId = ref(null)
 const activeModalPrompt = ref(null) // Stores the specific prompt chosen for the modal
@@ -20,12 +22,23 @@ const shuffledItems = ref([]) // Each item: { card, prompt }
 const isReviewFlipped = ref(false)
 const selectedTag = ref('all')
 
+// ====== Data Loading ======
+onMounted(async () => {
+  try {
+    historyCards.value = await fetchKnowledgeCards(props.theme || 'history')
+  } catch (e) {
+    console.error('Failed to load history data:', e)
+  } finally {
+    loading.value = false
+  }
+})
+
 // ====== Data Processing ======
-const sortedCards = [...historyCards].sort((a, b) => a.timeline_order - b.timeline_order)
+const sortedCards = computed(() => [...historyCards.value].sort((a, b) => a.timeline_order - b.timeline_order))
 
 const allTags = computed(() => {
   const tags = new Set()
-  historyCards.forEach(c => {
+  historyCards.value.forEach(c => {
     if (c.tags) c.tags.forEach(t => tags.add(t))
   })
   return ['all', ...Array.from(tags)]
@@ -34,7 +47,7 @@ const allTags = computed(() => {
 // Timeline Grouping
 const timelineData = computed(() => {
   const periods = {}
-  sortedCards.forEach(card => {
+  sortedCards.value.forEach(card => {
     if (!periods[card.period]) periods[card.period] = {}
     if (!periods[card.period][card.timeline_order]) periods[card.period][card.timeline_order] = []
     periods[card.period][card.timeline_order].push(card)
@@ -42,11 +55,11 @@ const timelineData = computed(() => {
   return periods
 })
 
-const activeCard = computed(() => historyCards.find(c => c.card_id === activeCardId.value))
+const activeCard = computed(() => historyCards.value.find(c => c.card_id === activeCardId.value))
 
 // ====== Actions ======
 function openCard(cardId) {
-  const card = historyCards.find(c => c.card_id === cardId)
+  const card = historyCards.value.find(c => c.card_id === cardId)
   if (!card) return
   
   activeCardId.value = cardId
@@ -75,8 +88,8 @@ function toggleYear(yearKey) {
 
 function startReview() {
   const pool = selectedTag.value === 'all' 
-    ? historyCards 
-    : historyCards.filter(c => c.tags.includes(selectedTag.value))
+    ? historyCards.value 
+    : historyCards.value.filter(c => c.tags.includes(selectedTag.value))
   
   // Explode cards: one prompt = one card in review
   const items = []
@@ -180,8 +193,13 @@ const periodColors = {
       </div>
     </header>
 
+    <div v-if="loading" class="loading-state">
+      <div class="spinner"></div>
+      <p>Chargement des fiches...</p>
+    </div>
+
     <!-- TIMELINE VIEW -->
-    <div v-if="viewMode === 'timeline'" class="timeline-view fade-in">
+    <div v-else-if="viewMode === 'timeline'" class="timeline-view fade-in">
       <div v-for="(years, period) in timelineData" :key="period" class="period-group">
         <div class="period-header">
           <h2 class="period-title" :style="{ color: periodColors[period] }">{{ period }}</h2>
@@ -626,6 +644,25 @@ h1 {
 .modal-title-sub { font-size: 0.8rem; color: var(--color-text-secondary); font-weight: 500; }
 
 /* Base Styles (Buttons & Helpers) */
+.loading-state {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #eee;
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
 .btn-primary { background: var(--color-primary); color: white; border: none; padding: 10px 24px; border-radius: var(--radius-sm); font-weight: 700; cursor: pointer; transition: all 0.2s; }
 .btn-primary:hover:not(:disabled) { opacity: 0.9; transform: translateY(-1px); }
 .btn-secondary { background: white; border: 1px solid var(--color-border); padding: 8px 16px; border-radius: 20px; font-weight: 600; color: var(--color-text-secondary); cursor: pointer; }

@@ -1,18 +1,31 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-import themes from '../data/categories.json'
+import { fetchThematicCategories } from '../services/questionService'
+import { supabase } from '../lib/supabaseClient'
 
 const router = useRouter()
 const route = useRoute()
 
 const step = ref(1)
 const selectedExam = ref(null)
+const themes = ref([])
+const loading = ref(false)
 
-onMounted(() => {
+onMounted(async () => {
   if (route.query.exam) {
     selectedExam.value = route.query.exam
     step.value = 2
+    
+    // Fetch modules if we are already in step 2
+    loading.value = true
+    try {
+      themes.value = await fetchThematicCategories(selectedExam.value)
+    } catch (e) {
+      console.error('[Home] Failed to fetch modules:', e)
+    } finally {
+      loading.value = false
+    }
   }
 })
 
@@ -29,18 +42,24 @@ const examTypes = [
   }
 ]
 
-function selectExam(type) {
+async function selectExam(type) {
   selectedExam.value = type
   step.value = 2
+  
+  // Fetch modules for the selected exam type
+  loading.value = true
+  try {
+    themes.value = await fetchThematicCategories(type)
+  } catch (e) {
+    console.error('[Home] Failed to fetch modules:', e)
+  } finally {
+    loading.value = false
+  }
 }
 
 function startPractice(themeId) {
-  const suffix = themeId.replace(/^0/, '')
-  const fullId = selectedExam.value === 'CR' 
-    ? `CR_00${suffix}` 
-    : `CSP_0${suffix}`
-    
-  router.push({ path: '/practice', query: { category: fullId } })
+  // themeId is now the full ID like 'CR_001' from the modules table
+  router.push({ path: '/practice', query: { category: themeId } })
 }
 
 function startMockExam() {
@@ -137,7 +156,11 @@ function reset() {
 
         <!-- Thématiques -->
         <h3 class="subsection-title">Entraînement par thématique</h3>
-        <div class="theme-grid">
+        <div v-if="loading" class="loading-state">
+          <div class="spinner"></div>
+          <p>Chargement des thématiques...</p>
+        </div>
+        <div v-else class="theme-grid">
           <div 
             v-for="theme in themes" 
             :key="theme.id" 
@@ -145,7 +168,7 @@ function reset() {
             @click="startPractice(theme.id)"
           >
             <span class="theme-index">{{ theme.id }}</span>
-            <h4>{{ theme.name }}</h4>
+            <h4>{{ theme.title_fr || theme.name }}</h4>
             <span class="action-text">S'entraîner →</span>
           </div>
         </div>
@@ -320,5 +343,27 @@ function reset() {
 .subsection-title {
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 40px 0;
+  background: white;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #eee;
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 </style>
